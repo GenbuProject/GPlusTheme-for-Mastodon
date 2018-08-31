@@ -1,0 +1,10 @@
+.notification__message {
+  color: #616161;
+  font-size: 13px;
+}
+
+.notification-favourite > .status.status-direct {
+  background: transparent;
+}
+
+/*# sourceMappingURL=notifications.css.map */

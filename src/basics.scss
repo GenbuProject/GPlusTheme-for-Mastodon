@@ -7,6 +7,12 @@ body {
 	background: $base-color;
 
 	.ui {
-		background: lighten($base-color, 7%);
+		background: $base-color;
+	}
+}
+
+.focusable {
+	&:focus {
+		background: inherit;
 	}
 }

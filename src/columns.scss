@@ -1,0 +1,44 @@
+@import 'variables.scss';
+
+
+.column-header__wrapper {
+	> .column-header {
+		background: $column-header-color;
+		box-shadow: 0 1px 8px $column-header-shadow-color;
+
+		* {
+			background: inherit;
+		}
+
+		.column-header__button {
+			&.active {
+				color: $icon-active-color;
+				background: inherit;
+			}
+		}
+	}
+
+	.column-header__collapsible-inner {
+		background: $column-header-color;
+	}
+}
+
+.column {
+	> .scrollable {
+		background: transparent;
+
+		> *[role="feed"] {
+			> article {
+				margin: 1em 0;
+			}
+		}
+	}
+}
+
+.tabs-bar {
+	background: $column-header-color;
+
+	> .tabs-bar__link {
+		color: $icon-color;
+	}
+}

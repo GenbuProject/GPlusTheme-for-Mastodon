@@ -1,17 +1,37 @@
 @import 'variables.scss';
 
 
-//.detailed-status__wrapper,
-.status__wrapper {
-	background: $status-color !important;
-	box-shadow: 0 1px 4px 0 $status-shadow-color;
 
-	&:focus {
-		background: $status-color;
+.status__wrapper {
+	&.focusable:focus {
+		background: inherit;
 		box-shadow: 0 0 20px $status-focused-shadow-color;
+		
+		.status {
+			&.status-direct {
+				background: darken($status-color, 5%);
+			}
+		}
 	}
 }
 
-.status__action-bar {
-	background: $status-actionbar-color;
+.status {
+	background: $status-color;
+	box-shadow: 0 1px 4px 0 $status-shadow-color;
+
+	&.status-direct {
+		background: darken($status-color, 10%);
+	}
+
+	.status__display-name {
+		strong {
+			color: $primary-text-color;
+		}
+	}
+
+	.status__content {
+		a {
+			color: $secondary-text-color;
+		}
+	}
 }

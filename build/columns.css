@@ -1,0 +1,30 @@
+.column-header__wrapper > .column-header {
+  background: #ffffff;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+}
+.column-header__wrapper > .column-header * {
+  background: inherit;
+}
+.column-header__wrapper > .column-header .column-header__button.active {
+  color: #db4437;
+  background: inherit;
+}
+.column-header__wrapper .column-header__collapsible-inner {
+  background: #ffffff;
+}
+
+.column > .scrollable {
+  background: transparent;
+}
+.column > .scrollable > *[role="feed"] > article {
+  margin: 1em 0;
+}
+
+.tabs-bar {
+  background: #ffffff;
+}
+.tabs-bar > .tabs-bar__link {
+  color: rgba(0, 0, 0, 0.55);
+}
+
+/*# sourceMappingURL=columns.css.map */
