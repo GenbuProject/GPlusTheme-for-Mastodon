@@ -33,14 +33,48 @@
 		> .drawer__inner {
 			background: $column-header-color;
 
-			> .navigation-bar {
-				color: $secondary-text-color;
+			> .search-results {
+				> .search-results__header {
+					background: $column-header-color;
+				}
 
-				.navigation-bar__profile-account {
-					color: $primary-text-color;
+				> .search-results__section {
+					h5 {
+						background: darken($column-header-color, 10%);
+					}
+
+					> .trends__item {
+						> .trends__item__name a {
+							color: $secondary-text-color;
+						}
+
+						> .trends__item__current {
+							color: lighten($secondary-text-color, 10%);
+						}
+					}
 				}
 			}
+
+			> .drawer__inner__mastodon {
+				visibility: hidden;
+			}
 		}
+	}
+}
+
+.navigation-bar {
+	color: $secondary-text-color;
+
+	.navigation-bar__profile {
+		strong {
+			color: $primary-text-color;
+		}
+	}
+}
+
+.compose-form {
+	> .compose-form__buttons-wrapper {
+		background: $column-header-color;
 	}
 }
 
@@ -90,11 +124,39 @@
 				&:first-child {
 					margin: 0;
 				}
+
+				.load-more {
+					background: transparent;
+
+					&:hover {
+						background: darken($column-header-color, 10%);
+					}
+				}
 			}
 		}
 	}
 
+	.column-subheading {
+		background: darken($column-header-color, 10%);
+	}
+
+	.column-link {
+		color: $primary-text-color;
+		background: $base-color;
+	}
+
 	.empty-column-indicator {
 		background: $column-header-color;
+	}
+
+	> .getting-started__wrapper,
+	> .getting-started__footer {
+		background: transparent;
+	}
+
+	> .getting-started {
+		a {
+			color: $primary-text-color;
+		}
 	}
 }

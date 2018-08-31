@@ -30,11 +30,31 @@ body .ui {
 .drawer > .drawer__pager > .drawer__inner {
   background: #ffffff;
 }
-.drawer > .drawer__pager > .drawer__inner > .navigation-bar {
+.drawer > .drawer__pager > .drawer__inner > .search-results > .search-results__header {
+  background: #ffffff;
+}
+.drawer > .drawer__pager > .drawer__inner > .search-results > .search-results__section h5 {
+  background: #e6e6e6;
+}
+.drawer > .drawer__pager > .drawer__inner > .search-results > .search-results__section > .trends__item > .trends__item__name a {
   color: #2962ff;
 }
-.drawer > .drawer__pager > .drawer__inner > .navigation-bar .navigation-bar__profile-account {
+.drawer > .drawer__pager > .drawer__inner > .search-results > .search-results__section > .trends__item > .trends__item__current {
+  color: #5c87ff;
+}
+.drawer > .drawer__pager > .drawer__inner > .drawer__inner__mastodon {
+  visibility: hidden;
+}
+
+.navigation-bar {
+  color: #2962ff;
+}
+.navigation-bar .navigation-bar__profile strong {
   color: rgba(0, 0, 0, 0.87);
+}
+
+.compose-form > .compose-form__buttons-wrapper {
+  background: #ffffff;
 }
 
 .column-header__wrapper > .column-header {
@@ -72,8 +92,28 @@ body .ui {
 .column > .scrollable > *[role="feed"] > article:first-child {
   margin: 0;
 }
+.column > .scrollable > *[role="feed"] > article .load-more {
+  background: transparent;
+}
+.column > .scrollable > *[role="feed"] > article .load-more:hover {
+  background: #e6e6e6;
+}
+.column .column-subheading {
+  background: #e6e6e6;
+}
+.column .column-link {
+  color: rgba(0, 0, 0, 0.87);
+  background: #f1f1f1;
+}
 .column .empty-column-indicator {
   background: #ffffff;
+}
+.column > .getting-started__wrapper,
+.column > .getting-started__footer {
+  background: transparent;
+}
+.column > .getting-started a {
+  color: rgba(0, 0, 0, 0.87);
 }
 
 .account > .account__wrapper > .account__display-name {
@@ -85,17 +125,6 @@ body .ui {
 
 .account__action-bar__tab strong {
   color: rgba(0, 0, 0, 0.87);
-}
-
-.notification.notification-favourite > .status.status-direct {
-  background: transparent;
-}
-.notification > .notification__message {
-  color: #616161;
-  font-size: 13px;
-}
-.notification > .notification__message .notification__display-name:hover {
-  color: #2962ff;
 }
 
 .status__wrapper.focusable:focus {
@@ -135,6 +164,17 @@ body .ui {
 }
 .status .status__content a,
 .detailed-status .status__content a {
+  color: #2962ff;
+}
+
+.notification.notification-favourite > .status.status-direct {
+  background: transparent;
+}
+.notification > .notification__message {
+  color: #616161;
+  font-size: 13px;
+}
+.notification > .notification__message .notification__display-name:hover {
   color: #2962ff;
 }
 
