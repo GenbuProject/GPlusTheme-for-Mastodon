@@ -1,0 +1,41 @@
+body {
+  color: rgba(0, 0, 0, 0.87);
+  background: #f1f1f1;
+}
+body .ui {
+  background: white;
+}
+
+.column-header {
+  background: #ffffff;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+}
+.column-header * {
+  background: inherit;
+}
+.column-header .column-header__button.active {
+  color: #db4437;
+  background: inherit;
+}
+
+.tabs-bar {
+  background: #ffffff;
+}
+.tabs-bar > .tabs-bar__link {
+  color: rgba(0, 0, 0, 0.55);
+}
+
+.status__wrapper {
+  background: #ffffff !important;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+}
+.status__wrapper:focus {
+  background: #ffffff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.status__action-bar {
+  background: #fafafa;
+}
+
+/*# sourceMappingURL=index.css.map */

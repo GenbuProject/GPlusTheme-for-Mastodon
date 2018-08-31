@@ -1,0 +1,14 @@
+.status__wrapper {
+  background: #ffffff !important;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+}
+.status__wrapper:focus {
+  background: #ffffff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.status__action-bar {
+  background: #fafafa;
+}
+
+/*# sourceMappingURL=statuses.css.map */

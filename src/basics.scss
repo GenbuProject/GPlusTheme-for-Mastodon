@@ -1,0 +1,12 @@
+@import 'variables.scss';
+
+
+
+body {
+	color: $primary-text-color;
+	background: $base-color;
+
+	.ui {
+		background: lighten($base-color, 7%);
+	}
+}

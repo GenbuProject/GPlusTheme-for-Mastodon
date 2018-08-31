@@ -1,0 +1,17 @@
+@import 'variables.scss';
+
+
+//.detailed-status__wrapper,
+.status__wrapper {
+	background: $status-color !important;
+	box-shadow: 0 1px 4px 0 $status-shadow-color;
+
+	&:focus {
+		background: $status-color;
+		box-shadow: 0 0 20px $status-focused-shadow-color;
+	}
+}
+
+.status__action-bar {
+	background: $status-actionbar-color;
+}

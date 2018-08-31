@@ -1,0 +1,20 @@
+.column-header {
+  background: #ffffff;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+}
+.column-header * {
+  background: inherit;
+}
+.column-header .column-header__button.active {
+  color: #db4437;
+  background: inherit;
+}
+
+.tabs-bar {
+  background: #ffffff;
+}
+.tabs-bar > .tabs-bar__link {
+  color: rgba(0, 0, 0, 0.55);
+}
+
+/*# sourceMappingURL=components.css.map */
