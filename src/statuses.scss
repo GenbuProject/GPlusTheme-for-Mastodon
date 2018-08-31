@@ -13,21 +13,43 @@
 			}
 		}
 	}
-}
 
-.status {
-	background: $status-color;
-	box-shadow: 0 1px 4px 0 $status-shadow-color;
-
-	&.status-direct {
-		background: darken($status-color, 10%);
-	}
-
-	.status__display-name {
-		strong {
-			color: $primary-text-color;
+	.status, {
+		box-shadow: 0 1px 4px 0 $status-shadow-color;
+	
+		&.status-direct {
+			background: darken($status-color, 10%);
+		}
+	
+		.status__display-name {
+			strong {
+				color: $primary-text-color;
+			}
 		}
 	}
+}
+
+.detailed-status__wrapper {
+	.detailed-status {
+		background: $status-color;
+
+		.detailed-status__display-name {
+			color: $secondary-text-color;
+
+			strong {
+				color: $primary-text-color;
+			}
+		}
+	}
+
+	.detailed-status__action-bar {
+		background: $status-color;
+	}
+}
+
+.status,
+.detailed-status {
+	background: $status-color;
 
 	.status__content {
 		a {

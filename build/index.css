@@ -59,18 +59,35 @@ body .ui {
 .status__wrapper.focusable:focus .status.status-direct {
   background: #f2f2f2;
 }
-
-.status {
-  background: #ffffff;
+.status__wrapper .status {
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
 }
-.status.status-direct {
+.status__wrapper .status.status-direct {
   background: #e6e6e6;
 }
-.status .status__display-name strong {
+.status__wrapper .status .status__display-name strong {
   color: rgba(0, 0, 0, 0.87);
 }
-.status .status__content a {
+
+.detailed-status__wrapper .detailed-status {
+  background: #ffffff;
+}
+.detailed-status__wrapper .detailed-status .detailed-status__display-name {
+  color: #2962ff;
+}
+.detailed-status__wrapper .detailed-status .detailed-status__display-name strong {
+  color: rgba(0, 0, 0, 0.87);
+}
+.detailed-status__wrapper .detailed-status__action-bar {
+  background: #ffffff;
+}
+
+.status,
+.detailed-status {
+  background: #ffffff;
+}
+.status .status__content a,
+.detailed-status .status__content a {
   color: #2962ff;
 }
 
