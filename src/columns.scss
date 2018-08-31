@@ -1,6 +1,31 @@
 @import 'variables.scss';
 
 
+
+.drawer {
+	> .drawer__header {
+		background: $column-header-color;
+		box-shadow: 0 1px 8px $column-header-shadow-color;
+
+		a {
+			&:hover {
+				background: $column-header-hover-color;
+			}
+		}
+	}
+
+	> .search {
+		.search__input {
+			color: $primary-text-color;
+			background: $column-search-color;
+
+			&:focus {
+				background: lighten($column-search-color, 20%);
+			}
+		}
+	}
+}
+
 .column-header__wrapper {
 	> .column-header {
 		background: $column-header-color;
@@ -8,6 +33,10 @@
 
 		* {
 			background: inherit;
+		}
+
+		.column-header__icon {
+			color: $icon-color;
 		}
 
 		.column-header__button {
@@ -23,6 +52,15 @@
 	}
 }
 
+.tabs-bar {
+	margin: 0;
+	background: $column-header-color;
+
+	> .tabs-bar__link {
+		color: $icon-color;
+	}
+}
+
 .column {
 	> .scrollable {
 		background: transparent;
@@ -30,15 +68,15 @@
 		> *[role="feed"] {
 			> article {
 				margin: 1em 0;
+
+				&:first-child {
+					margin: 0;
+				}
 			}
 		}
 	}
-}
 
-.tabs-bar {
-	background: $column-header-color;
-
-	> .tabs-bar__link {
-		color: $icon-color;
+	.empty-column-indicator {
+		background: $column-header-color;
 	}
 }

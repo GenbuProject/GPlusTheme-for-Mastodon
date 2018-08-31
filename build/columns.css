@@ -1,9 +1,27 @@
+.drawer > .drawer__header {
+  background: #ffffff;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+}
+.drawer > .drawer__header a:hover {
+  background: #e7e7e7;
+}
+.drawer > .search .search__input {
+  color: rgba(0, 0, 0, 0.87);
+  background: rgba(0, 0, 0, 0.1);
+}
+.drawer > .search .search__input:focus {
+  background: rgba(51, 51, 51, 0.1);
+}
+
 .column-header__wrapper > .column-header {
   background: #ffffff;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
 }
 .column-header__wrapper > .column-header * {
   background: inherit;
+}
+.column-header__wrapper > .column-header .column-header__icon {
+  color: #757575;
 }
 .column-header__wrapper > .column-header .column-header__button.active {
   color: #db4437;
@@ -13,18 +31,25 @@
   background: #ffffff;
 }
 
+.tabs-bar {
+  margin: 0;
+  background: #ffffff;
+}
+.tabs-bar > .tabs-bar__link {
+  color: #757575;
+}
+
 .column > .scrollable {
   background: transparent;
 }
 .column > .scrollable > *[role="feed"] > article {
   margin: 1em 0;
 }
-
-.tabs-bar {
-  background: #ffffff;
+.column > .scrollable > *[role="feed"] > article:first-child {
+  margin: 0;
 }
-.tabs-bar > .tabs-bar__link {
-  color: rgba(0, 0, 0, 0.55);
+.column .empty-column-indicator {
+  background: #ffffff;
 }
 
 /*# sourceMappingURL=columns.css.map */
