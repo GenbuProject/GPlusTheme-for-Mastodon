@@ -7,6 +7,7 @@
 }
 .status__wrapper .status {
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+  border-bottom: 0;
 }
 .status__wrapper .status.status-direct {
   background: #e6e6e6;

@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 @import 'variables.scss';
 
 
@@ -16,6 +18,7 @@
 
 	.status, {
 		box-shadow: 0 1px 4px 0 $status-shadow-color;
+		border-bottom: 0;
 	
 		&.status-direct {
 			background: darken($status-color, 10%);

@@ -12,6 +12,9 @@
 .drawer > .search .search__input:focus {
   background: rgba(51, 51, 51, 0.1);
 }
+.drawer > .drawer__pager {
+  box-shadow: 0 1px 8px #ffffff;
+}
 
 .column-header__wrapper > .column-header {
   background: #ffffff;

@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 @import 'variables.scss';
 
 
@@ -23,6 +25,10 @@
 				background: lighten($column-search-color, 20%);
 			}
 		}
+	}
+
+	> .drawer__pager {
+		box-shadow: 0 1px 8px $column-header-color;
 	}
 }
 

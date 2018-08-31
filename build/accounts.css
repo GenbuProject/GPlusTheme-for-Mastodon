@@ -1,3 +1,10 @@
+.account > .account__wrapper > .account__display-name {
+  color: #2962ff;
+}
+.account > .account__wrapper > .account__display-name strong {
+  color: rgba(0, 0, 0, 0.87);
+}
+
 .account__action-bar__tab strong {
   color: rgba(0, 0, 0, 0.87);
 }

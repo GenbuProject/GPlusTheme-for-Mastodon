@@ -1,16 +1,26 @@
+@charset "UTF-8";
+
 @import 'variables.scss';
 
 
 
-.notification__message {
-	color: $lighter2-text-color;
-	font-size: 13px;
-}
+.notification {
+	&.notification-favourite {
+		> .status {
+			&.status-direct {
+				background: transparent;
+			}
+		}
+	}
 
-.notification-favourite {
-	> .status {
-		&.status-direct {
-			background: transparent;
+	> .notification__message {
+		color: $lighter2-text-color;
+		font-size: 13px;
+
+		.notification__display-name {
+			&:hover {
+				color: $secondary-text-color;
+			}
 		}
 	}
 }

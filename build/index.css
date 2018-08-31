@@ -24,6 +24,9 @@ body .ui {
 .drawer > .search .search__input:focus {
   background: rgba(51, 51, 51, 0.1);
 }
+.drawer > .drawer__pager {
+  box-shadow: 0 1px 8px #ffffff;
+}
 
 .column-header__wrapper > .column-header {
   background: #ffffff;
@@ -64,17 +67,26 @@ body .ui {
   background: #ffffff;
 }
 
+.account > .account__wrapper > .account__display-name {
+  color: #2962ff;
+}
+.account > .account__wrapper > .account__display-name strong {
+  color: rgba(0, 0, 0, 0.87);
+}
+
 .account__action-bar__tab strong {
   color: rgba(0, 0, 0, 0.87);
 }
 
-.notification__message {
+.notification.notification-favourite > .status.status-direct {
+  background: transparent;
+}
+.notification > .notification__message {
   color: #616161;
   font-size: 13px;
 }
-
-.notification-favourite > .status.status-direct {
-  background: transparent;
+.notification > .notification__message .notification__display-name:hover {
+  color: #2962ff;
 }
 
 .status__wrapper.focusable:focus {
@@ -86,6 +98,7 @@ body .ui {
 }
 .status__wrapper .status {
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+  border-bottom: 0;
 }
 .status__wrapper .status.status-direct {
   background: #e6e6e6;
