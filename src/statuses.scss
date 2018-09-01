@@ -5,23 +5,14 @@
 
 
 .status__wrapper {
-	&.focusable:focus {
-		background: inherit;
-		box-shadow: 0 0 20px $status-focused-shadow-color;
-		
-		.status {
-			&.status-direct {
-				background: darken($status-color, 5%);
-			}
-		}
-	}
-
-	.status, {
+	.status {
 		box-shadow: 0 1px 4px 0 $status-shadow-color;
 		border-bottom: 0;
+
+		transition: box-shadow 0.1s 0s ease-out;
 	
 		&.status-direct {
-			background: darken($status-color, 10%);
+			background: darken($status-color, 5%);
 		}
 	
 		.status__display-name {
@@ -33,6 +24,10 @@
 }
 
 .detailed-status__wrapper {
+	div[tabIndex="-1"] {
+		margin-bottom: 1em;
+	}
+
 	.detailed-status {
 		background: $status-color;
 
@@ -47,6 +42,7 @@
 
 	.detailed-status__action-bar {
 		background: $status-color;
+		border-color: $base-separation-color;
 	}
 }
 

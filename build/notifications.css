@@ -1,12 +1,13 @@
-.notification.notification-favourite > .status.status-direct {
+.notification.notification-favourite .status.status-direct {
   background: transparent;
 }
 .notification > .notification__message {
   color: #616161;
   font-size: 13px;
+  padding: 8px 0;
 }
 .notification > .notification__message .notification__display-name:hover {
-  color: #2962ff;
+  color: inherit;
 }
 
 /*# sourceMappingURL=notifications.css.map */

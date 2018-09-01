@@ -16,5 +16,18 @@ body {
 .focusable {
 	&:focus {
 		background: inherit;
+
+		.status {
+			box-shadow: 0 0 20px $status-focused-shadow-color;
+
+			&.status-direct {
+				background: darken($status-color, 5%);
+			}
+		}
+
+		.detailed-status,
+		.detailed-status__action-bar {
+			background: $status-color;
+		}
 	}
 }

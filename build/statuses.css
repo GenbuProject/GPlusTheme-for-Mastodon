@@ -1,21 +1,18 @@
-.status__wrapper.focusable:focus {
-  background: inherit;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-}
-.status__wrapper.focusable:focus .status.status-direct {
-  background: #f2f2f2;
-}
 .status__wrapper .status {
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
   border-bottom: 0;
+  transition: box-shadow 0.1s 0s ease-out;
 }
 .status__wrapper .status.status-direct {
-  background: #e6e6e6;
+  background: #f2f2f2;
 }
 .status__wrapper .status .status__display-name strong {
   color: rgba(0, 0, 0, 0.87);
 }
 
+.detailed-status__wrapper div[tabIndex="-1"] {
+  margin-bottom: 1em;
+}
 .detailed-status__wrapper .detailed-status {
   background: #ffffff;
 }
@@ -27,6 +24,7 @@
 }
 .detailed-status__wrapper .detailed-status__action-bar {
   background: #ffffff;
+  border-color: rgba(0, 0, 0, 0.14);
 }
 
 .status,

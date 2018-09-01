@@ -14,10 +14,14 @@ $icon-active-color: #db4437;
 $base-color: #f1f1f1;
 $column-header-color: #ffffff;
 $column-header-hover-color: #e7e7e7;
-$column-search-color: rgba(0, 0, 0, 0.1);
 $status-color: #ffffff;
+$search-color: rgba(0, 0, 0, 0.1);
+$search-item-color: #ffffff;
 
 // Shadow colors
 $column-header-shadow-color: rgba(0, 0, 0, 0.3);
 $status-shadow-color: rgba(0, 0, 0, 0.14);
 $status-focused-shadow-color: rgba(0, 0, 0, 0.3);
+
+// Separation colors
+$base-separation-color: rgba(0, 0, 0, 0.14);
