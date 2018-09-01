@@ -57,6 +57,10 @@
 	> .compose-form__buttons-wrapper {
 		background: $column-header-color;
 	}
+
+	> .compose-form__publish {
+		border-top: 1px solid $base-separation-color;
+	}
 }
 
 .column {
@@ -87,9 +91,13 @@
 				}
 			}
 		}
-	
-		.column-header__collapsible-inner {
-			background: $column-header-color;
+
+		> .column-header__collapsible {
+			color: $secondary-text-color;
+
+			> .column-header__collapsible-inner {
+				background: $column-header-color;
+			}
 		}
 	}
 
@@ -114,6 +122,10 @@
 	.column-link {
 		color: $primary-text-color;
 		background: $base-color;
+
+		.column-link__icon {
+			color: $icon-color;
+		}
 	}
 
 	.empty-column-indicator {

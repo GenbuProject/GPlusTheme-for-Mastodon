@@ -36,6 +36,9 @@
 .compose-form > .compose-form__buttons-wrapper {
   background: #ffffff;
 }
+.compose-form > .compose-form__publish {
+  border-top: 1px solid rgba(0, 0, 0, 0.14);
+}
 
 .column > .column-header__wrapper > .column-header {
   box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.3);
@@ -55,7 +58,10 @@
   color: #db4437;
   background: inherit;
 }
-.column > .column-header__wrapper .column-header__collapsible-inner {
+.column > .column-header__wrapper > .column-header__collapsible {
+  color: #2962ff;
+}
+.column > .column-header__wrapper > .column-header__collapsible > .column-header__collapsible-inner {
   background: #ffffff;
 }
 .column > .scrollable {
@@ -73,6 +79,9 @@
 .column .column-link {
   color: rgba(0, 0, 0, 0.87);
   background: #f1f1f1;
+}
+.column .column-link .column-link__icon {
+  color: #757575;
 }
 .column .empty-column-indicator {
   flex-direction: column;
