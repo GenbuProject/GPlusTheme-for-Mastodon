@@ -1,7 +1,7 @@
-.account > .account__wrapper > .account__display-name {
+.account .account__wrapper .account__display-name {
   color: #2962ff;
 }
-.account > .account__wrapper > .account__display-name strong {
+.account .account__wrapper .account__display-name strong {
   color: rgba(0, 0, 0, 0.87);
 }
 

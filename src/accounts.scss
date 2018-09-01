@@ -5,14 +5,20 @@
 
 
 .account {
-	> .account__wrapper {
-		> .account__display-name {
+	.account__wrapper {
+		.account__display-name {
 			color: $secondary-text-color;
 
 			strong {
 				color: $primary-text-color;
 			}
 		}
+	}
+}
+
+.account-timeline__header {
+	.account__header {
+		
 	}
 }
 

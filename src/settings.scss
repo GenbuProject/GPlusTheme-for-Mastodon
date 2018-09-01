@@ -10,7 +10,7 @@
 	}
 
 	.setting-toggle {
-		> .react-toggle {
+		.react-toggle {
 			&.react-toggle--checked {
 				> .react-toggle-track {
 					background: $setting-toggle-checked-color;
@@ -35,5 +35,9 @@
 		.setting-toggle__label {
 			color: $primary-text-color;
 		}
+	}
+
+	.setting-meta__label {
+		color: $lighter1-text-color;
 	}
 }

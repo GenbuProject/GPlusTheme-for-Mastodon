@@ -25,6 +25,8 @@
 		}
 	
 		.status__display-name {
+			color: $lighter1-text-color;
+			
 			strong {
 				color: $primary-text-color;
 			}

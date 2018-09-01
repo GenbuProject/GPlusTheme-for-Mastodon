@@ -9,6 +9,9 @@
 .status__wrapper .status.muted .status__content p {
   color: rgba(51, 51, 51, 0.87);
 }
+.status__wrapper .status .status__display-name {
+  color: #9e9e9e;
+}
 .status__wrapper .status .status__display-name strong {
   color: rgba(0, 0, 0, 0.87);
 }
