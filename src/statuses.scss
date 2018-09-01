@@ -1,12 +1,13 @@
 @charset "UTF-8";
 
-@import 'variables.scss';
+@import '_variables.scss';
+@import '_mixins.scss';
 
 
 
 .status__wrapper {
 	.status {
-		box-shadow: 0 1px 4px 0 $status-shadow-color;
+		@include status-shadow;
 		border-bottom: 0;
 
 		transition: box-shadow 0.1s 0s ease-out;
@@ -14,11 +15,23 @@
 		&.status-direct {
 			background: darken($status-color, 5%);
 		}
+
+		&.muted {
+			.status__content {
+				p {
+					color: lighten($primary-text-color, 20%);
+				}
+			}
+		}
 	
 		.status__display-name {
 			strong {
 				color: $primary-text-color;
 			}
+		}
+
+		.status__relative-time {
+			color: $lighter1-text-color;
 		}
 	}
 }
@@ -41,7 +54,7 @@
 	}
 
 	.detailed-status__action-bar {
-		background: $status-color;
+		background: $status-actionbar-color;
 		border-color: $base-separation-color;
 	}
 }

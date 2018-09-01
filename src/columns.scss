@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
-@import 'variables.scss';
+@import '_variables.scss';
+@import '_mixins.scss';
 
 
 
@@ -15,8 +16,8 @@
 
 .drawer {
 	> .drawer__header {
+		@include column-shadow;
 		background: $column-header-color;
-		box-shadow: 0 1px 8px $column-header-shadow-color;
 
 		> .drawer__tab {
 			color: $icon-color;
@@ -29,11 +30,15 @@
 		}
 	}
 
-	.drawer__inner {
-		background: $base-color;
-
-		> .drawer__inner__mastodon {
-			visibility: hidden;
+	> .drawer__pager {
+		@include status-shadow;
+		
+		> .drawer__inner {
+			background: $column-header-color;
+	
+			> .drawer__inner__mastodon {
+				display: none;
+			}
 		}
 	}
 }
@@ -57,8 +62,8 @@
 .column {
 	> .column-header__wrapper {
 		> .column-header {
+			@include column-shadow;
 			background: $column-header-color;
-			box-shadow: 0 1px 8px $column-header-shadow-color;
 	
 			&.active {
 				.column-header__icon {
@@ -121,6 +126,8 @@
 
 			width: 100px;
 			height: 100px;
+			margin-bottom: 1em;
+
 			background: url("https://ssl.gstatic.com/s2/oz/images/notifications/jingles_eb4e5306b38f83915d82034fa93390d9/desktop_anim_2x.gif") center / contain no-repeat;
 		}
 	}

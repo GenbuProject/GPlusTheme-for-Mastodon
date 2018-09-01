@@ -10,7 +10,7 @@ body .ui {
   background: inherit;
 }
 .focusable:focus .status {
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
 }
 .focusable:focus .status.status-direct {
   background: #f2f2f2;

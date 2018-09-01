@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+@import '_variables.scss';
+
+
+
+@mixin column-shadow {
+	box-shadow: 0 1px 8px 0 $column-header-shadow-color;
+}
+
+@mixin status-shadow {
+	box-shadow: 0 1px 4px 0 $status-shadow-color;
+}
+
+@mixin status-focus-shadow {
+	box-shadow: 0 0 20px 0 $status-focused-shadow-color;
+}

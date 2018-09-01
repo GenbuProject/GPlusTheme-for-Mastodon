@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
-@import 'variables.scss';
+@import '_variables.scss';
+@import '_mixins.scss';
 
 
 
@@ -18,7 +19,7 @@ body {
 		background: inherit;
 
 		.status {
-			box-shadow: 0 0 20px $status-focused-shadow-color;
+			@include status-focus-shadow;
 
 			&.status-direct {
 				background: darken($status-color, 5%);
