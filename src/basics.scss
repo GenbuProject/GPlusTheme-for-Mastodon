@@ -26,9 +26,12 @@ body {
 			}
 		}
 
-		.detailed-status,
-		.detailed-status__action-bar {
+		.detailed-status {
 			background: $status-color;
+		}
+		
+		.detailed-status__action-bar {
+			background: $status-actionbar-color;
 		}
 	}
 }

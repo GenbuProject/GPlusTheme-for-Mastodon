@@ -15,9 +15,11 @@ body .ui {
 .focusable:focus .status.status-direct {
   background: #f2f2f2;
 }
-.focusable:focus .detailed-status,
-.focusable:focus .detailed-status__action-bar {
+.focusable:focus .detailed-status {
   background: #ffffff;
+}
+.focusable:focus .detailed-status__action-bar {
+  background: #fafafa;
 }
 
 /*# sourceMappingURL=basics.css.map */
