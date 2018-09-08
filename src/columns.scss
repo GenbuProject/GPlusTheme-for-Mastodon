@@ -82,12 +82,17 @@
 	
 			.column-header__icon {
 				color: $icon-color;
+				vertical-align: top;
 			}
 	
 			.column-header__button {
 				&.active {
 					color: $icon-active-color;
 					background: inherit;
+				}
+
+				.fa {
+					vertical-align: unset;
 				}
 			}
 		}

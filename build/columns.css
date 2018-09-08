@@ -53,10 +53,14 @@
 }
 .column .column-header__wrapper .column-header .column-header__icon {
   color: #757575;
+  vertical-align: top;
 }
 .column .column-header__wrapper .column-header .column-header__button.active {
   color: #db4437;
   background: inherit;
+}
+.column .column-header__wrapper .column-header .column-header__button .fa {
+  vertical-align: unset;
 }
 .column .column-header__wrapper .column-header__collapsible {
   color: #2962ff;
