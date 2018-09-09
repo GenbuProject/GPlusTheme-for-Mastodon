@@ -6,7 +6,7 @@
 
 
 ## Overview
-This theme replaces WebUI of any Mastodon instances with Google+ like one.
+This theme replaces WebUI of any Mastodon instances with [Google+](https://plus.google.com) like one.
 
 
 ## Requirement

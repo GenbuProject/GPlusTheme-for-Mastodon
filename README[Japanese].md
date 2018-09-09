@@ -6,7 +6,7 @@
 
 
 ## 概要 | Overview
-MastodonインスタンスのWebUIを、Google+風のUIに変更します。
+MastodonインスタンスのWebUIを、[Google+](https://plus.google.com)風のUIに変更します。
 
 
 ## 動作環境 | Requirement
