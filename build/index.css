@@ -199,6 +199,41 @@ body .ui {
   box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.3);
   background: #ffffff;
 }
+.column .account-timeline__header .account__header {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.column .account-timeline__header .account__header > div {
+  background-color: inherit;
+}
+.column .account-timeline__header .account__header .account__header__username {
+  color: #00bfff;
+}
+.column .account-timeline__header .account__header .account__header__fields dt {
+  color: rgba(0, 0, 0, 0.87);
+  background: #d8d8d8;
+}
+.column .account-timeline__header .account__header .account__header__fields dd {
+  color: rgba(0, 0, 0, 0.87);
+  background: #ffffff;
+}
+.column .account-timeline__header .account__header .account__header__fields a {
+  color: #2962ff;
+}
+.column .account-timeline__header .account__disclaimer {
+  background: #ffffff;
+}
+.column .account-timeline__header .account__action-bar {
+  background: #ffffff;
+}
+.column .account-timeline__header .account__section-headline {
+  background: #ffffff;
+}
+.column .account-timeline__header .account__section-headline a {
+  color: rgba(0, 0, 0, 0.87);
+}
+.column .account-timeline__header .account__section-headline a.active {
+  color: #9e9e9e;
+}
 
 .account__action-bar__tab strong {
   color: rgba(0, 0, 0, 0.87);
