@@ -12,6 +12,7 @@ $icon-active-color: #db4437;
 
 // Background colors
 $base-color: #f1f1f1;
+$checked-color: #4285f4;
 $column-header-color: #ffffff;
 $column-header-hover-color: #e7e7e7;
 $status-color: #ffffff;
@@ -21,12 +22,13 @@ $search-item-color: #ffffff;
 $setting-toggle-color: #b9b9b9;
 $setting-toggle-checked-color: rgba(66, 133, 244, 0.5);
 $setting-toggle-thumb-color: #fafafa;
-$setting-toggle-thumb-checked-color: #4285f4;
+$setting-toggle-thumb-checked-color: $checked-color;
 
 // Shadow colors
 $column-header-shadow-color: rgba(0, 0, 0, 0.3);
 $status-shadow-color: rgba(0, 0, 0, 0.14);
 $status-focused-shadow-color: rgba(0, 0, 0, 0.3);
+$icon-hovered-shadow-color: rgba(0, 0, 0, 0.26);
 
 // Separation colors
 $base-separation-color: rgba(0, 0, 0, 0.14);

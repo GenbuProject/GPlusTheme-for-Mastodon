@@ -23,17 +23,19 @@
 				}
 			}
 		}
-	
-		.status__display-name {
-			color: $lighter1-text-color;
-			
-			strong {
-				color: $primary-text-color;
-			}
-		}
 
-		.status__relative-time {
-			color: $lighter1-text-color;
+		.status__info {
+			.status__display-name {
+				color: $lighter1-text-color;
+				
+				strong {
+					color: $primary-text-color;
+				}
+			}
+
+			.status__relative-time {
+				color: $lighter1-text-color;
+			}
 		}
 	}
 }
@@ -66,6 +68,8 @@
 	background: $status-color;
 
 	.status__content {
+		color: $primary-text-color;
+
 		a {
 			color: $secondary-text-color;
 		}
