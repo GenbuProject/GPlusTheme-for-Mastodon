@@ -53,6 +53,7 @@ body .ui {
 
 .navigation-bar {
   color: #2962ff;
+  background: #ffffff;
 }
 .navigation-bar .navigation-bar__profile strong {
   color: rgba(0, 0, 0, 0.87);
@@ -87,9 +88,6 @@ body .ui {
 .column .column-header .column-header__button .fa {
   vertical-align: unset;
 }
-.column .column-back-button--slim .column-back-button {
-  background: inherit;
-}
 .column .column-header__collapsible {
   color: #2962ff;
   border-bottom: 1px solid rgba(0, 0, 0, 0.14);
@@ -100,10 +98,10 @@ body .ui {
 .column .scrollable {
   background: transparent;
 }
-.column .scrollable *[role="feed"] > article {
+.column .scrollable *[role="feed"] article {
   margin: 1em 0;
 }
-.column .scrollable *[role="feed"] > article:first-child {
+.column .scrollable *[role="feed"] article:first-child {
   margin: 0;
 }
 .column .column-subheading {
@@ -155,35 +153,35 @@ body .ui {
   border: 0;
 }
 
-.search .search__input {
-  color: rgba(0, 0, 0, 0.87);
-  background: rgba(0, 0, 0, 0.1);
+.column .column-back-button--slim .column-back-button {
+  background: inherit;
 }
-.search .search__input:focus {
-  background: rgba(51, 51, 51, 0.1);
-}
-.search .search__icon .fa {
-  color: #757575;
-}
-
-.search-results > .search-results__header {
-  background: #f1f1f1;
-}
-.search-results > .search-results__section > h5 {
-  background: #d8d8d8;
-}
-.search-results > .search-results__section > .account,
-.search-results > .search-results__section > .trends__item {
+.column .column-inline-form {
   background: #ffffff;
-  border-color: rgba(0, 0, 0, 0.14);
 }
-.search-results > .search-results__section > .trends__item > .trends__item__name a {
+.column .column-inline-form label input {
   color: #2962ff;
 }
-.search-results > .search-results__section > .trends__item > .trends__item__current {
-  color: #5c87ff;
+.column .column-inline-form label input:focus {
+  color: rgba(0, 0, 0, 0.87);
+}
+.column .column-inline-form ~ .scrollable article {
+  margin: 0;
 }
 
+.modal-root .list-editor {
+  background: #f1f1f1;
+}
+.modal-root .list-editor h4 {
+  background: #ffffff;
+}
+.modal-root .list-editor .drawer__pager .drawer__inner {
+  background: #ffffff;
+}
+
+.account {
+  border-color: rgba(0, 0, 0, 0.14);
+}
 .account .account__wrapper .account__display-name {
   color: #2962ff;
 }
@@ -259,6 +257,35 @@ body .ui {
 }
 .notification > .notification__message .notification__favourite-icon-wrapper .star-icon {
   color: #db4437;
+}
+
+.search .search__input {
+  color: rgba(0, 0, 0, 0.87);
+  background: rgba(0, 0, 0, 0.1);
+}
+.search .search__input:focus {
+  background: rgba(51, 51, 51, 0.1);
+}
+.search .search__icon .fa {
+  color: #757575;
+}
+
+.search-results > .search-results__header {
+  background: #f1f1f1;
+}
+.search-results > .search-results__section > h5 {
+  background: #d8d8d8;
+}
+.search-results > .search-results__section > .account,
+.search-results > .search-results__section > .trends__item {
+  background: #ffffff;
+  border-color: rgba(0, 0, 0, 0.14);
+}
+.search-results > .search-results__section > .trends__item > .trends__item__name a {
+  color: #2962ff;
+}
+.search-results > .search-results__section > .trends__item > .trends__item__current {
+  color: #5c87ff;
 }
 
 .column-header__collapsible__extra .column-settings__section {

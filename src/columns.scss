@@ -45,6 +45,7 @@
 
 .navigation-bar {
 	color: $secondary-text-color;
+	background: $column-header-color;
 
 	.navigation-bar__profile {
 		strong {
@@ -96,12 +97,6 @@
 		}
 	}
 
-	.column-back-button--slim {
-		.column-back-button {
-			background: inherit;
-		}
-	}
-
 	.column-header__collapsible {
 		color: $secondary-text-color;
 		border-bottom: 1px solid $base-separation-color;
@@ -115,7 +110,7 @@
 		background: transparent;
 
 		*[role="feed"] {
-			> article {
+			article {
 				margin: 1em 0;
 
 				&:first-child {

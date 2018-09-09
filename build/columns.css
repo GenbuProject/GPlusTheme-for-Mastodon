@@ -28,6 +28,7 @@
 
 .navigation-bar {
   color: #2962ff;
+  background: #ffffff;
 }
 .navigation-bar .navigation-bar__profile strong {
   color: rgba(0, 0, 0, 0.87);
@@ -62,9 +63,6 @@
 .column .column-header .column-header__button .fa {
   vertical-align: unset;
 }
-.column .column-back-button--slim .column-back-button {
-  background: inherit;
-}
 .column .column-header__collapsible {
   color: #2962ff;
   border-bottom: 1px solid rgba(0, 0, 0, 0.14);
@@ -75,10 +73,10 @@
 .column .scrollable {
   background: transparent;
 }
-.column .scrollable *[role="feed"] > article {
+.column .scrollable *[role="feed"] article {
   margin: 1em 0;
 }
-.column .scrollable *[role="feed"] > article:first-child {
+.column .scrollable *[role="feed"] article:first-child {
   margin: 0;
 }
 .column .column-subheading {

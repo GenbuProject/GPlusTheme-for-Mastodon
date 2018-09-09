@@ -1,0 +1,27 @@
+.column .column-back-button--slim .column-back-button {
+  background: inherit;
+}
+.column .column-inline-form {
+  background: #ffffff;
+}
+.column .column-inline-form label input {
+  color: #2962ff;
+}
+.column .column-inline-form label input:focus {
+  color: rgba(0, 0, 0, 0.87);
+}
+.column .column-inline-form ~ .scrollable article {
+  margin: 0;
+}
+
+.modal-root .list-editor {
+  background: #f1f1f1;
+}
+.modal-root .list-editor h4 {
+  background: #ffffff;
+}
+.modal-root .list-editor .drawer__pager .drawer__inner {
+  background: #ffffff;
+}
+
+/*# sourceMappingURL=lists.css.map */

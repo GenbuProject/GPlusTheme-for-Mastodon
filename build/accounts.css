@@ -1,3 +1,6 @@
+.account {
+  border-color: rgba(0, 0, 0, 0.14);
+}
 .account .account__wrapper .account__display-name {
   color: #2962ff;
 }

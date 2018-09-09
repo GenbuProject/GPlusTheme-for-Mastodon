@@ -5,6 +5,8 @@
 
 
 .account {
+	border-color: $base-separation-color;
+	
 	.account__wrapper {
 		.account__display-name {
 			color: $secondary-text-color;
