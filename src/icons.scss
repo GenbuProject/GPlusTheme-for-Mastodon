@@ -19,7 +19,7 @@
 	src: url("https://fonts.gstatic.com/s/materialiconsextended/v27/iPCrlNN5TpNi9yeZKkKxXzQoFWDY1ZXsjnEgMOt_jL4.woff2");
 }
 
-button.icon-button {
+.icon-button {
 	color: $icon-color;
 
 	&:active,
@@ -35,10 +35,6 @@ button.icon-button {
 			border-radius: 50%;
 		}
 	}
-
-	/*&.active {
-		color: $icon-active-color;
-	}*/
 
 	&.disabled {
 		color: lighten($icon-color, 13%);

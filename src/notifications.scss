@@ -23,5 +23,11 @@
 				color: inherit;
 			}
 		}
+
+		.notification__favourite-icon-wrapper {
+			.star-icon {
+				color: $icon-active-color;
+			}
+		}
 	}
 }

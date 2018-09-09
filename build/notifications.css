@@ -9,5 +9,8 @@
 .notification > .notification__message .notification__display-name:hover {
   color: inherit;
 }
+.notification > .notification__message .notification__favourite-icon-wrapper .star-icon {
+  color: #db4437;
+}
 
 /*# sourceMappingURL=notifications.css.map */
