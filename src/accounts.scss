@@ -20,7 +20,7 @@
 }
 
 .column {
-	.column-back-button {
+	> .column-back-button {
 		@include column-shadow;
 		background: $column-header-color;
 	}

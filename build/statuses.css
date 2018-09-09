@@ -31,6 +31,12 @@
 .detailed-status__wrapper .detailed-status .detailed-status__display-name strong {
   color: rgba(0, 0, 0, 0.87);
 }
+.detailed-status__wrapper .detailed-status .detailed-status__meta .detailed-status__datetime {
+  color: #9e9e9e;
+}
+.detailed-status__wrapper .detailed-status .detailed-status__meta .detailed-status__link .fa.fa-star {
+  vertical-align: middle;
+}
 .detailed-status__wrapper .detailed-status__action-bar {
   background: #fafafa;
   border-color: rgba(0, 0, 0, 0.14);

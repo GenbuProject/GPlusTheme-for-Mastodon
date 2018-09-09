@@ -55,6 +55,18 @@
 				color: $primary-text-color;
 			}
 		}
+
+		.detailed-status__meta {
+			.detailed-status__datetime {
+				color: $primary-lighter1-text-color;
+			}
+
+			.detailed-status__link {
+				.fa.fa-star {
+					vertical-align: middle;
+				}
+			}
+		}
 	}
 
 	.detailed-status__action-bar {
