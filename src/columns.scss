@@ -64,45 +64,50 @@
 }
 
 .column {
-	.column-header__wrapper {
-		.column-header {
-			@include column-shadow;
-			background: $column-header-color;
-	
-			&.active {
-				.column-header__icon {
-					color: $icon-active-color;
-					text-shadow: 0 0 10px change-color($color: $icon-active-color, $alpha: 0.4);
-				}
-			}
-	
-			* {
-				background: inherit;
-			}
-	
-			.column-header__icon {
-				color: $icon-color;
-				vertical-align: top;
-			}
-	
-			.column-header__button {
-				&.active {
-					color: $icon-active-color;
-					background: inherit;
-				}
+	.column-header {
+		@include column-shadow;
+		background: $column-header-color;
 
-				.fa {
-					vertical-align: unset;
-				}
+		&.active {
+			.column-header__icon {
+				color: $icon-active-color;
+				text-shadow: 0 0 10px change-color($color: $icon-active-color, $alpha: 0.4);
 			}
 		}
 
-		.column-header__collapsible {
-			color: $secondary-text-color;
+		* {
+			background: inherit;
+		}
 
-			> .column-header__collapsible-inner {
-				background: $column-header-color;
+		.column-header__icon {
+			color: $icon-color;
+			vertical-align: top;
+		}
+
+		.column-header__button {
+			&.active {
+				color: $icon-active-color;
+				background: inherit;
 			}
+
+			.fa {
+				vertical-align: unset;
+			}
+		}
+	}
+
+	.column-back-button--slim {
+		.column-back-button {
+			background: inherit;
+		}
+	}
+
+	.column-header__collapsible {
+		color: $secondary-text-color;
+		border-bottom: 1px solid $base-separation-color;
+
+		> .column-header__collapsible-inner {
+			background: $column-header-color;
 		}
 	}
 
@@ -130,6 +135,7 @@
 
 		.column-link__icon {
 			color: $icon-color;
+			vertical-align: top;
 		}
 	}
 
