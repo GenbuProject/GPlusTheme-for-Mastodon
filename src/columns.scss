@@ -85,14 +85,22 @@
 			vertical-align: top;
 		}
 
-		.column-header__button {
-			&.active {
-				color: $icon-active-color;
-				background: inherit;
+		.column-header__buttons {
+			.column-header__back-button {
+				.column-back-button__icon {
+					vertical-align: unset;
+				}
 			}
 
-			.fa {
-				vertical-align: unset;
+			.column-header__button {
+				&.active {
+					color: $icon-active-color;
+					background: inherit;
+				}
+	
+				.fa {
+					vertical-align: unset;
+				}
 			}
 		}
 	}
@@ -103,6 +111,12 @@
 
 		> .column-header__collapsible-inner {
 			background: $column-header-color;
+		}
+	}
+
+	.column-back-button {
+		.column-back-button__icon {
+			vertical-align: unset;
 		}
 	}
 

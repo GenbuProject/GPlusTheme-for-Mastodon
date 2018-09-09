@@ -1,12 +1,13 @@
 @charset "UTF-8";
 
 @import '_variables.scss';
+@import '_mixins.scss';
 
 
 
 .account {
 	border-color: $base-separation-color;
-	
+
 	.account__wrapper {
 		.account__display-name {
 			color: $secondary-text-color;
@@ -18,9 +19,16 @@
 	}
 }
 
-.account-timeline__header {
-	.account__header {
-		
+.column {
+	.column-back-button {
+		@include column-shadow;
+		background: $column-header-color;
+	}
+
+	.account-timeline__header {
+		.account__header {
+			// background: 
+		}
 	}
 }
 

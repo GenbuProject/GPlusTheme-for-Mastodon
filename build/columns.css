@@ -56,11 +56,14 @@
   color: #757575;
   vertical-align: top;
 }
-.column .column-header .column-header__button.active {
+.column .column-header .column-header__buttons .column-header__back-button .column-back-button__icon {
+  vertical-align: unset;
+}
+.column .column-header .column-header__buttons .column-header__button.active {
   color: #db4437;
   background: inherit;
 }
-.column .column-header .column-header__button .fa {
+.column .column-header .column-header__buttons .column-header__button .fa {
   vertical-align: unset;
 }
 .column .column-header__collapsible {
@@ -69,6 +72,9 @@
 }
 .column .column-header__collapsible > .column-header__collapsible-inner {
   background: #ffffff;
+}
+.column .column-back-button .column-back-button__icon {
+  vertical-align: unset;
 }
 .column .scrollable {
   background: transparent;
