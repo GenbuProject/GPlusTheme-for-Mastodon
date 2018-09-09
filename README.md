@@ -1,12 +1,18 @@
 # Google+ Theme for Mastodon
 
 
+## Languages
+* [日本語 | Japanese](./README[Japanese].md)
+
+
 ## Overview
-This theme replaces Mastodon's interface to one like Google+.
+This theme replaces WebUI of any Mastodon instances with Google+ like one.
 
 
-## How to Use
-
+## Requirement
+* Any instance of [Mastodon](https://github.com/tootsuite/mastodon)
+  * v2.5.0, v2.4.5, v2.4.4 (Vanilla)
+* [Sass](https://sass-lang.com)
 
 
 ## Screenshots
