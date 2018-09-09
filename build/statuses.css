@@ -50,6 +50,10 @@
 .detailed-status .status__content {
   color: rgba(0, 0, 0, 0.87);
 }
+.status .status__content .status__content__spoiler-link,
+.detailed-status .status__content .status__content__spoiler-link {
+  background: #f1f1f1;
+}
 .status .status__content a,
 .detailed-status .status__content a {
   color: #2962ff;

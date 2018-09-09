@@ -82,6 +82,10 @@
 	.status__content {
 		color: $primary-text-color;
 
+		.status__content__spoiler-link {
+			background: $base-color;
+		}
+
 		a {
 			color: $secondary-text-color;
 		}
