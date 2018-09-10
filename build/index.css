@@ -260,9 +260,6 @@ body .ui {
 .column .scrollable .account-timeline__header .account__section-headline a.active::after {
   border-color: transparent transparent #ffffff;
 }
-.column .scrollable .account-timeline__header ~ article {
-  margin: 0;
-}
 
 .account__action-bar__tab strong {
   color: rgba(0, 0, 0, 0.87);
