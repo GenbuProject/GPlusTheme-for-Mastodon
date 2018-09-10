@@ -56,8 +56,14 @@
 			}
 
 			.account--action-button {
-				.icon-button .fa.fa-pencil {
-					color: $status-color;
+				.icon-button:not(.active) {
+					color: darken($column-header-color, 7%);
+
+					&:active,
+					&:focus,
+					&:hover {
+						color: $column-header-color;
+					}
 				}
 			}
 		}

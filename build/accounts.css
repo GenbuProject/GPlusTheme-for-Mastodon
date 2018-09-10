@@ -32,7 +32,10 @@
 .column .account-timeline__header .account__header .account__header__fields a {
   color: #2962ff;
 }
-.column .account-timeline__header .account__header .account--action-button .icon-button .fa.fa-pencil {
+.column .account-timeline__header .account__header .account--action-button .icon-button:not(.active) {
+  color: #ededed;
+}
+.column .account-timeline__header .account__header .account--action-button .icon-button:not(.active):active, .column .account-timeline__header .account__header .account--action-button .icon-button:not(.active):focus, .column .account-timeline__header .account__header .account--action-button .icon-button:not(.active):hover {
   color: #ffffff;
 }
 .column .account-timeline__header .account__disclaimer {
