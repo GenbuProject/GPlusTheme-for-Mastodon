@@ -11,6 +11,10 @@
 
 	.tabs-bar__link {
 		color: $icon-color;
+
+		.fa {
+			vertical-align: top;
+		}
 	}
 }
 
@@ -131,7 +135,7 @@
 			article {
 				margin: 1em 0;
 
-				&:first-child {
+				&:first-of-type {
 					margin: 0;
 				}
 			}

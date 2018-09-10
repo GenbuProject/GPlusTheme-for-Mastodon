@@ -1,8 +1,5 @@
-body {
-  color: rgba(0, 0, 0, 0.87);
-  background: #f1f1f1;
-}
 body .ui {
+  color: rgba(0, 0, 0, 0.87);
   background: #f1f1f1;
 }
 

@@ -5,6 +5,9 @@
 .tabs-bar .tabs-bar__link {
   color: #757575;
 }
+.tabs-bar .tabs-bar__link .fa {
+  vertical-align: top;
+}
 
 .drawer .drawer__header {
   box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.3);
@@ -85,7 +88,7 @@
 .column .scrollable *[role="feed"] article {
   margin: 1em 0;
 }
-.column .scrollable *[role="feed"] article:first-child {
+.column .scrollable *[role="feed"] article:first-of-type {
   margin: 0;
 }
 .column .column-subheading {

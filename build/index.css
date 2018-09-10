@@ -1,9 +1,6 @@
 @charset "UTF-8";
-body {
-  color: rgba(0, 0, 0, 0.87);
-  background: #f1f1f1;
-}
 body .ui {
+  color: rgba(0, 0, 0, 0.87);
   background: #f1f1f1;
 }
 
@@ -29,6 +26,9 @@ body .ui {
 }
 .tabs-bar .tabs-bar__link {
   color: #757575;
+}
+.tabs-bar .tabs-bar__link .fa {
+  vertical-align: top;
 }
 
 .drawer .drawer__header {
@@ -110,7 +110,7 @@ body .ui {
 .column .scrollable *[role="feed"] article {
   margin: 1em 0;
 }
-.column .scrollable *[role="feed"] article:first-child {
+.column .scrollable *[role="feed"] article:first-of-type {
   margin: 0;
 }
 .column .column-subheading {
@@ -211,31 +211,49 @@ body .ui {
 .column .account-timeline__header .account__header .account__header__username {
   color: #00bfff;
 }
-.column .account-timeline__header .account__header .account__header__fields dt {
+.column .account-timeline__header .account__header .account__header__fields dl dt {
   color: rgba(0, 0, 0, 0.87);
   background: #d8d8d8;
 }
-.column .account-timeline__header .account__header .account__header__fields dd {
+.column .account-timeline__header .account__header .account__header__fields dl dd {
   color: rgba(0, 0, 0, 0.87);
   background: #ffffff;
 }
 .column .account-timeline__header .account__header .account__header__fields a {
   color: #2962ff;
 }
+.column .account-timeline__header .account__header .account--action-button .icon-button .fa.fa-pencil {
+  color: #ffffff;
+}
 .column .account-timeline__header .account__disclaimer {
   background: #ffffff;
+  border-color: rgba(0, 0, 0, 0.14);
 }
 .column .account-timeline__header .account__action-bar {
   background: #ffffff;
+  border-color: rgba(0, 0, 0, 0.14);
+}
+.column .account-timeline__header .account__action-bar .account__action-bar__tab {
+  border-color: rgba(0, 0, 0, 0.14);
+}
+.column .account-timeline__header .account__action-bar .account__action-bar__tab > span {
+  color: #9e9e9e;
 }
 .column .account-timeline__header .account__section-headline {
   background: #ffffff;
+  border-color: rgba(0, 0, 0, 0.14);
 }
 .column .account-timeline__header .account__section-headline a {
   color: rgba(0, 0, 0, 0.87);
 }
 .column .account-timeline__header .account__section-headline a.active {
   color: #9e9e9e;
+}
+.column .account-timeline__header .account__section-headline a.active::before {
+  border-color: transparent transparent rgba(0, 0, 0, 0.14);
+}
+.column .account-timeline__header .account__section-headline a.active::after {
+  border-color: transparent transparent #ffffff;
 }
 
 .account__action-bar__tab strong {

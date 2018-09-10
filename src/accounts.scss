@@ -38,38 +38,65 @@
 			}
 
 			.account__header__fields {
-				dt {
-					color: $primary-text-color;
-					background: darken($base-color, 10%);
-				}
-
-				dd {
-					color: $primary-text-color;
-					background: $column-header-color;
+				dl {
+					dt {
+						color: $primary-text-color;
+						background: darken($base-color, 10%);
+					}
+	
+					dd {
+						color: $primary-text-color;
+						background: $column-header-color;
+					}
 				}
 
 				a {
 					color: $secondary-text-color;
 				}
 			}
+
+			.account--action-button {
+				.icon-button .fa.fa-pencil {
+					color: $status-color;
+				}
+			}
 		}
 
 		.account__disclaimer {
 			background: $column-header-color;
+			border-color: $base-separation-color;
 		}
 
 		.account__action-bar {
 			background: $column-header-color;
+			border-color: $base-separation-color;
+
+			.account__action-bar__tab {
+				border-color: $base-separation-color;
+
+				> span {
+					color: $primary-lighter1-text-color;
+				}
+			}
 		}
 
 		.account__section-headline {
 			background: $column-header-color;
+			border-color: $base-separation-color;
 
 			a {
 				color: $primary-text-color;
 
 				&.active {
 					color: $primary-lighter1-text-color;
+
+					&::before {
+						border-color: transparent transparent $base-separation-color;
+					}
+
+					&::after {
+						border-color: transparent transparent $status-color;
+					}
 				}
 			}
 		}
