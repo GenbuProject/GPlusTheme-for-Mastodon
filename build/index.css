@@ -39,7 +39,7 @@ body .ui {
   color: #757575;
 }
 .drawer .drawer__header a:hover {
-  background: #e7e7e7;
+  background: #e6e6e6;
 }
 .drawer .drawer__pager {
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
@@ -190,6 +190,7 @@ body .ui {
 }
 
 .account {
+  background: #ffffff;
   border-color: rgba(0, 0, 0, 0.14);
 }
 .account .account__wrapper .account__display-name {
@@ -357,15 +358,14 @@ body .ui {
 .search-results > .search-results__section > h5 {
   background: #d8d8d8;
 }
-.search-results > .search-results__section > .account,
-.search-results > .search-results__section > .trends__item {
+
+.trends__item {
   background: #ffffff;
-  border-color: rgba(0, 0, 0, 0.14);
 }
-.search-results > .search-results__section > .trends__item > .trends__item__name a {
+.trends__item .trends__item__name a {
   color: #2962ff;
 }
-.search-results > .search-results__section > .trends__item > .trends__item__current {
+.trends__item .trends__item__current {
   color: #5c87ff;
 }
 

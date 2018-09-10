@@ -15,15 +15,14 @@
 .search-results > .search-results__section > h5 {
   background: #d8d8d8;
 }
-.search-results > .search-results__section > .account,
-.search-results > .search-results__section > .trends__item {
+
+.trends__item {
   background: #ffffff;
-  border-color: rgba(0, 0, 0, 0.14);
 }
-.search-results > .search-results__section > .trends__item > .trends__item__name a {
+.trends__item .trends__item__name a {
   color: #2962ff;
 }
-.search-results > .search-results__section > .trends__item > .trends__item__current {
+.trends__item .trends__item__current {
   color: #5c87ff;
 }
 

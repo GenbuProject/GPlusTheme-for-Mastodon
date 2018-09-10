@@ -30,21 +30,17 @@
 		> h5 {
 			background: darken($base-color, 10%);
 		}
+	}
+}
 
-		> .account,
-		> .trends__item {
-			background: $search-item-color;
-			border-color: $base-separation-color;
-		}
+.trends__item {
+	background: $trend-color;
 
-		> .trends__item {
-			> .trends__item__name a {
-				color: $secondary-text-color;
-			}
+	.trends__item__name a {
+		color: $secondary-text-color;
+	}
 
-			> .trends__item__current {
-				color: lighten($secondary-text-color, 10%);
-			}
-		}
+	.trends__item__current {
+		color: lighten($secondary-text-color, 10%);
 	}
 }

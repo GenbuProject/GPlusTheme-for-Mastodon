@@ -2,8 +2,8 @@
 
 // Text colors
 $primary-text-color: rgba(0, 0, 0, 0.87);
-$primary-lighter1-text-color: #9e9e9e; // ex: 時間表示
-$primary-lighter2-text-color: #616161; // ex: 通知メッセージ表示
+$primary-lighter1-text-color: change-color($color: $primary-text-color, $lightness: 62%, $alpha: 1.0); // ex: 時間表示
+$primary-lighter2-text-color: change-color($color: $primary-text-color, $lightness: 38%, $alpha: 1.0); // ex: 通知メッセージ表示
 $secondary-text-color: #2962ff;
 $secondary-lighter1-text-color: #00bfff; // ex: アカウントTLのユーザーID
 
@@ -15,21 +15,23 @@ $icon-active-color: #db4437;
 $base-color: #f1f1f1;
 $checked-color: #4285f4;
 $column-header-color: #ffffff;
-$column-header-hover-color: #e7e7e7;
-$status-color: #ffffff;
-$status-actionbar-color: #fafafa;
+$column-header-hover-color: change-color($color: $column-header-color, $lightness: 90%);
+$status-color: $column-header-color;
+$status-direct-color: darken($status-color, 5%);
+$status-actionbar-color: change-color($color: $status-color, $lightness: 98%);
+$account-color: $column-header-color;
+$account-foreground-color: rgba(0, 0, 0, 0.4);
 $search-color: rgba(0, 0, 0, 0.1);
-$search-item-color: #ffffff;
+$trend-color: $column-header-color;
 $setting-toggle-color: #b9b9b9;
-$setting-toggle-checked-color: rgba(66, 133, 244, 0.5);
+$setting-toggle-checked-color: change-color($color: $checked-color, $alpha: 0.5);
 $setting-toggle-thumb-color: #fafafa;
 $setting-toggle-thumb-checked-color: $checked-color;
-$account-foreground-color: rgba(0, 0, 0, 0.4);
 
 // Shadow colors
 $column-header-shadow-color: rgba(0, 0, 0, 0.3);
 $status-shadow-color: rgba(0, 0, 0, 0.14);
-$status-focused-shadow-color: rgba(0, 0, 0, 0.3);
+$status-focused-shadow-color: change-color($color: $status-shadow-color, $alpha: 0.3);
 $icon-hovered-shadow-color: rgba(0, 0, 0, 0.26);
 
 // Separation colors

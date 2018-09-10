@@ -20,7 +20,7 @@ body {
 			@include status-focus-shadow;
 
 			&.status-direct {
-				background: darken($status-color, 5%);
+				background: $status-direct-color;
 			}
 		}
 

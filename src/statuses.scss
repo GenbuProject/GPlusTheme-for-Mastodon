@@ -13,7 +13,7 @@
 		transition: box-shadow 0.1s 0s ease-out;
 	
 		&.status-direct {
-			background: darken($status-color, 5%);
+			background: $status-direct-color;
 		}
 
 		&.muted {
