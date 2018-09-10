@@ -168,7 +168,8 @@
 			height: 100px;
 			margin-bottom: 1em;
 
-			background: url("https://ssl.gstatic.com/s2/oz/images/notifications/jingles_eb4e5306b38f83915d82034fa93390d9/desktop_anim_2x.gif") center / contain no-repeat;
+			background: none center / contain no-repeat;
+			background-image: url("https://ssl.gstatic.com/s2/oz/images/notifications/jingles_eb4e5306b38f83915d82034fa93390d9/desktop_anim_2x.gif");
 		}
 	}
 }
