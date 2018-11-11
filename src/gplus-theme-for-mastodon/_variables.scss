@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+
+
 // Text colors
 $primary-text-color: rgba(0, 0, 0, 0.87);
 $primary-lighter1-text-color: change-color($color: $primary-text-color, $lightness: 62%, $alpha: 1.0); // ex: 時間表示
