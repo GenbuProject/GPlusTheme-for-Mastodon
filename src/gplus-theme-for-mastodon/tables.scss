@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+@import 'variables';
+
+
+
+.table {
+	thead th {
+		border-bottom-color: $base-separation-color;
+	}
+	
+	th,
+	td {
+		color: $primary-text-color;
+		background-color: $base-color;
+		border-top: 0;
+	}
+
+	& > tbody > tr:nth-child(odd) {
+		& > td,
+		& > th {
+			background: darken($base-color, 4%);
+		}
+	}
+
+	a {
+		color: $secondary-text-color;
+	}
+}
+
+a.table-action-link,
+button.table-action-link {
+	color: $secondary-text-color;
+
+	&:hover {
+		color: $secondary-lighter1-text-color;
+	}
+}
