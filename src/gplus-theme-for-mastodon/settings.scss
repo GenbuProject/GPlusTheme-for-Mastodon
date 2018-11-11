@@ -66,6 +66,22 @@ body.admin {
 			border-bottom-color: $base-separation-color;
 		}
 
+		.table {
+			thead th {
+				border-bottom-color: $base-separation-color;
+			}
+
+			th,
+			td {
+				color: $primary-text-color;
+				background-color: $setting-base-color;
+			}
+
+			.table-action-link {
+				color: $secondary-text-color;
+			}
+		}
+
 		.muted-hint {
 			color: $primary-lighter1-text-color;
 		}
@@ -126,6 +142,13 @@ body.admin {
 		color: $primary-text-color;
 		background-color: $setting-content-base-color;
 		border-color: $base-separation-color;
+	}
+
+	.input.field_with_errors {
+		label,
+		.error {
+			color: $error-text-color;
+		}
 	}
 
 	.hint,
