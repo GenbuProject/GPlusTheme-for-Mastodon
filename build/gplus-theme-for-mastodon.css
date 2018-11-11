@@ -10517,9 +10517,28 @@ body.admin .content .muted-hint {
 .simple_form textarea:focus {
   background: #ebebeb;
 }
+.simple_form select {
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #ffffff;
+  border-color: rgba(0, 0, 0, 0.14);
+}
 .simple_form .hint,
 .simple_form p.hint {
   color: #9e9e9e;
+}
+.simple_form .label_input__append {
+  color: #9e9e9e;
+}
+
+.quick-nav a {
+  color: #2962ff;
+}
+.quick-nav a:hover, .quick-nav a:focus, .quick-nav a:active {
+  color: #5280ff;
+}
+
+label[for=user_setting_default_privacy_public], label[for=user_setting_default_privacy_unlisted] {
+  color: #db4437 !important;
 }
 
 .column-header__collapsible__extra .column-settings__section {

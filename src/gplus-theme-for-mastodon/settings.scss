@@ -53,12 +53,12 @@ body.admin {
 		h2,
 		h3,
 		h4,
-		h6, {
+		h6 {
 			color: $primary-text-color;
 		}
 
 		h2,
-		h4, {
+		h4 {
 			border-bottom-color: $base-separation-color;
 		}
 
@@ -76,7 +76,7 @@ body.admin {
 	.input {
 		&.boolean,
 		&.with_label,
-		&.with_floating_label, {
+		&.with_floating_label {
 			.label_input > label {
 				color: $primary-text-color;
 			}
@@ -102,11 +102,12 @@ body.admin {
 			}
 		}
 	}
+
 	input[type=text],
 	input[type=number],
 	input[type=email],
 	input[type=password],
-	textarea, {
+	textarea {
 		color: $primary-text-color;
 		background: $setting-content-base-color;
 		border-color: $base-separation-color;
@@ -121,9 +122,40 @@ body.admin {
 		}
 	}
 
+	select {
+		color: $primary-text-color;
+		background-color: $setting-content-base-color;
+		border-color: $base-separation-color;
+	}
+
 	.hint,
-	p.hint, {
+	p.hint {
 		color: $primary-lighter1-text-color;
+	}
+
+	.label_input {
+		&__append {
+			color: $primary-lighter1-text-color;
+		}
+	}
+}
+
+.quick-nav {
+	a {
+		color: $secondary-text-color;
+
+		&:hover,
+		&:focus,
+		&:active {
+			color: lighten($secondary-text-color, 8%);
+		}
+	}
+}
+
+label {
+	&[for=user_setting_default_privacy_public],
+	&[for=user_setting_default_privacy_unlisted] {
+		color: $active-text-color !important;
 	}
 }
 
