@@ -10049,37 +10049,6 @@ body.rtl .simple_form .input.radio_buttons .radio > label input {
   transform: scale(0.71);
 }
 
-body.admin {
-  background: #f1f1f1;
-}
-body.admin .sidebar-wrapper {
-  background: inherit;
-}
-body.admin .sidebar ul {
-  border-radius: 0;
-}
-body.admin .sidebar ul a {
-  color: #616161;
-  border-radius: 0;
-}
-body.admin .sidebar ul a:hover {
-  color: rgba(0, 0, 0, 0.87);
-  background: #e4e4e4;
-}
-body.admin .sidebar ul a.selected {
-  color: rgba(0, 0, 0, 0.87);
-  background: #ececec;
-}
-body.admin .sidebar ul ul {
-  background: #e7e7e7;
-}
-body.admin .sidebar ul .simple-navigation-active-leaf a {
-  color: #db4437;
-  background: #ececec;
-}
-body.admin .sidebar ul .simple-navigation-active-leaf a:hover {
-  background: #e4e4e4;
-}
 body .ui {
   color: rgba(0, 0, 0, 0.87);
   background: #f1f1f1;
@@ -10455,6 +10424,102 @@ body .ui {
 }
 .trends__item .trends__item__current {
   color: #5c87ff;
+}
+
+body.admin {
+  background: #f1f1f1;
+}
+body.admin .sidebar-wrapper {
+  background: inherit;
+}
+body.admin .sidebar ul {
+  border-radius: 0;
+}
+body.admin .sidebar ul a {
+  color: #616161;
+  border-radius: 0;
+}
+body.admin .sidebar ul a:hover {
+  color: rgba(0, 0, 0, 0.87);
+  background: #e4e4e4;
+}
+body.admin .sidebar ul a.selected {
+  color: rgba(0, 0, 0, 0.87);
+  background: #ececec;
+}
+body.admin .sidebar ul ul {
+  background: #e7e7e7;
+}
+body.admin .sidebar ul .simple-navigation-active-leaf a {
+  color: #db4437;
+  background: initial;
+}
+body.admin .sidebar ul .simple-navigation-active-leaf a:hover {
+  background: #e4e4e4;
+}
+body.admin .content {
+  box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.3);
+  background: #ffffff;
+}
+body.admin .content h2,
+body.admin .content h3,
+body.admin .content h4,
+body.admin .content h6 {
+  color: rgba(0, 0, 0, 0.87);
+}
+body.admin .content h2,
+body.admin .content h4 {
+  border-bottom-color: rgba(0, 0, 0, 0.14);
+}
+body.admin .content hr {
+  border-bottom-color: rgba(0, 0, 0, 0.14);
+}
+body.admin .content .muted-hint {
+  color: #9e9e9e;
+}
+
+.simple_form .input.boolean .label_input > label, .simple_form .input.with_label .label_input > label, .simple_form .input.with_floating_label .label_input > label {
+  color: rgba(0, 0, 0, 0.87);
+}
+.simple_form .input.with_block_label > label {
+  color: rgba(0, 0, 0, 0.87);
+}
+.simple_form .input.radio_buttons .radio label {
+  color: rgba(0, 0, 0, 0.87);
+}
+.simple_form .check_boxes .checkbox label {
+  color: rgba(0, 0, 0, 0.87);
+}
+.simple_form input[type=text],
+.simple_form input[type=number],
+.simple_form input[type=email],
+.simple_form input[type=password],
+.simple_form textarea {
+  color: rgba(0, 0, 0, 0.87);
+  background: #ffffff;
+  border-color: rgba(0, 0, 0, 0.14);
+}
+.simple_form input[type=text]:hover,
+.simple_form input[type=number]:hover,
+.simple_form input[type=email]:hover,
+.simple_form input[type=password]:hover,
+.simple_form textarea:hover {
+  border-color: rgba(0, 0, 0, 0.14);
+}
+.simple_form input[type=text]:active, .simple_form input[type=text]:focus,
+.simple_form input[type=number]:active,
+.simple_form input[type=number]:focus,
+.simple_form input[type=email]:active,
+.simple_form input[type=email]:focus,
+.simple_form input[type=password]:active,
+.simple_form input[type=password]:focus,
+.simple_form textarea:active,
+.simple_form textarea:focus {
+  background: #ebebeb;
+}
+.simple_form .hint,
+.simple_form p.hint {
+  color: #9e9e9e;
 }
 
 .column-header__collapsible__extra .column-settings__section {

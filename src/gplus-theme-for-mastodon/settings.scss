@@ -1,8 +1,131 @@
 @charset "UTF-8";
 
 @import 'variables';
+@import 'mixins';
 
 
+
+body.admin {
+	background: $setting-base-color;
+
+	.sidebar-wrapper {
+		background: inherit;
+	}
+	
+	.sidebar {
+		ul {
+			border-radius: 0;
+
+			a {
+				color: $primary-lighter2-text-color;
+				border-radius: 0;
+
+				&:hover {
+					color: $primary-text-color;
+					background: $setting-lists-hover-color;
+				}
+
+				&.selected {
+					color: $primary-text-color;
+					background: $setting-lists-selected-color;
+				}
+			}
+
+			ul {
+				background: darken($setting-base-color, 4%);
+			}
+
+			.simple-navigation-active-leaf a {
+				color: $icon-active-color;
+				background: initial;
+
+				&:hover {
+					background: $setting-lists-hover-color;
+				}
+			}
+		}
+	}
+
+	.content {
+		@include column-shadow;
+		background: $setting-content-base-color;
+
+		h2,
+		h3,
+		h4,
+		h6, {
+			color: $primary-text-color;
+		}
+
+		h2,
+		h4, {
+			border-bottom-color: $base-separation-color;
+		}
+
+		hr {
+			border-bottom-color: $base-separation-color;
+		}
+
+		.muted-hint {
+			color: $primary-lighter1-text-color;
+		}
+	}
+}
+
+.simple_form {
+	.input {
+		&.boolean,
+		&.with_label,
+		&.with_floating_label, {
+			.label_input > label {
+				color: $primary-text-color;
+			}
+		}
+
+		&.with_block_label {
+			& > label {
+				color: $primary-text-color;
+			}
+		}
+
+		&.radio_buttons{
+			.radio label {
+				color: $primary-text-color;
+			}
+		}
+	}
+
+	.check_boxes {
+		.checkbox {
+			label {
+				color: $primary-text-color;
+			}
+		}
+	}
+	input[type=text],
+	input[type=number],
+	input[type=email],
+	input[type=password],
+	textarea, {
+		color: $primary-text-color;
+		background: $setting-content-base-color;
+		border-color: $base-separation-color;
+
+		&:hover {
+			border-color: $base-separation-color;
+		}
+
+		&:active,
+		&:focus {
+			background: darken($setting-content-base-color, 8%);
+		}
+	}
+
+	.hint,
+	p.hint, {
+		color: $primary-lighter1-text-color;
+	}
+}
 
 .column-header__collapsible__extra {
 	.column-settings__section {

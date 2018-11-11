@@ -8,10 +8,11 @@ $primary-lighter1-text-color: change-color($color: $primary-text-color, $lightne
 $primary-lighter2-text-color: change-color($color: $primary-text-color, $lightness: 38%, $alpha: 1.0); // ex: 通知メッセージ表示
 $secondary-text-color: #2962ff;
 $secondary-lighter1-text-color: #00bfff; // ex: アカウントTLのユーザーID
+$active-text-color: #db4437;
 
 // Icon colors
 $icon-color: #757575;
-$icon-active-color: #db4437;
+$icon-active-color: $active-text-color;
 
 // Background colors
 $base-color: #f1f1f1;
@@ -28,6 +29,7 @@ $trend-color: $column-header-color;
 $setting-base-color: $base-color;
 $setting-lists-selected-color: darken($base-color, 2%);
 $setting-lists-hover-color: darken($base-color, 5%);
+$setting-content-base-color: $column-header-color;
 $setting-toggle-color: #b9b9b9;
 $setting-toggle-checked-color: change-color($color: $checked-color, $alpha: 0.5);
 $setting-toggle-thumb-color: #fafafa;
