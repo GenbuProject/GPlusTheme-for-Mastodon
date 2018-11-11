@@ -140,6 +140,10 @@
 				}
 			}
 		}
+
+		div[tabindex="-1"] {
+			margin-bottom: 1em;
+		}
 	}
 
 	.column-subheading {

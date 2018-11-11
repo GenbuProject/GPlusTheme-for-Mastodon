@@ -10163,6 +10163,9 @@ body .ui {
 .column .scrollable *[role=feed] article:first-of-type {
   margin: 0;
 }
+.column .scrollable div[tabindex="-1"] {
+  margin-bottom: 1em;
+}
 .column .column-subheading {
   background: #d8d8d8;
 }
@@ -10336,8 +10339,8 @@ body .ui {
   color: #9e9e9e;
 }
 
-.detailed-status__wrapper div[tabIndex="-1"] {
-  margin-bottom: 1em;
+.detailed-status__wrapper {
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
 }
 .detailed-status__wrapper .detailed-status {
   background: #ffffff;

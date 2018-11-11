@@ -41,10 +41,8 @@
 }
 
 .detailed-status__wrapper {
-	div[tabIndex="-1"] {
-		margin-bottom: 1em;
-	}
-
+	@include status-shadow;
+	
 	.detailed-status {
 		background: $status-color;
 
