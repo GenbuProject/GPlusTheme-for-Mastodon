@@ -166,6 +166,27 @@ label {
 	}
 }
 
+.filters {
+	.filter-subset {
+		a {
+			color: $primary-lighter1-text-color;
+
+			&:hover {
+				color: $primary-text-color;
+			}
+
+			&.selected {
+				color: $secondary-text-color;
+				border-bottom-color: $secondary-text-color;
+			}
+		}
+	}
+}
+
+.report-card {
+	background: $setting-content-base-color;
+}
+
 .column-header__collapsible__extra {
 	.column-settings__section {
 		color: $primary-text-color;

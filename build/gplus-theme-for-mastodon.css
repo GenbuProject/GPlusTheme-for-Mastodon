@@ -10570,6 +10570,21 @@ label[for=user_setting_default_privacy_public], label[for=user_setting_default_p
   color: #db4437 !important;
 }
 
+.filters .filter-subset a {
+  color: #9e9e9e;
+}
+.filters .filter-subset a:hover {
+  color: rgba(0, 0, 0, 0.87);
+}
+.filters .filter-subset a.selected {
+  color: #2962ff;
+  border-bottom-color: #2962ff;
+}
+
+.report-card {
+  background: #ffffff;
+}
+
 .column-header__collapsible__extra .column-settings__section {
   color: rgba(0, 0, 0, 0.87);
 }
