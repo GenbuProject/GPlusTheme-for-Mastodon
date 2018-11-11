@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+@import 'variables';
+@import 'mixins';
+
+
+
+body.admin {
+	background: $setting-base-color;
+
+	.sidebar-wrapper {
+		background: inherit;
+	}
+	
+	.sidebar {
+		ul {
+			border-radius: 0;
+
+			a {
+				color: $primary-lighter2-text-color;
+				border-radius: 0;
+
+				&:hover {
+					color: $primary-text-color;
+					background: $setting-lists-hover-color;
+				}
+
+				&.selected {
+					color: $primary-text-color;
+					background: $setting-lists-selected-color;
+				}
+			}
+
+			ul {
+				background: darken($setting-base-color, 4%);
+			}
+
+			.simple-navigation-active-leaf a {
+				color: $icon-active-color;
+				background: $setting-lists-selected-color;
+
+				&:hover {
+					background: $setting-lists-hover-color;
+				}
+			}
+		}
+	}
+
+	.content {
+		h2 {
+			
+		}
+	}
+}

@@ -10049,6 +10049,37 @@ body.rtl .simple_form .input.radio_buttons .radio > label input {
   transform: scale(0.71);
 }
 
+body.admin {
+  background: #f1f1f1;
+}
+body.admin .sidebar-wrapper {
+  background: inherit;
+}
+body.admin .sidebar ul {
+  border-radius: 0;
+}
+body.admin .sidebar ul a {
+  color: #616161;
+  border-radius: 0;
+}
+body.admin .sidebar ul a:hover {
+  color: rgba(0, 0, 0, 0.87);
+  background: #e4e4e4;
+}
+body.admin .sidebar ul a.selected {
+  color: rgba(0, 0, 0, 0.87);
+  background: #ececec;
+}
+body.admin .sidebar ul ul {
+  background: #e7e7e7;
+}
+body.admin .sidebar ul .simple-navigation-active-leaf a {
+  color: #db4437;
+  background: #ececec;
+}
+body.admin .sidebar ul .simple-navigation-active-leaf a:hover {
+  background: #e4e4e4;
+}
 body .ui {
   color: rgba(0, 0, 0, 0.87);
   background: #f1f1f1;
