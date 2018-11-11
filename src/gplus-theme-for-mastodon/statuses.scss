@@ -91,3 +91,9 @@
 		}
 	}
 }
+
+.status-card {
+	&:hover {
+		background: initial;
+	}
+}
