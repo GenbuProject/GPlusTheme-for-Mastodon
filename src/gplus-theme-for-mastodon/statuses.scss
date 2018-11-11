@@ -90,7 +90,8 @@
 	}
 }
 
-.status-card {
+a.status-card,
+a.status-card.compact {
 	&:hover {
 		background: initial;
 	}

@@ -10404,7 +10404,8 @@ button.table-action-link:hover {
   color: #2962ff;
 }
 
-.status-card:hover {
+a.status-card:hover,
+a.status-card.compact:hover {
   background: initial;
 }
 
