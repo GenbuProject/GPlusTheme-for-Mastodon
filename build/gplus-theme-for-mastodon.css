@@ -10409,6 +10409,11 @@ a.status-card.compact:hover {
   background: initial;
 }
 
+.name-tag,
+a.name-tag {
+  color: #2962ff;
+}
+
 .notification.notification-favourite .status.status-direct {
   background: transparent;
 }
@@ -10450,6 +10455,67 @@ a.status-card.compact:hover {
 }
 .trends__item .trends__item__current {
   color: #5c87ff;
+}
+
+.filters .filter-subset a {
+  color: #616161;
+}
+.filters .filter-subset a:hover {
+  color: rgba(0, 0, 0, 0.87);
+}
+.filters .filter-subset a.selected {
+  color: #2962ff;
+  border-bottom-color: #2962ff;
+}
+
+.report-card {
+  background: #ffffff;
+}
+.report-card__profile__stats {
+  color: #616161;
+}
+.report-card__profile__stats a:focus, .report-card__profile__stats a:hover, .report-card__profile__stats a:active {
+  color: #757575;
+}
+.report-card__summary__item {
+  border-top-color: rgba(0, 0, 0, 0.14);
+}
+.report-card__summary__item:hover {
+  background: #e6e6e6;
+}
+.report-card__summary__item__reported-by, .report-card__summary__item__assigned {
+  color: #616161;
+}
+.report-card__summary__item__content__icon {
+  color: #757575;
+}
+.report-card__summary__item__content a {
+  color: #616161;
+}
+
+.batch-table__toolbar {
+  background: #ffffff;
+  border-color: rgba(0, 0, 0, 0.14);
+}
+.batch-table__row {
+  background: #ffffff;
+  border-color: rgba(0, 0, 0, 0.14);
+}
+.batch-table__row:hover {
+  background: #e6e6e6;
+}
+.batch-table__row__content .status__content {
+  color: rgba(0, 0, 0, 0.87);
+}
+.batch-table__row__content .detailed-status__meta {
+  color: #9e9e9e;
+}
+
+.speech-bubble__bubble {
+  color: rgba(0, 0, 0, 0.87);
+}
+.speech-bubble a {
+  color: #2962ff;
 }
 
 body.admin {
@@ -10569,21 +10635,6 @@ body.admin .content .muted-hint {
 
 label[for=user_setting_default_privacy_public], label[for=user_setting_default_privacy_unlisted] {
   color: #db4437 !important;
-}
-
-.filters .filter-subset a {
-  color: #9e9e9e;
-}
-.filters .filter-subset a:hover {
-  color: rgba(0, 0, 0, 0.87);
-}
-.filters .filter-subset a.selected {
-  color: #2962ff;
-  border-bottom-color: #2962ff;
-}
-
-.report-card {
-  background: #ffffff;
 }
 
 .column-header__collapsible__extra .column-settings__section {

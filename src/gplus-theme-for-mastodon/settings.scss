@@ -2,6 +2,7 @@
 
 @import 'variables';
 @import 'mixins';
+@import 'settings-report';
 
 
 
@@ -164,27 +165,6 @@ label {
 	&[for=user_setting_default_privacy_unlisted] {
 		color: $active-text-color !important;
 	}
-}
-
-.filters {
-	.filter-subset {
-		a {
-			color: $primary-lighter1-text-color;
-
-			&:hover {
-				color: $primary-text-color;
-			}
-
-			&.selected {
-				color: $secondary-text-color;
-				border-bottom-color: $secondary-text-color;
-			}
-		}
-	}
-}
-
-.report-card {
-	background: $setting-content-base-color;
 }
 
 .column-header__collapsible__extra {
