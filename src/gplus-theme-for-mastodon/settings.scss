@@ -160,6 +160,41 @@ body.admin {
 	}
 }
 
+.pagination {
+	.page,
+	a {
+		color: $primary-text-color;
+	}
+
+	.page {
+		&.current {
+			background: $icon-active-color;
+			color: $column-header-color;
+		}
+	}
+}
+
+.filters {
+	.filter-subset {
+		strong {
+			color: $primary-text-color;
+		}
+
+		a {
+			color: $primary-lighter2-text-color;
+
+			&:hover {
+				color: $primary-text-color;
+			}
+
+			&.selected {
+				color: $active-text-color;
+				border-bottom-color: $active-text-color;
+			}
+		}
+	}
+}
+
 label {
 	&[for=user_setting_default_privacy_public],
 	&[for=user_setting_default_privacy_unlisted] {

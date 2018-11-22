@@ -5,23 +5,6 @@
 
 
 
-.filters {
-	.filter-subset {
-		a {
-			color: $primary-lighter2-text-color;
-
-			&:hover {
-				color: $primary-text-color;
-			}
-
-			&.selected {
-				color: $secondary-text-color;
-				border-bottom-color: $secondary-text-color;
-			}
-		}
-	}
-}
-
 .report-card {
 	background: $setting-content-base-color;
 

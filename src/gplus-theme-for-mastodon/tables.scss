@@ -33,6 +33,6 @@ button.table-action-link {
 	color: $secondary-text-color;
 
 	&:hover {
-		color: $secondary-lighter1-text-color;
+		color: darken($secondary-text-color, 8%);
 	}
 }

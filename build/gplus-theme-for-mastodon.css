@@ -10092,7 +10092,7 @@ button.table-action-link {
 }
 a.table-action-link:hover,
 button.table-action-link:hover {
-  color: #00bfff;
+  color: #0044ff;
 }
 
 .tabs-bar {
@@ -10457,17 +10457,6 @@ a.name-tag {
   color: #5c87ff;
 }
 
-.filters .filter-subset a {
-  color: #616161;
-}
-.filters .filter-subset a:hover {
-  color: rgba(0, 0, 0, 0.87);
-}
-.filters .filter-subset a.selected {
-  color: #2962ff;
-  border-bottom-color: #2962ff;
-}
-
 .report-card {
   background: #ffffff;
 }
@@ -10631,6 +10620,29 @@ body.admin .content .muted-hint {
 }
 .quick-nav a:hover, .quick-nav a:focus, .quick-nav a:active {
   color: #5280ff;
+}
+
+.pagination .page,
+.pagination a {
+  color: rgba(0, 0, 0, 0.87);
+}
+.pagination .page.current {
+  background: #db4437;
+  color: #ffffff;
+}
+
+.filters .filter-subset strong {
+  color: rgba(0, 0, 0, 0.87);
+}
+.filters .filter-subset a {
+  color: #616161;
+}
+.filters .filter-subset a:hover {
+  color: rgba(0, 0, 0, 0.87);
+}
+.filters .filter-subset a.selected {
+  color: #db4437;
+  border-bottom-color: #db4437;
 }
 
 label[for=user_setting_default_privacy_public], label[for=user_setting_default_privacy_unlisted] {
