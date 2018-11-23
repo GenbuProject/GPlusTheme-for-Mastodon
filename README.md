@@ -1,4 +1,4 @@
-# Google+ Theme for Mastodon
+# Google+ Theme for Mastodon v2.6.1
 
 
 ## Languages
