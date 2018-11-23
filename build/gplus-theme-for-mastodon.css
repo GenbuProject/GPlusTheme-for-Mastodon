@@ -10049,6 +10049,7 @@ body.rtl .simple_form .input.radio_buttons .radio > label input {
   transform: scale(0.71);
 }
 
+body,
 body .ui {
   color: rgba(0, 0, 0, 0.87);
   background: #f1f1f1;
@@ -10828,6 +10829,16 @@ label[for=user_setting_default_privacy_public], label[for=user_setting_default_p
 }
 .fa.fa-eraser::before {
   content: "";
+}
+
+.public-layout .public-account-header {
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+}
+.public-layout .public-account-header__image {
+  background: #ffffff;
+}
+.public-layout .public-account-header__bar {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.46));
 }
 
 /*# sourceMappingURL=gplus-theme-for-mastodon.css.map */

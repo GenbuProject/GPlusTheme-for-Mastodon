@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+@import 'variables';
+@import 'mixins';
+
+
+
+.public-layout {
+	.public-account-header {
+		@include status-shadow;
+
+		&__image {
+			background: $base-lighter1-color;
+
+			> img:not([src]) {
+				content: url("https://raw.githubusercontent.com/GenbuProject/GPlusTheme-for-Mastodon/asset/account-default_header.jpg");
+			}
+		}
+
+		&__bar {
+			background: $account-header-image-shadow-color;
+		}
+	}
+}

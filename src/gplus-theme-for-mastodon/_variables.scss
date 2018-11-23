@@ -64,6 +64,7 @@ $column-header-shadow-color: rgba(0, 0, 0, 0.3);
 $status-shadow-color: rgba(0, 0, 0, 0.14);
 $status-focused-shadow-color: change-color($color: $status-shadow-color, $alpha: 0.3);
 $icon-hovered-shadow-color: rgba(0, 0, 0, 0.26);
+$account-header-image-shadow-color: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.46));
 
 
 // Separation colors
