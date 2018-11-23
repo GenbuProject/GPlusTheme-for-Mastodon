@@ -10569,6 +10569,7 @@ a.name-tag {
 
 body.admin {
   background: #f1f1f1;
+  color: rgba(0, 0, 0, 0.87);
 }
 body.admin .sidebar-wrapper {
   background: inherit;
@@ -10679,6 +10680,11 @@ body.admin .content .muted-hint {
 }
 .simple_form .label_input__append {
   color: #9e9e9e;
+}
+
+.simple_form .warning,
+.table-form .warning {
+  background: rgba(213, 0, 0, 0.8);
 }
 
 .quick-nav a {

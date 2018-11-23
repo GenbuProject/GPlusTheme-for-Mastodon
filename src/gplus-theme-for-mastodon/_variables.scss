@@ -2,38 +2,44 @@
 
 
 
+// Base colors
+$active-color: #db4437;
+$valid-color: #4285f4;
+$error-color: #d50000;
+$checked-color: #4285f4;
+
 // Text colors
 $primary-text-color: rgba(0, 0, 0, 0.87);
 $primary-lighter1-text-color: change-color($color: $primary-text-color, $lightness: 62%, $alpha: 1.0); // ex: 時間表示
 $primary-lighter2-text-color: change-color($color: $primary-text-color, $lightness: 38%, $alpha: 1.0); // ex: 通知メッセージ表示
 $secondary-text-color: #2962ff;
 $secondary-lighter1-text-color: #00bfff; // ex: アカウントTLのユーザーID
-$active-text-color: #db4437;
-$error-text-color: #d50000;
+$active-text-color: $active-color;
+$error-text-color: $error-color;
 
 // Icon colors
 $icon-color: #757575;
-$icon-active-color: $active-text-color;
+$icon-active-color: $active-color;
 
 // Background colors
 $base-color: #f1f1f1;
-$checked-color: #4285f4;
-$column-header-color: #ffffff;
+$base-lighter1-color: #ffffff;
+$column-header-color: $base-lighter1-color;
 $column-header-hover-color: change-color($color: $column-header-color, $lightness: 90%);
-$status-color: $column-header-color;
+$status-color: $base-lighter1-color;
 $status-direct-color: darken($status-color, 5%);
 $status-actionbar-color: change-color($color: $status-color, $lightness: 98%);
-$account-color: $column-header-color;
+$account-color: $base-lighter1-color;
 $account-foreground-color: rgba(0, 0, 0, 0.4);
-$card-color: $column-header-color;
+$card-color: $base-lighter1-color;
 $card-hover-color: $column-header-hover-color;
 $card-image-color: $base-color;
 $search-color: rgba(0, 0, 0, 0.1);
-$trend-color: $column-header-color;
+$trend-color: $base-lighter1-color;
 $setting-base-color: $base-color;
 $setting-lists-selected-color: darken($base-color, 2%);
 $setting-lists-hover-color: darken($base-color, 5%);
-$setting-content-base-color: $column-header-color;
+$setting-content-base-color: $base-lighter1-color;
 $setting-toggle-color: #b9b9b9;
 $setting-toggle-checked-color: change-color($color: $checked-color, $alpha: 0.5);
 $setting-toggle-thumb-color: #fafafa;

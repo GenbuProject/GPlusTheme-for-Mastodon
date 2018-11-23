@@ -48,12 +48,12 @@
 
 .batch-table {
 	&__toolbar {
-		background: $column-header-color;
+		background: $base-lighter1-color;
 		border-color: $base-separation-color;
 	}
 
 	&__row {
-		background: $column-header-color;
+		background: $base-lighter1-color;
 		border-color: $base-separation-color;
 
 		&:hover {

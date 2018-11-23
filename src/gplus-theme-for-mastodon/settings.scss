@@ -9,6 +9,7 @@
 
 body.admin {
 	background: $setting-base-color;
+	color: $primary-text-color;
 
 	.sidebar-wrapper {
 		background: inherit;
@@ -159,6 +160,13 @@ body.admin {
 	}
 }
 
+.simple_form,
+.table-form {
+	.warning {
+		background: change-color($color: $error-color, $alpha: 0.8);
+	}
+}
+
 .quick-nav {
 	a {
 		color: $secondary-text-color;
@@ -180,7 +188,7 @@ body.admin {
 	.page {
 		&.current {
 			background: $icon-active-color;
-			color: $column-header-color;
+			color: $base-lighter1-color;
 		}
 	}
 }
