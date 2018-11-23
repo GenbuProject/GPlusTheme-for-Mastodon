@@ -5,44 +5,41 @@
 
 
 .edit_account {
-	.card {
-		> a {
-			position: relative;
+	@media screen and (min-width: 415px) {
+		.card {
+			> a {
+				position: relative;
 
-			.card__img {
-				border-bottom: 1px solid $base-separation-color;
-			}
-		
-			.card__bar {
-				position: static;
-				padding-top: 30%;
-				background: $card-color;
-		
-				.avatar {
-					position: absolute;
-					left: 0;
-					bottom: 0;
-
-					display: flex;
-					justify-content: center;
-					align-items: center;
-					width: 100%;
-					height: 100%;
-
-					img {
-						width: 128px;
-						height: 128px;
-						background: transparent;
-					}
+				.card__img {
+					border-bottom: 1px solid $base-separation-color;
 				}
-		
-				.display-name {
-					flex: auto;
-					margin-left: 0;
-					text-align: center;
-					
-					strong { color: $primary-text-color }
-					span { color: $primary-lighter2-text-color }
+			
+				.card__bar {
+					position: static;
+					padding-top: 30%;
+			
+					.avatar {
+						position: absolute;
+						left: 0;
+						bottom: 0;
+
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						width: 100%;
+						height: 100%;
+
+						img {
+							width: 128px;
+							height: 128px;
+						}
+					}
+			
+					.display-name {
+						flex: auto;
+						margin-left: 0;
+						text-align: center;
+					}
 				}
 			}
 		}

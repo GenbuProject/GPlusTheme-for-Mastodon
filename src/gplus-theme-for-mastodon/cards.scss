@@ -10,12 +10,16 @@
 
 	> a {
 		@include status-shadow;
-		
+
 		&:hover,
 		&:focus,
 		&:active {
 			.card__bar {
-				background: $card-hover-color;
+				background: initial;
+
+				.display-name strong {
+					color: $secondary-text-color;
+				}
 			}
 		}
 
