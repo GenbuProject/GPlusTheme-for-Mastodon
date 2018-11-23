@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+@import 'variables';
+
+
+
+.dashboard {
+	&__counters {
+		> div {
+			> div,
+			> a {
+				background: $dashboard-counters-base-color;
+			}
+
+			> a {
+				&:hover,
+				&:focus,
+				&:active {
+					background: $dashboard-counters-hover-color;
+				}
+			}
+		}
+
+		&__num {
+			color: $primary-text-color;
+		}
+
+		&__label {
+			color: $primary-lighter1-text-color;
+		}
+	}
+
+	&__widgets {
+		a:not(.name-tag) {
+			color: $primary-lighter2-text-color;
+		}
+	}
+}

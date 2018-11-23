@@ -8,6 +8,7 @@ $valid-color: #4285f4;
 $error-color: #d50000;
 $checked-color: #4285f4;
 
+
 // Text colors
 $primary-text-color: rgba(0, 0, 0, 0.87);
 $primary-lighter1-text-color: change-color($color: $primary-text-color, $lightness: 62%, $alpha: 1.0); // ex: 時間表示
@@ -17,39 +18,53 @@ $secondary-lighter1-text-color: #00bfff; // ex: アカウントTLのユーザー
 $active-text-color: $active-color;
 $error-text-color: $error-color;
 
+
 // Icon colors
 $icon-color: #757575;
 $icon-active-color: $active-color;
 
+
 // Background colors
 $base-color: #f1f1f1;
 $base-lighter1-color: #ffffff;
+
 $column-header-color: $base-lighter1-color;
 $column-header-hover-color: change-color($color: $column-header-color, $lightness: 90%);
+
 $status-color: $base-lighter1-color;
 $status-direct-color: darken($status-color, 5%);
 $status-actionbar-color: change-color($color: $status-color, $lightness: 98%);
+
 $account-color: $base-lighter1-color;
 $account-foreground-color: rgba(0, 0, 0, 0.4);
+
 $card-color: $base-lighter1-color;
 $card-hover-color: $column-header-hover-color;
 $card-image-color: $base-color;
+
 $search-color: rgba(0, 0, 0, 0.1);
 $trend-color: $base-lighter1-color;
+
 $setting-base-color: $base-color;
 $setting-lists-selected-color: darken($base-color, 2%);
 $setting-lists-hover-color: darken($base-color, 5%);
 $setting-content-base-color: $base-lighter1-color;
+
 $setting-toggle-color: #b9b9b9;
 $setting-toggle-checked-color: change-color($color: $checked-color, $alpha: 0.5);
 $setting-toggle-thumb-color: #fafafa;
 $setting-toggle-thumb-checked-color: $checked-color;
+
+$dashboard-counters-base-color: $base-color;
+$dashboard-counters-hover-color: lighten($base-color, 2%);
+
 
 // Shadow colors
 $column-header-shadow-color: rgba(0, 0, 0, 0.3);
 $status-shadow-color: rgba(0, 0, 0, 0.14);
 $status-focused-shadow-color: change-color($color: $status-shadow-color, $alpha: 0.3);
 $icon-hovered-shadow-color: rgba(0, 0, 0, 0.26);
+
 
 // Separation colors
 $base-separation-color: rgba(0, 0, 0, 0.14);

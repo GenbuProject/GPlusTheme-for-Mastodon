@@ -4,12 +4,13 @@
 @import 'mixins';
 @import 'settings-account';
 @import 'settings-report';
+@import 'settings-dashboard';
 
 
 
 body.admin {
-	background: $setting-base-color;
 	color: $primary-text-color;
+	background: $setting-base-color;
 
 	.sidebar-wrapper {
 		background: inherit;
@@ -61,6 +62,8 @@ body.admin {
 		}
 
 		p {
+			color: $primary-text-color;
+
 			strong {
 				color: $primary-text-color;
 			}
