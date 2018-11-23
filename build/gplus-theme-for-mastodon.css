@@ -10831,14 +10831,98 @@ label[for=user_setting_default_privacy_public], label[for=user_setting_default_p
   content: "";
 }
 
+.public-layout a.button {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.4);
+  color: rgba(0, 0, 0, 0.87);
+  background: #ffffff;
+}
+.public-layout .logo-button svg path:not(#Mastodon):not(#Itabashi) {
+  fill: #2962ff !important;
+}
+.public-layout .logo-button svg path:last-child {
+  fill: #ffffff !important;
+}
 .public-layout .public-account-header {
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
 }
 .public-layout .public-account-header__image {
   background: #ffffff;
 }
-.public-layout .public-account-header__bar {
+@media screen and (min-width: 600px) {
+  .public-layout .public-account-header__image {
+    height: 500px;
+  }
+}
+.public-layout .public-account-header__image::after {
+  position: absolute;
+  top: auto;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 30%;
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.46));
+  box-shadow: none;
+}
+.public-layout .public-account-header__image > img:not([src]),
+.public-layout .public-account-header__image > img[src="/headers/original/missing.png"] {
+  content: url("https://raw.githubusercontent.com/GenbuProject/GPlusTheme-for-Mastodon/asset/account-default_header.jpg");
+}
+@media screen and (min-width: 600px) {
+  .public-layout .public-account-header__bar {
+    margin-top: -140px;
+  }
+}
+.public-layout .public-account-header__bar::before {
+  background: #ffffff;
+}
+@media screen and (max-width: 600px) {
+  .public-layout .public-account-header__bar .avatar {
+    position: relative;
+    bottom: 30px;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .public-layout .public-account-header__bar .avatar img {
+    border: inherit;
+    border-radius: inherit;
+  }
+}
+.public-layout .public-account-header__bar .avatar img {
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  background: transparent;
+}
+@media screen and (max-width: 600px) {
+  .public-layout .public-account-header__tabs {
+    flex-wrap: wrap;
+  }
+  .public-layout .public-account-header__tabs__name {
+    flex: auto;
+    text-align: center;
+  }
+  .public-layout .public-account-header__tabs__tabs {
+    justify-content: center;
+    flex: auto;
+  }
+  .public-layout .public-account-header__tabs__tabs .spacer {
+    display: none;
+  }
+  .public-layout .public-account-header__tabs__tabs a.button.logo-button {
+    color: #ffffff;
+    background: #2962ff;
+  }
+}
+.public-layout .public-account-header__tabs .details-counters .counter {
+  color: #ffffff;
+  border-right: 0;
+}
+.public-layout .public-account-header__tabs .details-counters .counter::after {
+  border-bottom-color: #f1f1f1;
+}
+.public-layout .public-account-header__tabs .details-counters .counter.active::after {
+  border-bottom-color: #db4437;
 }
 
 /*# sourceMappingURL=gplus-theme-for-mastodon.css.map */

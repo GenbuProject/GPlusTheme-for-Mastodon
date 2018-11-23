@@ -6,19 +6,126 @@
 
 
 .public-layout {
+	a.button {
+		@include button-shadow;
+
+		color: $primary-text-color;
+		background: $base-lighter1-color;
+	}
+
+	.logo-button {
+		svg path {
+			&:not(#Mastodon):not(#Itabashi) {
+				fill: $secondary-text-color !important;
+			}
+
+			&:last-child {
+				fill: $base-lighter1-color !important;
+			}
+		}
+	}
+
 	.public-account-header {
 		@include status-shadow;
 
 		&__image {
 			background: $base-lighter1-color;
 
-			> img:not([src]) {
+			@media screen and (min-width: 600px) {
+				height: 500px;
+			}
+
+			&::after {
+				position: absolute;
+				top: auto;
+				left: 0;
+				bottom: 0;
+
+				width: 100%;
+				height: 30%;
+				background: $account-header-image-shadow-color;
+				box-shadow: none;
+			}
+
+			> img:not([src]),
+			> img[src="/headers/original/missing.png"] {
 				content: url("https://raw.githubusercontent.com/GenbuProject/GPlusTheme-for-Mastodon/asset/account-default_header.jpg");
 			}
 		}
 
 		&__bar {
-			background: $account-header-image-shadow-color;
+			@media screen and (min-width: 600px) {
+				margin-top: -140px;
+			}
+
+			&::before {
+				background: $base-lighter1-color;
+			}
+
+			.avatar {
+				@media screen and (max-width: 600px) {
+					position: relative;
+					bottom: 30px;
+
+					width: 60px;
+					height: 60px;
+					margin: 0 auto;
+					padding: 0;
+
+					img {
+						border: inherit;
+						border-radius: inherit;
+					}
+				}
+
+				img {
+					border: 2px solid $base-lighter1-color;
+					border-radius: 50%;
+					background: transparent;
+				}
+			}
+		}
+
+		&__tabs {
+			@media screen and (max-width: 600px) {
+				flex-wrap: wrap;
+
+				&__name {
+					flex: auto;
+					text-align: center;
+				}
+
+				&__tabs {
+					justify-content: center;
+					flex: auto;
+
+					.spacer {
+						display: none
+					}
+
+					a.button.logo-button {
+						color: $base-lighter1-color;
+						background: $secondary-text-color;
+					}
+				}
+			}
+
+			.details-counters {
+				.counter {
+					color: $base-lighter1-color;
+					border-right: 0;
+
+					&::after {
+						border-bottom-color: $base-color;
+					}
+
+					&.active {
+						&::after {
+							border-bottom-color: $active-color;
+						}
+					}
+				}
+			}
 		}
 	}
 }
