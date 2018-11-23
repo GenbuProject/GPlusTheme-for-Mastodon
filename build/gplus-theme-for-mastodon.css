@@ -10696,7 +10696,7 @@ body.admin .content .muted-hint {
 }
 .simple_form .hint,
 .simple_form p.hint {
-  color: #9e9e9e;
+  color: #9e9e9e !important;
 }
 .simple_form .label_input__append {
   color: #9e9e9e;
