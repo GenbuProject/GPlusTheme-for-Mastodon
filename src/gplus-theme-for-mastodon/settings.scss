@@ -58,6 +58,12 @@ body.admin {
 			color: $primary-text-color;
 		}
 
+		p {
+			strong {
+				color: $primary-text-color;
+			}
+		}
+
 		h2,
 		h4 {
 			border-bottom-color: $base-separation-color;
@@ -93,6 +99,10 @@ body.admin {
 			.radio label {
 				color: $primary-text-color;
 			}
+		}
+
+		&-copy {
+			background: $base-color;
 		}
 	}
 
