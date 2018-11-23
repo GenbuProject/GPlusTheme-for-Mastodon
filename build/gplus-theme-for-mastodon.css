@@ -10867,6 +10867,11 @@ label[for=user_setting_default_privacy_public], label[for=user_setting_default_p
 .public-layout .public-account-header__image > img[src="/headers/original/missing.png"] {
   content: url("https://raw.githubusercontent.com/GenbuProject/GPlusTheme-for-Mastodon/asset/account-default_header.jpg");
 }
+@media screen and (max-width: 600px) {
+  .public-layout .public-account-header__bar {
+    background: #f1f1f1;
+  }
+}
 @media screen and (min-width: 600px) {
   .public-layout .public-account-header__bar {
     margin-top: -140px;
@@ -10884,10 +10889,6 @@ label[for=user_setting_default_privacy_public], label[for=user_setting_default_p
     margin: 0 auto;
     padding: 0;
   }
-  .public-layout .public-account-header__bar .avatar img {
-    border: inherit;
-    border-radius: inherit;
-  }
 }
 .public-layout .public-account-header__bar .avatar img {
   border: 2px solid #ffffff;
@@ -10897,10 +10898,17 @@ label[for=user_setting_default_privacy_public], label[for=user_setting_default_p
 @media screen and (max-width: 600px) {
   .public-layout .public-account-header__tabs {
     flex-wrap: wrap;
+    margin-left: 0;
   }
   .public-layout .public-account-header__tabs__name {
     flex: auto;
     text-align: center;
+  }
+  .public-layout .public-account-header__tabs__name h1 {
+    color: rgba(0, 0, 0, 0.87);
+  }
+  .public-layout .public-account-header__tabs__name h1 small {
+    color: #9e9e9e;
   }
   .public-layout .public-account-header__tabs__tabs {
     justify-content: center;
@@ -10923,6 +10931,64 @@ label[for=user_setting_default_privacy_public], label[for=user_setting_default_p
 }
 .public-layout .public-account-header__tabs .details-counters .counter.active::after {
   border-bottom-color: #db4437;
+}
+.public-layout .public-account-header__extra .public-account-bio .account__header__content {
+  text-align: center;
+}
+.public-layout .public-account-header__extra__links {
+  color: rgba(0, 0, 0, 0.87);
+}
+.public-layout .public-account-header__extra__links a,
+.public-layout .public-account-header__extra__links a strong {
+  color: rgba(0, 0, 0, 0.87);
+}
+.public-layout .public-account-bio {
+  box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.3);
+  background: #ffffff;
+}
+.public-layout .public-account-bio .account__header__content {
+  color: rgba(0, 0, 0, 0.87);
+}
+.public-layout .public-account-bio__extra {
+  color: #9e9e9e;
+}
+.public-layout .endorsements-widget {
+  box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.3);
+  padding-bottom: 0;
+  border-radius: 4px;
+}
+.public-layout .endorsements-widget h4 {
+  color: #9e9e9e;
+}
+.public-layout .hero-widget {
+  box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.3);
+}
+.public-layout .hero-widget__img {
+  background: #f1f1f1;
+}
+.public-layout .hero-widget__text {
+  background: #ffffff;
+}
+.public-layout .hero-widget__text,
+.public-layout .hero-widget__text em {
+  color: #616161;
+}
+.public-layout .nothing-here {
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+  color: #9e9e9e;
+  background: #ffffff;
+}
+.public-layout .footer h4 {
+  color: #9e9e9e;
+}
+.public-layout .footer ul a {
+  color: #616161;
+}
+.public-layout .footer .brand svg path:not(#Mastodon):not(#Itabashi) {
+  fill: #2962ff !important;
+}
+.public-layout .footer .brand svg path:last-child {
+  fill: #ffffff !important;
 }
 
 /*# sourceMappingURL=gplus-theme-for-mastodon.css.map */
