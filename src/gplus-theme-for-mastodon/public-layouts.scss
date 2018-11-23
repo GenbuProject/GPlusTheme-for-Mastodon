@@ -11,6 +11,12 @@
 
 		color: $primary-text-color;
 		background: $base-lighter1-color;
+
+		&:hover,
+		&:focus,
+		&:active {
+			background: darken($base-lighter1-color, 8%);
+		}
 	}
 
 	.logo-button {
@@ -177,6 +183,7 @@
 
 		h4 {
 			color: $primary-lighter1-text-color;
+			background: $base-lighter1-color;
 		}
 	}
 
@@ -193,6 +200,40 @@
 			&,
 			em {
 				color: $primary-lighter2-text-color;
+			}
+		}
+	}
+
+	.account__section-headline {
+		background: $base-lighter1-color;
+		border-bottom-color: $base-separation-color;
+
+		a {
+			color: $primary-lighter1-text-color;
+
+			&.active {
+				color: $primary-lighter2-text-color;
+
+				&::before {
+					border-color: transparent transparent $base-separation-color;
+				}
+
+				&::after {
+					border-color: transparent transparent $status-color;
+				}
+			}
+		}
+	}
+
+	.activity-stream {
+		box-shadow: none;
+
+		.entry {
+			margin: 1em 0;
+			background: transparent;
+
+			&:first-of-type {
+				margin: 0;
 			}
 		}
 	}

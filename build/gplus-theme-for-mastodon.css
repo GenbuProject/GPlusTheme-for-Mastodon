@@ -2291,7 +2291,7 @@ code {
   border-color: rgba(232, 116, 135, 0.5);
 }
 
-.account__header__fields {
+.account__header__fields, .account-timeline__header .account__header__fields {
   padding: 0;
   margin: 15px -15px -15px;
   border: 0 none;
@@ -2300,12 +2300,13 @@ code {
   font-size: 14px;
   line-height: 20px;
 }
-.account__header__fields dl {
+.account__header__fields dl, .account-timeline__header .account__header__fields dl {
   display: flex;
   border-bottom: 1px solid #42485a;
 }
-.account__header__fields dt,
-.account__header__fields dd {
+.account__header__fields dt, .account-timeline__header .account__header__fields dt,
+.account__header__fields dd,
+.account-timeline__header .account__header__fields dd {
   box-sizing: border-box;
   padding: 14px;
   text-align: center;
@@ -2314,18 +2315,18 @@ code {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.account__header__fields dt {
+.account__header__fields dt, .account-timeline__header .account__header__fields dt {
   font-weight: 500;
   width: 120px;
   flex: 0 0 auto;
   color: #d9e1e8;
   background: rgba(23, 25, 31, 0.5);
 }
-.account__header__fields dd {
+.account__header__fields dd, .account-timeline__header .account__header__fields dd {
   flex: 1 1 auto;
   color: #9baec8;
 }
-.account__header__fields a {
+.account__header__fields a, .account-timeline__header .account__header__fields a {
   color: #2b90d9;
   text-decoration: none;
 }
@@ -3386,7 +3387,7 @@ button.icon-button.disabled i.fa-retweet {
   position: relative;
 }
 
-.detailed-status {
+.detailed-status, .detailed-status__wrapper .detailed-status {
   background: #313543;
   padding: 14px 10px;
 }
@@ -10300,10 +10301,10 @@ button.table-action-link:hover {
   background: #ffffff;
   border-color: rgba(0, 0, 0, 0.14);
 }
-.account .account__wrapper .account__display-name {
+.account__display-name {
   color: #2962ff;
 }
-.account .account__wrapper .account__display-name strong {
+.account__display-name strong {
   color: rgba(0, 0, 0, 0.87);
 }
 
@@ -10311,105 +10312,109 @@ button.table-action-link:hover {
   box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.3);
   background: #ffffff;
 }
-.column .scrollable .account-timeline__header .account__header {
+
+.account-timeline__header .account__header {
   background-color: rgba(0, 0, 0, 0.4);
 }
-.column .scrollable .account-timeline__header .account__header > div {
+.account-timeline__header .account__header > div {
   background-color: inherit;
 }
-.column .scrollable .account-timeline__header .account__header .account__header__username {
+.account-timeline__header .account__header__username {
   color: #00bfff;
 }
-.column .scrollable .account-timeline__header .account__header .account__header__fields dl dt {
-  color: rgba(0, 0, 0, 0.87);
-  background: #d8d8d8;
-}
-.column .scrollable .account-timeline__header .account__header .account__header__fields dl dd {
-  color: rgba(0, 0, 0, 0.87);
-  background: #ffffff;
-}
-.column .scrollable .account-timeline__header .account__header .account__header__fields a {
-  color: #2962ff;
-}
-.column .scrollable .account-timeline__header .account__header .account--action-button .icon-button:not(.active) {
+.account-timeline__header .account__header .account--action-button .icon-button:not(.active) {
   color: #ededed;
 }
-.column .scrollable .account-timeline__header .account__header .account--action-button .icon-button:not(.active):active, .column .scrollable .account-timeline__header .account__header .account--action-button .icon-button:not(.active):focus, .column .scrollable .account-timeline__header .account__header .account--action-button .icon-button:not(.active):hover {
+.account-timeline__header .account__header .account--action-button .icon-button:not(.active):active, .account-timeline__header .account__header .account--action-button .icon-button:not(.active):focus, .account-timeline__header .account__header .account--action-button .icon-button:not(.active):hover {
   color: #ffffff;
 }
-.column .scrollable .account-timeline__header .account__disclaimer {
+.account-timeline__header .account__disclaimer {
   background: #ffffff;
   border-color: rgba(0, 0, 0, 0.14);
 }
-.column .scrollable .account-timeline__header .account__action-bar {
+.account-timeline__header .account__action-bar {
   background: #ffffff;
   border-color: rgba(0, 0, 0, 0.14);
 }
-.column .scrollable .account-timeline__header .account__action-bar .account__action-bar__tab {
+.account-timeline__header .account__action-bar__tab {
   border-color: rgba(0, 0, 0, 0.14);
 }
-.column .scrollable .account-timeline__header .account__action-bar .account__action-bar__tab > span {
+.account-timeline__header .account__action-bar__tab.active {
+  border-bottom-color: #db4437;
+}
+.account-timeline__header .account__action-bar__tab > span {
   color: #9e9e9e;
 }
-.column .scrollable .account-timeline__header .account__section-headline {
+.account-timeline__header .account__section-headline {
   background: #ffffff;
   border-color: rgba(0, 0, 0, 0.14);
 }
-.column .scrollable .account-timeline__header .account__section-headline a {
+.account-timeline__header .account__section-headline a {
   color: rgba(0, 0, 0, 0.87);
 }
-.column .scrollable .account-timeline__header .account__section-headline a.active {
+.account-timeline__header .account__section-headline a.active {
   color: #9e9e9e;
 }
-.column .scrollable .account-timeline__header .account__section-headline a.active::before {
+.account-timeline__header .account__section-headline a.active::before {
   border-color: transparent transparent rgba(0, 0, 0, 0.14);
 }
-.column .scrollable .account-timeline__header .account__section-headline a.active::after {
+.account-timeline__header .account__section-headline a.active::after {
   border-color: transparent transparent #ffffff;
+}
+
+.account__header__fields dl, .account-timeline__header .account__header__fields dl {
+  border-color: rgba(0, 0, 0, 0.14);
+}
+.account__header__fields dl dt, .account-timeline__header .account__header__fields dl dt,
+.account__header__fields dl dd,
+.account-timeline__header .account__header__fields dl dd {
+  color: rgba(0, 0, 0, 0.87);
+  background: #ffffff;
+}
+.account__header__fields a, .account-timeline__header .account__header__fields a {
+  color: #2962ff;
 }
 
 .account__action-bar__tab strong {
   color: rgba(0, 0, 0, 0.87);
 }
 
-.status__wrapper .status {
+.status {
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
   border-bottom: 0;
   transition: box-shadow 0.1s 0s ease-out;
 }
-.status__wrapper .status.status-direct {
+.status.status-direct {
   background: #f2f2f2;
 }
-.status__wrapper .status.muted .status__content p {
+.status.muted .status__content p {
   color: rgba(51, 51, 51, 0.87);
 }
-.status__wrapper .status .status__info .status__display-name {
+.status .status__info .status__display-name {
   color: #9e9e9e;
 }
-.status__wrapper .status .status__info .status__display-name strong {
+.status .status__info .status__display-name strong {
   color: rgba(0, 0, 0, 0.87);
 }
-.status__wrapper .status .status__info .status__relative-time {
+.status .status__info .status__relative-time {
   color: #9e9e9e;
+}
+
+.detailed-status .detailed-status__display-name {
+  color: #2962ff;
+}
+.detailed-status .detailed-status__display-name strong {
+  color: rgba(0, 0, 0, 0.87);
+}
+.detailed-status .detailed-status__meta .detailed-status__datetime {
+  color: #9e9e9e;
+}
+.detailed-status .detailed-status__meta .detailed-status__link .fa.fa-star {
+  vertical-align: middle;
 }
 
 .detailed-status__wrapper {
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
-}
-.detailed-status__wrapper .detailed-status {
-  background: #ffffff;
-}
-.detailed-status__wrapper .detailed-status .detailed-status__display-name {
-  color: #2962ff;
-}
-.detailed-status__wrapper .detailed-status .detailed-status__display-name strong {
-  color: rgba(0, 0, 0, 0.87);
-}
-.detailed-status__wrapper .detailed-status .detailed-status__meta .detailed-status__datetime {
-  color: #9e9e9e;
-}
-.detailed-status__wrapper .detailed-status .detailed-status__meta .detailed-status__link .fa.fa-star {
-  vertical-align: middle;
 }
 .detailed-status__wrapper .detailed-status__action-bar {
   background: #fafafa;
@@ -10417,7 +10422,8 @@ button.table-action-link:hover {
 }
 
 .status,
-.detailed-status {
+.detailed-status,
+.detailed-status__wrapper .detailed-status {
   background: #ffffff;
 }
 .status .status__content,
@@ -10426,6 +10432,7 @@ button.table-action-link:hover {
 }
 .status .status__content .status__content__spoiler-link,
 .detailed-status .status__content .status__content__spoiler-link {
+  color: rgba(0, 0, 0, 0.87);
   background: #f1f1f1;
 }
 .status .status__content a,
@@ -10836,6 +10843,9 @@ label[for=user_setting_default_privacy_public], label[for=user_setting_default_p
   color: rgba(0, 0, 0, 0.87);
   background: #ffffff;
 }
+.public-layout a.button:hover, .public-layout a.button:focus, .public-layout a.button:active {
+  background: #ebebeb;
+}
 .public-layout .logo-button svg path:not(#Mastodon):not(#Itabashi) {
   fill: #2962ff !important;
 }
@@ -10959,6 +10969,7 @@ label[for=user_setting_default_privacy_public], label[for=user_setting_default_p
 }
 .public-layout .endorsements-widget h4 {
   color: #9e9e9e;
+  background: #ffffff;
 }
 .public-layout .hero-widget {
   box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.3);
@@ -10972,6 +10983,32 @@ label[for=user_setting_default_privacy_public], label[for=user_setting_default_p
 .public-layout .hero-widget__text,
 .public-layout .hero-widget__text em {
   color: #616161;
+}
+.public-layout .account__section-headline {
+  background: #ffffff;
+  border-bottom-color: rgba(0, 0, 0, 0.14);
+}
+.public-layout .account__section-headline a {
+  color: #9e9e9e;
+}
+.public-layout .account__section-headline a.active {
+  color: #616161;
+}
+.public-layout .account__section-headline a.active::before {
+  border-color: transparent transparent rgba(0, 0, 0, 0.14);
+}
+.public-layout .account__section-headline a.active::after {
+  border-color: transparent transparent #ffffff;
+}
+.public-layout .activity-stream {
+  box-shadow: none;
+}
+.public-layout .activity-stream .entry {
+  margin: 1em 0;
+  background: transparent;
+}
+.public-layout .activity-stream .entry:first-of-type {
+  margin: 0;
 }
 .public-layout .nothing-here {
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);

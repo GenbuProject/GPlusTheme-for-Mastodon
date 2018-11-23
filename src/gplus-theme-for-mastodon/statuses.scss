@@ -5,36 +5,56 @@
 
 
 
-.status__wrapper {
-	.status {
-		@include status-shadow;
-		border-bottom: 0;
+.status {
+	@include status-shadow;
+	border-bottom: 0;
 
-		transition: box-shadow 0.1s 0s ease-out;
-	
-		&.status-direct {
-			background: $status-direct-color;
+	transition: box-shadow 0.1s 0s ease-out;
+
+	&.status-direct {
+		background: $status-direct-color;
+	}
+
+	&.muted {
+		.status__content {
+			p {
+				color: lighten($primary-text-color, 20%);
+			}
 		}
+	}
 
-		&.muted {
-			.status__content {
-				p {
-					color: lighten($primary-text-color, 20%);
-				}
+	.status__info {
+		.status__display-name {
+			color: $primary-lighter1-text-color;
+			
+			strong {
+				color: $primary-text-color;
 			}
 		}
 
-		.status__info {
-			.status__display-name {
-				color: $primary-lighter1-text-color;
-				
-				strong {
-					color: $primary-text-color;
-				}
-			}
+		.status__relative-time {
+			color: $primary-lighter1-text-color;
+		}
+	}
+}
 
-			.status__relative-time {
-				color: $primary-lighter1-text-color;
+.detailed-status {
+	.detailed-status__display-name {
+		color: $secondary-text-color;
+
+		strong {
+			color: $primary-text-color;
+		}
+	}
+
+	.detailed-status__meta {
+		.detailed-status__datetime {
+			color: $primary-lighter1-text-color;
+		}
+
+		.detailed-status__link {
+			.fa.fa-star {
+				vertical-align: middle;
 			}
 		}
 	}
@@ -44,27 +64,7 @@
 	@include status-shadow;
 	
 	.detailed-status {
-		background: $status-color;
-
-		.detailed-status__display-name {
-			color: $secondary-text-color;
-
-			strong {
-				color: $primary-text-color;
-			}
-		}
-
-		.detailed-status__meta {
-			.detailed-status__datetime {
-				color: $primary-lighter1-text-color;
-			}
-
-			.detailed-status__link {
-				.fa.fa-star {
-					vertical-align: middle;
-				}
-			}
-		}
+		@extend .detailed-status;
 	}
 
 	.detailed-status__action-bar {
@@ -81,6 +81,7 @@
 		color: $primary-text-color;
 
 		.status__content__spoiler-link {
+			color: $primary-text-color;
 			background: $base-color;
 		}
 

@@ -9,13 +9,11 @@
 	background: $account-color;
 	border-color: $base-separation-color;
 
-	.account__wrapper {
-		.account__display-name {
-			color: $secondary-text-color;
+	&__display-name {
+		color: $secondary-text-color;
 
-			strong {
-				color: $primary-text-color;
-			}
+		strong {
+			color: $primary-text-color;
 		}
 	}
 }
@@ -25,90 +23,94 @@
 		@include column-shadow;
 		background: $column-header-color;
 	}
+}
 
-	.scrollable {
-		.account-timeline__header {
-			.account__header {
-				background-color: $account-foreground-color;
+.account-timeline__header {
+	.account__header {
+		background-color: $account-foreground-color;
 
-				> div {
-					background-color: inherit;
-				}
+		> div {
+			background-color: inherit;
+		}
 
-				.account__header__username {
-					color: $secondary-lighter1-text-color;
-				}
+		&__username {
+			color: $secondary-lighter1-text-color;
+		}
 
-				.account__header__fields {
-					dl {
-						dt {
-							color: $primary-text-color;
-							background: darken($base-color, 10%);
-						}
-		
-						dd {
-							color: $primary-text-color;
-							background: $column-header-color;
-						}
-					}
+		&__fields {
+			@extend .account__header__fields;
+		}
 
-					a {
-						color: $secondary-text-color;
-					}
-				}
+		.account--action-button {
+			.icon-button:not(.active) {
+				color: darken($column-header-color, 7%);
 
-				.account--action-button {
-					.icon-button:not(.active) {
-						color: darken($column-header-color, 7%);
-
-						&:active,
-						&:focus,
-						&:hover {
-							color: $column-header-color;
-						}
-					}
-				}
-			}
-
-			.account__disclaimer {
-				background: $column-header-color;
-				border-color: $base-separation-color;
-			}
-
-			.account__action-bar {
-				background: $column-header-color;
-				border-color: $base-separation-color;
-
-				.account__action-bar__tab {
-					border-color: $base-separation-color;
-
-					> span {
-						color: $primary-lighter1-text-color;
-					}
-				}
-			}
-
-			.account__section-headline {
-				background: $column-header-color;
-				border-color: $base-separation-color;
-
-				a {
-					color: $primary-text-color;
-
-					&.active {
-						color: $primary-lighter1-text-color;
-
-						&::before {
-							border-color: transparent transparent $base-separation-color;
-						}
-
-						&::after {
-							border-color: transparent transparent $status-color;
-						}
-					}
+				&:active,
+				&:focus,
+				&:hover {
+					color: $column-header-color;
 				}
 			}
 		}
+	}
+
+	.account__disclaimer {
+		background: $column-header-color;
+		border-color: $base-separation-color;
+	}
+
+	.account__action-bar {
+		background: $column-header-color;
+		border-color: $base-separation-color;
+
+		&__tab {
+			border-color: $base-separation-color;
+
+			&.active {
+				border-bottom-color: $active-color;
+			}
+
+			> span {
+				color: $primary-lighter1-text-color;
+			}
+		}
+	}
+
+	.account__section-headline {
+		background: $column-header-color;
+		border-color: $base-separation-color;
+
+		a {
+			color: $primary-text-color;
+
+			&.active {
+				color: $primary-lighter1-text-color;
+
+				&::before {
+					border-color: transparent transparent $base-separation-color;
+				}
+
+				&::after {
+					border-color: transparent transparent $status-color;
+				}
+			}
+		}
+	}
+}
+
+.account__header__fields {
+	dl {
+		border-color: $base-separation-color;
+		
+		dt,
+		dd {
+			color: $primary-text-color;
+			background: $column-header-color;
+		}
+	}
+
+	a {
+		color: $secondary-text-color;
 	}
 }
 
