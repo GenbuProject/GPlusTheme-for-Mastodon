@@ -61,6 +61,7 @@
 
 		&__bar {
 			@media screen and (max-width: 600px) {
+				flex-direction: column;
 				background: $base-color;
 			}
 			
@@ -77,6 +78,7 @@
 					position: relative;
 					bottom: 30px;
 
+					display: initial;
 					width: 60px;
 					height: 60px;
 					margin: 0 auto;
@@ -97,7 +99,7 @@
 				margin-left: 0;
 
 				&__name {
-					flex: auto;
+					width: 100%;
 					text-align: center;
 
 					h1 {
@@ -114,12 +116,22 @@
 					flex: auto;
 
 					.spacer {
-						display: none
+						display: none;
 					}
 
 					a.button.logo-button {
 						color: $base-lighter1-color;
 						background: $secondary-text-color;
+
+						svg path {
+							&:not(#Mastodon):not(#Itabashi) {
+								fill: $base-lighter1-color !important;
+							}
+				
+							&:last-child {
+								fill: $secondary-text-color !important;
+							}
+						}
 					}
 				}
 			}
