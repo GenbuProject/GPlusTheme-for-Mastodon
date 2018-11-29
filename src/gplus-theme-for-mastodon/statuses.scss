@@ -13,6 +13,11 @@
 
 	&.status-direct {
 		background: $status-direct-color;
+
+		&:not(.read) {
+			background: inherit;
+			border-bottom-color: initial;
+		}
 	}
 
 	&.muted {

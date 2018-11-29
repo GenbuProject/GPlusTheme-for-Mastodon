@@ -340,6 +340,10 @@ button.table-action-link:hover {
 .status.status-direct {
   background: #f2f2f2;
 }
+.status.status-direct:not(.read) {
+  background: inherit;
+  border-bottom-color: initial;
+}
 .status.muted .status__content p {
   color: rgba(51, 51, 51, 0.87);
 }
