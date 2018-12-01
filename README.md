@@ -1,4 +1,4 @@
-# Google+ Theme for Mastodon v2.6.1
+# Google+ Theme for Mastodon v1.0
 
 
 ## Languages
@@ -10,7 +10,10 @@ This theme replaces WebUI of any Mastodon instances with [Google+](https://plus.
 
 
 ## Requirement
-* [Mastodon v2.6.1](https://github.com/tootsuite/mastodon/releases/v2.6.1)
+* [Mastodon](https://github.com/tootsuite/mastodon)
+  * v2.6.x
+  * v2.5.x
+  * v2.4.x
 * [Sass](https://sass-lang.com)
 
 
