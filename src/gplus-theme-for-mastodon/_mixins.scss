@@ -19,3 +19,7 @@
 @mixin button-shadow {
 	box-shadow: 0 2px 5px 0 $button-shadow-color;
 }
+
+@mixin card-radius {
+	border-radius: 2px;
+}

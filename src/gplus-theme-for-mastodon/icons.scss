@@ -64,23 +64,43 @@
 .fa {
 	&.fa-users,
 	&.fa-globe,
+	&.fa-sign-out,
+	&.fa-reply,
+	&.fa-mail-reply,
+	&.fa-reply-all,
+	&.fa-mail-reply-all,
+	&.fa-retweet,
 	&.fa-star,
+	&.fa-bookmark,
+	&.fa-ellipsis-h,
 	&.fa-thumb-tack,
 	&.fa-cog,
 	&.fa-home,
+	&.fa-sliders,
 	&.fa-bell,
 	&.fa-lock,
-	&.fa-eraser {
+	&.fa-eraser,
+	&.fa-ellipsis-v {
 		font-family: "Material Icons Extended";
 	}
 
 	&.fa-users::before { content: "people" }
 	&.fa-globe::before { content: "" }
+	&.fa-sign-out::before { content: "" }
+	&.fa-reply::before { content: "" }
+	&.fa-mail-reply::before { content: "" }
+	&.fa-reply-all::before { content: "" }
+	&.fa-mail-reply-all::before { content: "" }
+	&.fa-retweet::before { content: "" }
 	&.fa-star::before { content: "plus_one" }
+	&.fa-bookmark::before { content: "" }
+	&.fa-ellipsis-h:before { content: "" }
 	&.fa-thumb-tack::before { content: "" }
 	&.fa-cog::before { content: "settings" }
 	&.fa-home::before { content: "home" }
+	&.fa-sliders::before { content: "" }
 	&.fa-bell::before { content: "" }
 	&.fa-lock::before { content: "" }
 	&.fa-eraser::before { content: "" }
+	&.fa-ellipsis-v:before { content: "" }
 }

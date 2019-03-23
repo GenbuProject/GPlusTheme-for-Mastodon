@@ -18,6 +18,12 @@
 	}
 }
 
+.search {
+	.search__input {
+		@include card-radius;
+	}
+}
+
 .drawer {
 	.drawer__header {
 		@include column-shadow;
@@ -25,6 +31,9 @@
 
 		.drawer__tab {
 			color: $icon-color;
+			padding: 12px 2px 12px;
+			font-size: 22px;
+			border-bottom: 0px;
 		}
 
 		a {
@@ -36,6 +45,7 @@
 
 	.drawer__pager {
 		@include status-shadow;
+		@include card-radius;
 		
 		.drawer__inner {
 			background: $column-header-color;
@@ -69,6 +79,18 @@
 
 	.compose-form__publish {
 		border-top: 1px solid $base-separation-color;
+
+		.compose-form__publish-button-wrapper {
+			@include button-shadow;
+		}
+	}
+}
+
+.button {
+	@include button-shadow;
+
+	.button.active::after {
+		border-color: $base-color;
 	}
 }
 
@@ -91,6 +113,15 @@
 		.column-header__icon {
 			color: $icon-color;
 			vertical-align: top;
+			font-size: 22px;
+			padding: 12px 0 12px 0;
+			margin-right: 12px;
+			vertical-align: sub;
+		}
+
+		.column-header>button {
+			font-size: 20px;
+			padding: 0 16px;
 		}
 
 		.column-header__buttons {
@@ -98,9 +129,7 @@
 				.column-back-button__icon {
 					vertical-align: unset;
 				}
-			}
 
-			.column-header__button {
 				&.active {
 					color: $icon-active-color;
 					background: inherit;
@@ -176,6 +205,33 @@
 			background-image: url("https://raw.githubusercontent.com/GenbuProject/GPlusTheme-for-Mastodon/asset/notification-jingle_2x.gif");
 		}
 	}
+
+	.notification__filter-bar {
+		border-bottom: 1px solid $base-color;
+
+		.notification__filter-bar-button {
+			color: $secondary-text-color;
+			background: $base-color;
+
+			.notification__filter-bar button.active {
+				color: $primary-text-color;
+			}
+		}
+	}
+}
+
+.status{
+	@include card-radius;
+}
+
+.dropdown-menu {
+	border-radius: 2px;
+	background: $base-lighter1-color;
+
+	.dropdown-menu__item a {
+		padding: 8px 16px;
+		background: $base-lighter1-color
+	}
 }
 
 .getting-started__wrapper,
@@ -202,4 +258,9 @@
 
 .load-gap {
 	border: 0;
+}
+
+//mobile
+.tabs-bar__link .fa {
+	font-size: 24px;
 }
