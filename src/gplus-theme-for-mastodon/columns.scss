@@ -121,6 +121,11 @@
 
 		.column-header>button {
 			font-size: 20px;
+			padding: 0 14px;
+		}
+
+		.column-header__button{
+			color: $icon-color;
 			padding: 0 16px;
 		}
 
@@ -262,5 +267,10 @@
 
 //mobile
 .tabs-bar__link .fa {
+	font-size: 24px;
+}
+
+.floating-action-button {
+	background: $active-color;
 	font-size: 24px;
 }

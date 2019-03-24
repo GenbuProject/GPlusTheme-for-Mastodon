@@ -80,7 +80,8 @@
 	&.fa-bell,
 	&.fa-lock,
 	&.fa-eraser,
-	&.fa-ellipsis-v {
+	&.fa-ellipsis-v,
+	&.fa-pencil {
 		font-family: "Material Icons Extended";
 	}
 
@@ -102,5 +103,6 @@
 	&.fa-bell::before { content: "" }
 	&.fa-lock::before { content: "" }
 	&.fa-eraser::before { content: "" }
-	&.fa-ellipsis-v:before { content: "" }
+	&.fa-ellipsis-v::before { content: "" }
+	&.fa-pencil::before { content: "" }
 }
