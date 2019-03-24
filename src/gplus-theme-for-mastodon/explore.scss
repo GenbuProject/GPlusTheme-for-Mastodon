@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+@import 'variables';
+@import 'mixins';
+
+
+
+.public-layout {
+	.page-header {
+		background: $explore-header-color;
+
+		h1 { color: $primary-text-color }
+		p { color: $primary-lighter2-text-color }
+	}
+
+	.directory {
+		background: $explore-directory-color;
+
+		.accounts-table {
+			&__count {
+				color: $primary-lighter2-text-color;
+				small { color: $primary-lighter1-text-color }
+			}
+		}
+
+		&__tag {
+			a { background: $explore-directory-color }
+			h4 { color: $primary-text-color }
+			.fa, small { color: $primary-lighter1-text-color }
+		}
+	}
+
+	.notice-widget {
+		color: $primary-lighter1-text-color;
+		background: $explore-directory-color;
+
+		a { color: $secondary-text-color }
+	}
+}

@@ -63,6 +63,9 @@ $setting-toggle-thumb-checked-color: $checked-color;
 $dashboard-counters-base-color: $base-color;
 $dashboard-counters-hover-color: lighten($base-color, 2%);
 
+$explore-header-color: lighten($accent-color, 16%);
+$explore-directory-color: $base-lighter1-color;
+
 
 // Shadow colors
 $column-header-shadow-color: rgba(0, 0, 0, 0.3);

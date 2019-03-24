@@ -1,0 +1,5 @@
+* https://plus.google.com/explore
+  * Non-Active ...  (Material Icons Extended)
+  * Active ...
+    * https://ssl.gstatic.com/s2/oz/images/quark/ic_explore_active.svg
+	* https://raw.githubusercontent.com/GenbuProject/GPlusTheme-for-Mastodon/asset/icon-explore-active.svg

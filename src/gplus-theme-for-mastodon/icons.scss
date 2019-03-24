@@ -16,7 +16,7 @@
 
 @font-face {
 	font-family: "Material Icons Extended";
-	src: url("https://fonts.gstatic.com/s/materialiconsextended/v27/iPCrlNN5TpNi9yeZKkKxXzQoFWDY1ZXsjnEgMOt_jL4.woff2");
+	src: url("https://fonts.gstatic.com/s/materialiconsextended/v50/kJEjBvgX7BgnkSrUwT8UnLVc38YydejYY-oE_LvJ.woff2");
 }
 
 .icon-button {
@@ -70,7 +70,8 @@
 	&.fa-home,
 	&.fa-bell,
 	&.fa-lock,
-	&.fa-eraser {
+	&.fa-eraser,
+	&.fa-address-book {
 		font-family: "Material Icons Extended";
 	}
 
@@ -83,4 +84,5 @@
 	&.fa-bell::before { content: "" }
 	&.fa-lock::before { content: "" }
 	&.fa-eraser::before { content: "" }
+	&.fa-address-book::before { content: "" }
 }
