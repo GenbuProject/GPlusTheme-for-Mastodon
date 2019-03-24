@@ -98,6 +98,8 @@
 	.column-header {
 		@include column-shadow;
 		background: $column-header-color;
+		font-size: 18px;
+		padding: 0 0 0 14px;
 
 		&.active {
 			.column-header__icon {
@@ -119,17 +121,15 @@
 			vertical-align: sub;
 		}
 
-		.column-header>button {
-			font-size: 20px;
-			padding: 0 14px;
-		}
-
-		.column-header__button{
+		.column-header__button {
 			color: $icon-color;
 			padding: 0 16px;
 		}
 
 		.column-header__buttons {
+			height: 46px;
+			padding: 0 16px 0 0;
+
 			.column-header__back-button {
 				.column-back-button__icon {
 					vertical-align: unset;
