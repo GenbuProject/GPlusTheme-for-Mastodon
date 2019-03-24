@@ -13,12 +13,6 @@ body {
 	}
 }
 
-.button {
-	@include button-shadow;
-
-	// background: $button-color;
-}
-
 .focusable {
 	&:focus {
 		background: inherit;

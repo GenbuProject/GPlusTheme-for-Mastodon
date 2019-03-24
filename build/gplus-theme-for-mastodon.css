@@ -9,10 +9,6 @@ body .ui {
   background: #f1f1f1;
 }
 
-.button {
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.4);
-}
-
 .focusable:focus {
   background: inherit;
 }
@@ -258,10 +254,10 @@ button.table-action-link:hover {
   background: #ffffff;
   border-color: rgba(0, 0, 0, 0.14);
 }
-.account__display-name {
+.account .account__display-name {
   color: #2962ff;
 }
-.account__display-name strong {
+.account .account__display-name strong {
   color: rgba(0, 0, 0, 0.87);
 }
 
@@ -276,7 +272,7 @@ button.table-action-link:hover {
 .account-timeline__header .account__header > div {
   background-color: inherit;
 }
-.account-timeline__header .account__header__username {
+.account-timeline__header .account__header .account__header__username {
   color: #00bfff;
 }
 .account-timeline__header .account__header .account--action-button .icon-button:not(.active) {
@@ -319,16 +315,16 @@ button.table-action-link:hover {
   border-color: transparent transparent #ffffff;
 }
 
-.account__header__fields dl, .account-timeline__header .account__header__fields dl {
+.account__header__fields dl, .account-timeline__header .account__header .account__header__fields dl {
   border-color: rgba(0, 0, 0, 0.14);
 }
-.account__header__fields dl dt, .account-timeline__header .account__header__fields dl dt,
+.account__header__fields dl dt, .account-timeline__header .account__header .account__header__fields dl dt,
 .account__header__fields dl dd,
-.account-timeline__header .account__header__fields dl dd {
+.account-timeline__header .account__header .account__header__fields dl dd {
   color: rgba(0, 0, 0, 0.87);
   background: #ffffff;
 }
-.account__header__fields a, .account-timeline__header .account__header__fields a {
+.account__header__fields a, .account-timeline__header .account__header .account__header__fields a {
   color: #2962ff;
 }
 
@@ -997,10 +993,42 @@ label[for=user_setting_default_privacy_public], label[for=user_setting_default_p
   fill: #ffffff !important;
 }
 
+.landing-page h3, .landing-page h4, .landing-page h5, .landing-page h6 {
+  color: #616161;
+}
+.landing-page p {
+  color: #9e9e9e;
+}
+.landing-page em {
+  color: rgba(0, 0, 0, 0.87);
+}
 .landing-page .column-0 {
   background: rgba(0, 0, 0, 0.4);
 }
-.landing-page__information, .landing-page__forms, .landing-page__call-to-action {
+.landing-page .column-2 .landing-page__information {
+  padding: 0;
+}
+.landing-page .column-2 .landing-page__short-description > .row:first-child {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px 20px;
+}
+.landing-page .column-2 .landing-page__short-description > * {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.landing-page .column-2 .landing-page__short-description > *:last-child {
+  padding-bottom: 45px;
+}
+@media screen and (max-width: 700px) {
+  .landing-page .column-2 .landing-page__short-description > * {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .landing-page .column-2 .landing-page__short-description > *:last-child {
+    padding-bottom: 25px;
+  }
+}
+.landing-page__forms, .landing-page__information, .landing-page__call-to-action {
   background: #ffffff;
 }
 .landing-page__forms {
@@ -1038,20 +1066,39 @@ label[for=user_setting_default_privacy_public], label[for=user_setting_default_p
     background: #f1f1f1;
   }
 }
-.landing-page__short-description {
+.landing-page__information {
+  color: #9e9e9e;
+}
+.landing-page__information h1 small {
+  color: #d9d9d9;
+}
+.landing-page__information h1 small span {
+  color: #ffffff;
+}
+.landing-page__call-to-action .row__information-board .information-board__section {
+  color: #616161;
+}
+.landing-page__call-to-action .row__information-board .information-board__section > span:last-child {
+  color: #9e9e9e;
+}
+.landing-page__features .features-list .features-list__row .text {
+  color: #9e9e9e;
+}
+.landing-page__features .features-list .features-list__row .visual .fa {
+  color: #757575;
+}
+.landing-page__footer {
+  color: #9e9e9e;
+}
+.landing-page #mastodon-timeline {
+  color: rgba(0, 0, 0, 0.87);
+  background: transparent;
+}
+.landing-page #mastodon-timeline p {
   color: rgba(0, 0, 0, 0.87);
 }
-.landing-page__short-description h1 small {
-  color: #d9d9d9;
-}
-.landing-page__short-description h1 small span {
-  color: #ffffff;
-}
-.landing-page p {
-  color: #ffffff;
-}
-.landing-page em {
-  color: #d9d9d9;
+.landing-page #mastodon-timeline p a {
+  color: #2962ff;
 }
 
 /*# sourceMappingURL=gplus-theme-for-mastodon.css.map */

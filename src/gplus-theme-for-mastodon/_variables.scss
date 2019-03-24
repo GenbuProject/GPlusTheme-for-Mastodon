@@ -32,8 +32,6 @@ $base-color: #f1f1f1;
 $base-lighter1-color: #ffffff;
 $base-darker1-color: rgba(0, 0, 0, 0.4);
 
-$button-color: $base-lighter1-color;
-
 $column-header-color: $base-lighter1-color;
 $column-header-hover-color: change-color($color: $column-header-color, $lightness: 90%);
 

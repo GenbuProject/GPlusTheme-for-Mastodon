@@ -9,11 +9,13 @@
 	background: $account-color;
 	border-color: $base-separation-color;
 
-	&__display-name {
-		color: $secondary-text-color;
-
-		strong {
-			color: $primary-text-color;
+	.account {
+		&__display-name {
+			color: $secondary-text-color;
+	
+			strong {
+				color: $primary-text-color;
+			}
 		}
 	}
 }
@@ -33,12 +35,14 @@
 			background-color: inherit;
 		}
 
-		&__username {
-			color: $secondary-lighter1-text-color;
-		}
-
-		&__fields {
-			@extend .account__header__fields;
+		.account__header {
+			&__username {
+				color: $secondary-lighter1-text-color;
+			}
+	
+			&__fields {
+				@extend .account__header__fields;
+			}
 		}
 
 		.account--action-button {
@@ -54,44 +58,46 @@
 		}
 	}
 
-	.account__disclaimer {
-		background: $column-header-color;
-		border-color: $base-separation-color;
-	}
-
-	.account__action-bar {
-		background: $column-header-color;
-		border-color: $base-separation-color;
-
-		&__tab {
+	.account {
+		&__disclaimer {
+			background: $column-header-color;
 			border-color: $base-separation-color;
-
-			&.active {
-				border-bottom-color: $active-color;
-			}
-
-			> span {
-				color: $primary-lighter1-text-color;
+		}
+	
+		&__action-bar {
+			background: $column-header-color;
+			border-color: $base-separation-color;
+	
+			&__tab {
+				border-color: $base-separation-color;
+	
+				&.active {
+					border-bottom-color: $active-color;
+				}
+	
+				> span {
+					color: $primary-lighter1-text-color;
+				}
 			}
 		}
-	}
-
-	.account__section-headline {
-		background: $column-header-color;
-		border-color: $base-separation-color;
-
-		a {
-			color: $primary-text-color;
-
-			&.active {
-				color: $primary-lighter1-text-color;
-
-				&::before {
-					border-color: transparent transparent $base-separation-color;
-				}
-
-				&::after {
-					border-color: transparent transparent $status-color;
+	
+		&__section-headline {
+			background: $column-header-color;
+			border-color: $base-separation-color;
+	
+			a {
+				color: $primary-text-color;
+	
+				&.active {
+					color: $primary-lighter1-text-color;
+	
+					&::before {
+						border-color: transparent transparent $base-separation-color;
+					}
+	
+					&::after {
+						border-color: transparent transparent $status-color;
+					}
 				}
 			}
 		}
