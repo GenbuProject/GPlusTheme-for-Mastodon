@@ -949,6 +949,9 @@ label[for=user_setting_default_privacy_public], label[for=user_setting_default_p
 .public-layout .hero-widget__text em {
   color: #616161;
 }
+.public-layout .hero-widget__text a {
+  color: #2962ff;
+}
 .public-layout .account__section-headline {
   background: #ffffff;
   border-bottom-color: rgba(0, 0, 0, 0.14);
