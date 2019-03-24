@@ -9,6 +9,10 @@ body .ui {
   background: #f1f1f1;
 }
 
+.button {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.4);
+}
+
 .focusable:focus {
   background: inherit;
 }
@@ -993,20 +997,55 @@ label[for=user_setting_default_privacy_public], label[for=user_setting_default_p
   fill: #ffffff !important;
 }
 
-.landing-page__information, .landing-page__forms {
+.landing-page .column-0 {
   background: rgba(0, 0, 0, 0.4);
 }
+.landing-page__information, .landing-page__forms, .landing-page__call-to-action {
+  background: #ffffff;
+}
+.landing-page__forms {
+  padding: 0;
+}
+.landing-page__forms > *:first-child {
+  margin: inherit;
+}
+.landing-page__forms > * {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.landing-page__forms .brand {
+  background: rgba(0, 0, 0, 0.4);
+}
+.landing-page__forms form > .input input {
+  background: rgba(0, 0, 0, 0.1);
+}
+.landing-page__forms form > .input input:focus {
+  background: rgba(51, 51, 51, 0.1);
+}
+.landing-page__forms .separator-or {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.landing-page__forms .separator-or span {
+  color: #9e9e9e;
+  background: #ffffff;
+}
+@media screen and (max-width: 700px) {
+  .landing-page__forms {
+    background: inherit;
+  }
+  .landing-page__forms .separator-or span {
+    background: #f1f1f1;
+  }
+}
 .landing-page__short-description {
-  color: #ffffff;
+  color: rgba(0, 0, 0, 0.87);
 }
 .landing-page__short-description h1 small {
   color: #d9d9d9;
 }
 .landing-page__short-description h1 small span {
   color: #ffffff;
-}
-.landing-page .separator-or span {
-  background: #f1f1f1;
 }
 .landing-page p {
   color: #ffffff;

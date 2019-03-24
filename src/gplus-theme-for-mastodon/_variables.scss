@@ -4,6 +4,7 @@
 
 // Base colors
 $active-color: #db4437;
+$accent-color: #fbbc04;
 $valid-color: #4285f4;
 $error-color: #d50000;
 $checked-color: #4285f4;
@@ -29,6 +30,9 @@ $icon-active-color: $active-color;
 // Background colors
 $base-color: #f1f1f1;
 $base-lighter1-color: #ffffff;
+$base-darker1-color: rgba(0, 0, 0, 0.4);
+
+$button-color: $base-lighter1-color;
 
 $column-header-color: $base-lighter1-color;
 $column-header-hover-color: change-color($color: $column-header-color, $lightness: 90%);
@@ -38,13 +42,14 @@ $status-direct-color: darken($status-color, 5%);
 $status-actionbar-color: change-color($color: $status-color, $lightness: 98%);
 
 $account-color: $base-lighter1-color;
-$account-foreground-color: rgba(0, 0, 0, 0.4);
+$account-foreground-color: $base-darker1-color;
 
 $card-color: $base-lighter1-color;
 $card-hover-color: $column-header-hover-color;
 $card-image-color: $base-color;
 
-$search-color: rgba(0, 0, 0, 0.1);
+$form-color: rgba(0, 0, 0, 0.1);
+$form-focused-color: lighten($form-color, 20%);
 $trend-color: $base-lighter1-color;
 
 $setting-base-color: $base-color;

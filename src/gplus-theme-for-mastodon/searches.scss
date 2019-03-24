@@ -7,10 +7,10 @@
 .search {
 	.search__input {
 		color: $primary-text-color;
-		background: $search-color;
+		background: $form-color;
 
 		&:focus {
-			background: lighten($search-color, 20%);
+			background: $form-focused-color;
 		}
 	}
 

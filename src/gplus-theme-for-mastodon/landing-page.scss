@@ -5,14 +5,57 @@
 
 
 
+// from mastodon/about.scss
+$column-breakpoint: 700px;
+
+
+
 .landing-page {
+	.column-0 {
+		background: $base-darker1-color;
+	}
+
+	// { background: $base-darker1-color }
+
 	&__information,
+	&__forms,
+	&__call-to-action { background: $column-header-color }
+
 	&__forms {
-		background: $account-foreground-color;
+		padding: 0;
+
+		& > *:first-child { margin: inherit }
+		& > * { margin-left: 20px; margin-right: 20px; }
+
+		.brand { background: $base-darker1-color }
+
+		form {
+			& > .input input {
+				background: $form-color;
+
+				&:focus { background: $form-focused-color }
+			}
+		}
+
+		.separator-or {
+			margin-left: 20px;
+			margin-right: 20px;
+			
+			span {
+				color: $primary-lighter1-text-color;
+				background: $column-header-color;
+			}
+		}
+
+		@media screen and (max-width: $column-breakpoint) {
+			background: inherit;
+
+			.separator-or span { background: $base-color }
+		}
 	}
 
 	&__short-description {
-		color: $light-text-color;
+		color: $primary-text-color;
 
 		h1 small {
 			color: $light-darker1-text-color;
@@ -20,12 +63,6 @@
 			span {
 				color: $light-text-color;
 			}
-		}
-	}
-
-	.separator-or {
-		span {
-			background: $base-color;
 		}
 	}
 
