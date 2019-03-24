@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /**
- * Google+ Theme for Mastodon v2.6.1
+ * Google+ Theme for Mastodon v1.1
  * Copyright (C) 2018 Genbu Project & Genbu Hase
  */
 body,
@@ -741,7 +741,7 @@ label[for=user_setting_default_privacy_public], label[for=user_setting_default_p
   color: #878787;
 }
 .icon-button.star-icon.active {
-  color: white;
+  color: #ffffff;
   background: #db4437;
   border-radius: 50%;
 }
@@ -991,6 +991,28 @@ label[for=user_setting_default_privacy_public], label[for=user_setting_default_p
 }
 .public-layout .footer .brand svg path:last-child {
   fill: #ffffff !important;
+}
+
+.landing-page__information, .landing-page__forms {
+  background: rgba(0, 0, 0, 0.4);
+}
+.landing-page__short-description {
+  color: #ffffff;
+}
+.landing-page__short-description h1 small {
+  color: #d9d9d9;
+}
+.landing-page__short-description h1 small span {
+  color: #ffffff;
+}
+.landing-page .separator-or span {
+  background: #f1f1f1;
+}
+.landing-page p {
+  color: #ffffff;
+}
+.landing-page em {
+  color: #d9d9d9;
 }
 
 /*# sourceMappingURL=gplus-theme-for-mastodon.css.map */

@@ -1,11 +1,11 @@
 /**
- * Google+ Theme for Mastodon v1.0
+ * Google+ Theme for Mastodon v1.1
  * Copyright (C) 2018 Genbu Project & Genbu Hase
  */
 
 @charset "UTF-8";
 
-@import 'application';
+// @import 'application';
 @import 'gplus-theme-for-mastodon/basics';
 @import 'gplus-theme-for-mastodon/cards';
 @import 'gplus-theme-for-mastodon/tables';
@@ -18,3 +18,4 @@
 @import 'gplus-theme-for-mastodon/settings';
 @import 'gplus-theme-for-mastodon/icons';
 @import 'gplus-theme-for-mastodon/public-layouts';
+@import 'gplus-theme-for-mastodon/landing-page';

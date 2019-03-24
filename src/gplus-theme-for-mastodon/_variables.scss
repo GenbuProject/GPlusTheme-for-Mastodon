@@ -15,6 +15,8 @@ $primary-lighter1-text-color: change-color($color: $primary-text-color, $lightne
 $primary-lighter2-text-color: change-color($color: $primary-text-color, $lightness: 38%, $alpha: 1.0); // ex: 通知メッセージ表示
 $secondary-text-color: #2962ff;
 $secondary-lighter1-text-color: #00bfff; // ex: アカウントTLのユーザーID
+$light-text-color: #ffffff;
+$light-darker1-text-color: darken($light-text-color, 15%);
 $active-text-color: $active-color;
 $error-text-color: $error-color;
 

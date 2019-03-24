@@ -43,12 +43,12 @@
 
 		.account--action-button {
 			.icon-button:not(.active) {
-				color: darken($column-header-color, 7%);
+				color: darken($light-text-color, 7%);
 
 				&:active,
 				&:focus,
 				&:hover {
-					color: $column-header-color;
+					color: $light-text-color;
 				}
 			}
 		}

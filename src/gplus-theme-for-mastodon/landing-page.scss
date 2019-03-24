@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+@import 'variables';
+@import 'mixins';
+
+
+
+.landing-page {
+	&__information,
+	&__forms {
+		background: $account-foreground-color;
+	}
+
+	&__short-description {
+		color: $light-text-color;
+
+		h1 small {
+			color: $light-darker1-text-color;
+
+			span {
+				color: $light-text-color;
+			}
+		}
+	}
+
+	.separator-or {
+		span {
+			background: $base-color;
+		}
+	}
+
+	p {
+		color: $light-text-color;
+	}
+
+	em {
+		color: $light-darker1-text-color;
+	}
+}
