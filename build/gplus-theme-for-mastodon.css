@@ -1035,6 +1035,7 @@ label[for=user_setting_default_privacy_public], label[for=user_setting_default_p
   }
 }
 .landing-page__forms, .landing-page__information, .landing-page__call-to-action {
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
   background: #ffffff;
 }
 .landing-page__forms {
@@ -1067,6 +1068,7 @@ label[for=user_setting_default_privacy_public], label[for=user_setting_default_p
 @media screen and (max-width: 700px) {
   .landing-page__forms {
     background: inherit;
+    box-shadow: none;
   }
   .landing-page__forms .separator-or span {
     background: #f1f1f1;
@@ -1075,10 +1077,20 @@ label[for=user_setting_default_privacy_public], label[for=user_setting_default_p
 .landing-page__information {
   color: #9e9e9e;
 }
-.landing-page__information h1 small {
+.landing-page__information.contact-widget {
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+  background: #ffffff;
+}
+.landing-page__information.contact-widget .contact-widget__mail a {
+  color: rgba(0, 0, 0, 0.87);
+}
+.landing-page__information strong {
+  color: inherit;
+}
+.landing-page__information .row:first-child h1 small {
   color: #d9d9d9;
 }
-.landing-page__information h1 small span {
+.landing-page__information .row:first-child h1 small span {
   color: #ffffff;
 }
 .landing-page__call-to-action .row__information-board .information-board__section {

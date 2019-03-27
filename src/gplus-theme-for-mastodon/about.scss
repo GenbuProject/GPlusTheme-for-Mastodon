@@ -43,7 +43,10 @@ $column-breakpoint: 700px;
 
 	&__forms,
 	&__information,
-	&__call-to-action { background: $column-header-color }
+	&__call-to-action {
+		@include status-shadow;
+		background: $column-header-color;
+	}
 
 	&__forms {
 		padding: 0;
@@ -73,6 +76,7 @@ $column-breakpoint: 700px;
 
 		@media screen and (max-width: $column-breakpoint) {
 			background: inherit;
+			box-shadow: none;
 
 			.separator-or span { background: $base-color }
 		}
@@ -81,10 +85,25 @@ $column-breakpoint: 700px;
 	&__information {
 		color: $primary-lighter1-text-color;
 
-		h1 small {
-			color: $light-darker1-text-color;
+		&.contact-widget {
+			@include status-shadow;
+			background: $column-header-color;
 
-			span { color: $light-text-color }
+			.contact-widget {
+				&__mail {
+					a { color: $primary-text-color }
+				}
+			}
+		}
+
+		strong { color: inherit }
+
+		.row:first-child {
+			h1 small {
+				color: $light-darker1-text-color;
+
+				span { color: $light-text-color }
+			}
 		}
 	}
 
