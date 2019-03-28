@@ -1,12 +1,15 @@
 @charset "UTF-8";
 
 @import 'variables';
+@import 'mixins';
 
 
 
 .search {
 	.search {
 		&__input {
+			@include material-border;
+
 			color: $primary-text-color;
 			background: $form-color;
 	

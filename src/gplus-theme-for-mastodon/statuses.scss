@@ -11,6 +11,19 @@
 
 	transition: box-shadow 0.1s 0s ease-out;
 
+	&.light {
+		.status {
+			&__relative-time { color: $primary-lighter1-text-color }
+			&__display-name {
+				color: $primary-text-color;
+
+				.display-name__account { color: $primary-lighter1-text-color }
+			}
+
+			&__content { color: $primary-text-color }
+		}
+	}
+
 	&.status-direct {
 		background: $status-direct-color;
 

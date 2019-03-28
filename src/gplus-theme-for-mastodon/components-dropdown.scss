@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+@import 'variables';
+@import 'mixins';
+
+
+
+.dropdown-menu,
+.actions-modal > ul {
+	@include material-border;
+	background: $base-lighter1-color;
+
+	.dropdown-menu {
+		&__arrow {
+			&.top { border-top-color: $column-header-color }
+			&.bottom { border-bottom-color: $column-header-color }
+		}
+
+		&__item {
+			a {
+				color: $primary-lighter2-text-color;
+
+				padding: 8px 16px;
+				background: $column-header-color;
+
+				&:active,
+				&:focus,
+				&:hover {
+					background: $column-header-hover-color;
+				}
+			}
+		}
+
+		&__separator { border-bottom-color: $base-separation-color }
+	}
+
+	& > li:not(:empty) {
+		@extend .dropdown-menu__item;
+
+		a { padding: 12px 16px }
+	}
+}

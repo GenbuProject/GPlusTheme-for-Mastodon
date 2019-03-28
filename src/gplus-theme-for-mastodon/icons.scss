@@ -67,25 +67,31 @@
 .fa {
 	&.fa-users,
 	&.fa-globe,
-	&.fa-star,
-	&.fa-thumb-tack,
 	&.fa-cog,
+	&.fa-star,
 	&.fa-home,
 	&.fa-bell,
-	&.fa-lock,
 	&.fa-eraser,
-	&.fa-address-book {
+	&.fa-ellipsis-h,
+	&.fa-ellipsis-v,
+	&.fa-address-book,
+	&.fa-thumb-tack,
+	&.fa-lock,
+	&.fa-pencil {
 		font-family: "Material Icons Extended";
 	}
 
-	&.fa-users::before { content: "people" }
-	&.fa-globe::before { content: "" }
-	&.fa-star::before { content: "plus_one" }
-	&.fa-thumb-tack::before { content: "" }
-	&.fa-cog::before { content: "settings" }
-	&.fa-home::before { content: "home" }
-	&.fa-bell::before { content: "" }
-	&.fa-lock::before { content: "" }
-	&.fa-eraser::before { content: "" }
-	&.fa-address-book::before { content: "" }
+	&.fa-users::before { content: "people" } // 人々マーク(.drawer__header > .drawer__tab:2)
+	&.fa-globe::before { content: "" } // 地球マーク(.drawer__header > .drawer__tab:3)
+	&.fa-cog::before { content: "settings" } // 歯車マーク(.drawer__header > .drawer__tab:4)
+	&.fa-star::before { content: "plus_one" } // +1(.status .status__action-bar > .star-icon)
+	&.fa-home::before { content: "home" } // 家マーク(ホームタイムライン)
+	&.fa-bell::before { content: "" } // ベルマーク(通知)
+	&.fa-eraser::before { content: "" } // 通知を消去のマーク
+	&.fa-ellipsis-h::before { content: "" } // 三点リーダー(横)
+	&.fa-ellipsis-v::before { content: "" } // 三点リーダー(縦)
+	&.fa-address-book::before { content: "" } // discoverマーク(explore遷移タブ)
+	&.fa-thumb-tack::before { content: "" } // ピンマーク(ピン留め投稿)
+	&.fa-lock::before { content: "" } // サークルマーク(フォロワー限定投稿)
+	&.fa-pencil::before { content: "" } // 鉛筆マーク(モバイル用フローティングボタン)
 }
