@@ -25,6 +25,23 @@ body .ui {
   background: #fafafa;
 }
 
+::-webkit-scrollbar-thumb {
+  background: #e0e0e0;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d6d6d6;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #e0e0e0;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-track:hover, ::-webkit-scrollbar-track:active {
+  background: #ebebeb;
+}
+
 .card {
   border: 1px solid rgba(0, 0, 0, 0.14);
 }
@@ -105,7 +122,7 @@ button.table-action-link:hover {
 .drawer .drawer__pager .drawer__inner {
   background: #ffffff;
 }
-.drawer .drawer__pager .drawer__inner .drawer__inner__mastodon {
+.drawer .drawer__pager .drawer__inner__mastodon {
   display: none;
 }
 
@@ -116,7 +133,7 @@ button.table-action-link:hover {
 .navigation-bar .navigation-bar__profile strong {
   color: rgba(0, 0, 0, 0.87);
 }
-.navigation-bar .navigation-bar__profile .navigation-bar__profile-edit {
+.navigation-bar .navigation-bar__profile-edit {
   color: #2962ff;
 }
 
@@ -138,29 +155,40 @@ button.table-action-link:hover {
 .column .column-header * {
   background: inherit;
 }
-.column .column-header .column-header__icon {
+.column .column-header__icon {
   color: #757575;
   vertical-align: top;
 }
-.column .column-header .column-header__buttons .column-header__back-button .column-back-button__icon {
+.column .column-header__buttons .column-header__back-button .column-back-button__icon {
   vertical-align: unset;
 }
-.column .column-header .column-header__buttons .column-header__button.active {
+.column .column-header__buttons .column-header__button.active {
   color: #db4437;
   background: inherit;
 }
-.column .column-header .column-header__buttons .column-header__button .fa {
+.column .column-header__buttons .column-header__button .fa {
   vertical-align: unset;
 }
 .column .column-header__collapsible {
   color: #2962ff;
   border-bottom: 1px solid rgba(0, 0, 0, 0.14);
 }
-.column .column-header__collapsible > .column-header__collapsible-inner {
+.column .column-header__collapsible-inner {
   background: #ffffff;
 }
-.column .column-back-button .column-back-button__icon {
+.column .column-back-button__icon {
   vertical-align: unset;
+}
+.column .column-subheading {
+  background: #d8d8d8;
+}
+.column .column-link {
+  color: rgba(0, 0, 0, 0.87);
+  background: #f1f1f1;
+}
+.column .column-link__icon {
+  color: #757575;
+  vertical-align: top;
 }
 .column .scrollable {
   background: transparent;
@@ -174,16 +202,22 @@ button.table-action-link:hover {
 .column .scrollable div[tabindex="-1"] {
   margin-bottom: 1em;
 }
-.column .column-subheading {
-  background: #d8d8d8;
+.column .notification__filter-bar {
+  background: #ffffff;
+  border-bottom-color: rgba(0, 0, 0, 0.14);
 }
-.column .column-link {
-  color: rgba(0, 0, 0, 0.87);
-  background: #f1f1f1;
-}
-.column .column-link .column-link__icon {
+.column .notification__filter-bar button {
   color: #757575;
-  vertical-align: top;
+  background: #ffffff;
+}
+.column .notification__filter-bar button.active {
+  color: #db4437;
+}
+.column .notification__filter-bar button.active::before {
+  border-color: transparent transparent rgba(0, 0, 0, 0.14);
+}
+.column .notification__filter-bar button.active::after {
+  border-color: transparent transparent #ffffff;
 }
 .column .empty-column-indicator {
   flex-direction: column;
@@ -199,11 +233,9 @@ button.table-action-link:hover {
   background-image: url("https://raw.githubusercontent.com/GenbuProject/GPlusTheme-for-Mastodon/asset/notification-jingle_2x.gif");
 }
 
-.getting-started__wrapper,
-.getting-started {
+.getting-started__wrapper, .getting-started {
   background: #f1f1f1;
 }
-
 .getting-started {
   border-top: 1px solid rgba(0, 0, 0, 0.14);
 }
@@ -211,15 +243,12 @@ button.table-action-link:hover {
   color: rgba(0, 0, 0, 0.87);
 }
 
-.load-more,
-.load-gap {
+.load-more, .load-gap {
   background: transparent;
 }
-.load-more:hover,
-.load-gap:hover {
+.load-more:hover, .load-gap:hover {
   background: #e6e6e6;
 }
-
 .load-gap {
   border: 0;
 }
@@ -806,6 +835,9 @@ label[for=user_setting_default_privacy_public], label[for=user_setting_default_p
 .public-layout a.button:hover, .public-layout a.button:focus, .public-layout a.button:active {
   background: #ebebeb;
 }
+.public-layout .logo-button svg path {
+  /* Only for Itabashi-don */
+}
 .public-layout .logo-button svg path:not(#Mastodon):not(#Itabashi) {
   fill: #2962ff !important;
 }
@@ -892,6 +924,9 @@ label[for=user_setting_default_privacy_public], label[for=user_setting_default_p
   .public-layout .public-account-header__tabs__tabs a.button.logo-button {
     color: #ffffff;
     background: #2962ff;
+  }
+  .public-layout .public-account-header__tabs__tabs a.button.logo-button svg path {
+    /* Only for Itabashi-don */
   }
   .public-layout .public-account-header__tabs__tabs a.button.logo-button svg path:not(#Mastodon):not(#Itabashi) {
     fill: #ffffff !important;
@@ -991,6 +1026,9 @@ label[for=user_setting_default_privacy_public], label[for=user_setting_default_p
 }
 .public-layout .footer ul a {
   color: #616161;
+}
+.public-layout .footer .brand svg path {
+  /* Only for Itabashi-don */
 }
 .public-layout .footer .brand svg path:not(#Mastodon):not(#Itabashi) {
   fill: #2962ff !important;
