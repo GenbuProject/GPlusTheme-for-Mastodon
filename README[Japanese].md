@@ -1,4 +1,4 @@
-# Google+ Theme for Mastodon v1.0
+# Google+ Theme for Mastodon v1.1
 
 
 ## 言語 | Languages
@@ -12,6 +12,7 @@ MastodonインスタンスのWebUIを、[Google+](https://plus.google.com)風の
 
 ## 動作環境 | Requirement
 * [Mastodon](https://github.com/tootsuite/mastodon)
+  * v2.7.x
   * v2.6.x
   * v2.5.x
   * v2.4.x
