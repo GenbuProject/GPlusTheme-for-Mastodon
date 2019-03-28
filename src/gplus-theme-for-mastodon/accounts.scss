@@ -90,6 +90,15 @@
 			color: $primary-text-color;
 			background: $column-header-color;
 		}
+
+		dd {
+			&.verified {
+				border-color: transparentize($valid-color, 0.5);
+				background: transparentize($valid-color, 0.75);
+
+				a { color: lighten($verified-color, 20%) }
+			}
+		}
 	}
 
 	a { color: $secondary-text-color }
