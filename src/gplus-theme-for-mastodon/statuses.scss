@@ -22,59 +22,48 @@
 
 	&.muted {
 		.status__content {
-			p {
-				color: lighten($primary-text-color, 20%);
-			}
+			p { color: lighten($primary-text-color, 20%) }
 		}
 	}
 
-	.status__info {
-		.status__display-name {
-			color: $primary-lighter1-text-color;
-			
-			strong {
-				color: $primary-text-color;
+	.status {
+		&__info {
+			.status__display-name {
+				color: $primary-lighter1-text-color;
+	
+				strong { color: $primary-text-color }
 			}
-		}
-
-		.status__relative-time {
-			color: $primary-lighter1-text-color;
+	
+			.status__relative-time { color: $primary-lighter1-text-color }
 		}
 	}
 }
 
 .detailed-status {
-	.detailed-status__display-name {
-		color: $secondary-text-color;
-
-		strong {
-			color: $primary-text-color;
+	.detailed-status {
+		&__display-name {
+			color: $secondary-text-color;
+	
+			strong { color: $primary-text-color }
 		}
-	}
-
-	.detailed-status__meta {
-		.detailed-status__datetime {
-			color: $primary-lighter1-text-color;
-		}
-
-		.detailed-status__link {
-			.fa.fa-star {
-				vertical-align: middle;
+	
+		&__meta {
+			.detailed-status__datetime { color: $primary-lighter1-text-color }
+	
+			.detailed-status__link {
+				.fa.fa-star { vertical-align: middle }
 			}
 		}
 	}
-}
-
-.detailed-status__wrapper {
-	@include status-shadow;
 	
-	.detailed-status {
-		@extend .detailed-status;
-	}
-
-	.detailed-status__action-bar {
-		background: $status-actionbar-color;
-		border-color: $base-separation-color;
+	&__wrapper {
+		@include status-shadow;
+		
+		.detailed-status { @extend .detailed-status; }
+		.detailed-status__action-bar {
+			background: $status-actionbar-color;
+			border-color: $base-separation-color;
+		}
 	}
 }
 
@@ -85,22 +74,18 @@
 	.status__content {
 		color: $primary-text-color;
 
+		a { color: $secondary-text-color }
+
 		.status__content__spoiler-link {
 			color: $primary-text-color;
 			background: $base-color;
-		}
-
-		a {
-			color: $secondary-text-color;
 		}
 	}
 }
 
 a.status-card,
 a.status-card.compact {
-	&:hover {
-		background: initial;
-	}
+	&:hover { background: initial }
 }
 
 .name-tag,

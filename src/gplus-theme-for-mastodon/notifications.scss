@@ -7,9 +7,7 @@
 .notification {
 	&.notification-favourite {
 		.status {
-			&.status-direct {
-				background: transparent;
-			}
+			&.status-direct { background: transparent }
 		}
 	}
 
@@ -19,15 +17,11 @@
 		padding: 8px 0;
 
 		.notification__display-name {
-			&:hover {
-				color: inherit;
-			}
+			&:hover { color: inherit }
 		}
 
 		.notification__favourite-icon-wrapper {
-			.star-icon {
-				color: $icon-active-color;
-			}
+			.star-icon { color: $icon-active-color }
 		}
 	}
 }

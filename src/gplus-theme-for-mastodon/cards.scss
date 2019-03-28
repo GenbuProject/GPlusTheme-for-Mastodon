@@ -1,7 +1,6 @@
 @charset "UTF-8";
 
 @import 'variables';
-@import 'mixins';
 
 
 
@@ -17,23 +16,16 @@
 			.card__bar {
 				background: initial;
 
-				.display-name strong {
-					color: $secondary-text-color;
-				}
+				.display-name strong { color: $secondary-text-color }
 			}
 		}
 
-		.card__img {
-			background: $card-image-color;
-		}
-	
+		.card__img { background: $card-image-color }
 		.card__bar {
 			background: $card-color;
 	
 			.avatar {
-				img {
-					background: transparent;
-				}
+				img { background: transparent }
 			}
 	
 			.display-name {

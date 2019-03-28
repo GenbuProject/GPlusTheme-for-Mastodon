@@ -102,9 +102,7 @@
 			color: $secondary-text-color;
 			border-bottom: 1px solid $base-separation-color;
 	
-			&-inner {
-				background: $column-header-color;
-			}
+			&-inner { background: $column-header-color }
 		}
 	}
 
@@ -113,9 +111,7 @@
 	}
 
 	.column {
-		&-subheading {
-			background: darken($base-color, 10%);
-		}
+		&-subheading { background: darken($base-color, 10%) }
 	
 		&-link {
 			color: $primary-text-color;

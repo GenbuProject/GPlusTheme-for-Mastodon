@@ -10,10 +10,7 @@
 			> a {
 				position: relative;
 
-				.card__img {
-					border-bottom: 1px solid $base-separation-color;
-				}
-			
+				.card__img { border-bottom: 1px solid $base-separation-color }
 				.card__bar {
 					position: static;
 					padding-top: 30%;

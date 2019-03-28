@@ -1,7 +1,6 @@
 @charset "UTF-8";
 
 @import 'variables';
-@import 'mixins';
 
 
 
@@ -24,9 +23,7 @@
 		&__item {
 			border-top-color: $base-separation-color;
 
-			&:hover {
-				background: $column-header-hover-color;
-			}
+			&:hover { background: $column-header-hover-color }
 
 			&__reported-by,
 			&__assigned {
@@ -34,13 +31,8 @@
 			}
 
 			&__content {
-				&__icon {
-					color: $icon-color;
-				}
-
-				a {
-					color: $primary-lighter2-text-color;
-				}
+				&__icon { color: $icon-color }
+				a { color: $primary-lighter2-text-color }
 			}
 		}
 	}
@@ -56,28 +48,16 @@
 		background: $base-lighter1-color;
 		border-color: $base-separation-color;
 
-		&:hover {
-			background: $column-header-hover-color;
-		}
+		&:hover { background: $column-header-hover-color }
 
 		&__content {
-			.status__content {
-				color: $primary-text-color;
-			}
-
-			.detailed-status__meta {
-				color: $primary-lighter1-text-color;
-			}
+			.status__content { color: $primary-text-color }
+			.detailed-status__meta { color: $primary-lighter1-text-color }
 		}
 	}
 }
 
 .speech-bubble {
-	&__bubble {
-		color: $primary-text-color;
-	}
-
-	a {
-		color: $secondary-text-color;
-	}
+	&__bubble { color: $primary-text-color }
+	a { color: $secondary-text-color }
 }

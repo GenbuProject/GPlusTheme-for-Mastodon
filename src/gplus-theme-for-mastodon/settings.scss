@@ -11,12 +11,10 @@
 body.admin {
 	color: $primary-text-color;
 	background: $setting-base-color;
-
-	.sidebar-wrapper {
-		background: inherit;
-	}
 	
 	.sidebar {
+		&-wrapper { background: inherit }
+
 		ul {
 			border-radius: 0;
 
@@ -35,17 +33,13 @@ body.admin {
 				}
 			}
 
-			ul {
-				background: darken($setting-base-color, 4%);
-			}
+			ul { background: darken($setting-base-color, 4%) }
 
 			.simple-navigation-active-leaf a {
 				color: $icon-active-color;
 				background: initial;
 
-				&:hover {
-					background: $setting-lists-hover-color;
-				}
+				&:hover { background: $setting-lists-hover-color }
 			}
 		}
 	}
@@ -54,33 +48,15 @@ body.admin {
 		@include column-shadow;
 		background: $setting-content-base-color;
 
-		h2,
-		h3,
-		h4,
-		h6 {
-			color: $primary-text-color;
-		}
+		h2, h3, h4, h6 { color: $primary-text-color }
 
 		p {
 			color: $primary-text-color;
-
-			strong {
-				color: $primary-text-color;
-			}
+			strong { color: $primary-text-color }
 		}
 
-		h2,
-		h4 {
-			border-bottom-color: $base-separation-color;
-		}
-
-		hr {
-			border-bottom-color: $base-separation-color;
-		}
-
-		.muted-hint {
-			color: $primary-lighter1-text-color;
-		}
+		h2, h4, hr { border-bottom-color: $base-separation-color }
+		.muted-hint { color: $primary-lighter1-text-color }
 	}
 }
 
@@ -89,33 +65,23 @@ body.admin {
 		&.boolean,
 		&.with_label,
 		&.with_floating_label {
-			.label_input > label {
-				color: $primary-text-color;
-			}
+			.label_input > label { color: $primary-text-color }
 		}
 
 		&.with_block_label {
-			& > label {
-				color: $primary-text-color;
-			}
+			& > label { color: $primary-text-color }
 		}
 
 		&.radio_buttons{
-			.radio label {
-				color: $primary-text-color;
-			}
+			.radio label { color: $primary-text-color }
 		}
 
-		&-copy {
-			background: $base-color;
-		}
+		&-copy { background: $base-color }
 	}
 
 	.check_boxes {
 		.checkbox {
-			label {
-				color: $primary-text-color;
-			}
+			label { color: $primary-text-color }
 		}
 	}
 
@@ -151,23 +117,16 @@ body.admin {
 		}
 	}
 
-	.hint,
-	p.hint {
-		color: $primary-lighter1-text-color !important;
-	}
+	.hint, p.hint { color: $primary-lighter1-text-color !important }
 
 	.label_input {
-		&__append {
-			color: $primary-lighter1-text-color;
-		}
+		&__append { color: $primary-lighter1-text-color }
 	}
 }
 
 .simple_form,
 .table-form {
-	.warning {
-		background: change-color($color: $error-color, $alpha: 0.8);
-	}
+	.warning { background: change-color($color: $error-color, $alpha: 0.8) }
 }
 
 .quick-nav {
@@ -198,16 +157,12 @@ body.admin {
 
 .filters {
 	.filter-subset {
-		strong {
-			color: $primary-text-color;
-		}
+		strong { color: $primary-text-color }
 
 		a {
 			color: $primary-lighter2-text-color;
 
-			&:hover {
-				color: $primary-text-color;
-			}
+			&:hover { color: $primary-text-color }
 
 			&.selected {
 				color: $active-text-color;
@@ -225,16 +180,12 @@ label {
 }
 
 .column-header__collapsible__extra {
-	.column-settings__section {
-		color: $primary-text-color;
-	}
+	.column-settings__section { color: $primary-text-color }
 
 	.setting-toggle {
 		.react-toggle {
 			&.react-toggle--checked {
-				> .react-toggle-track {
-					background: $setting-toggle-checked-color;
-				}
+				> .react-toggle-track { background: $setting-toggle-checked-color }
 
 				> .react-toggle-thumb {
 					border-color: $setting-toggle-checked-color;
@@ -242,9 +193,7 @@ label {
 				}
 			}
 
-			> .react-toggle-track {
-				background: $setting-toggle-color;
-			}
+			> .react-toggle-track { background: $setting-toggle-color }
 
 			> .react-toggle-thumb {
 				border-color: $setting-toggle-color;
@@ -252,12 +201,8 @@ label {
 			}
 		}
 
-		.setting-toggle__label {
-			color: $primary-text-color;
-		}
+		.setting-toggle__label { color: $primary-text-color }
 	}
 
-	.setting-meta__label {
-		color: $primary-lighter1-text-color;
-	}
+	.setting-meta__label { color: $primary-lighter1-text-color }
 }

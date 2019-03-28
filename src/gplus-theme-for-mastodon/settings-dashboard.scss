@@ -6,13 +6,10 @@
 
 .dashboard {
 	&__counters {
-		> div {
-			> div,
-			> a {
-				background: $dashboard-counters-base-color;
-			}
-
-			> a {
+		& > div {
+			& > div, & > a { background: $dashboard-counters-base-color }
+			
+			& > a {
 				&:hover,
 				&:focus,
 				&:active {
@@ -21,18 +18,11 @@
 			}
 		}
 
-		&__num {
-			color: $primary-text-color;
-		}
-
-		&__label {
-			color: $primary-lighter1-text-color;
-		}
+		&__num { color: $primary-text-color }
+		&__label { color: $primary-lighter1-text-color }
 	}
 
 	&__widgets {
-		a:not(.name-tag) {
-			color: $primary-lighter2-text-color;
-		}
+		a:not(.name-tag) { color: $primary-lighter2-text-color }
 	}
 }

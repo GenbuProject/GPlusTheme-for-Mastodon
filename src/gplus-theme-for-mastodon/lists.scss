@@ -5,26 +5,19 @@
 
 
 .column {
-	.column-back-button {
-		background: inherit;
-	}
+	.column-back-button { background: inherit }
 
 	.column-inline-form {
 		background: $column-header-color;
 
 		label input {
 			color: $secondary-text-color;
-
-			&:focus {
-				color: $primary-text-color;
-			}
+			&:focus { color: $primary-text-color }
 		}
 	}
 
 	.column-inline-form ~ .scrollable {
-		article {
-			margin: 0;
-		}
+		article { margin: 0 }
 	}
 }
 
@@ -32,14 +25,10 @@
 	.list-editor {
 		background: $base-color;
 		
-		h4 {
-			background: $column-header-color;
-		}
+		h4 { background: $column-header-color }
 
 		.drawer__pager {
-			.drawer__inner {
-				background: $column-header-color;
-			}
+			.drawer__inner { background: $column-header-color }
 		}
 	}
 }

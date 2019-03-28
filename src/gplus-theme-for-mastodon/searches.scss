@@ -5,30 +5,25 @@
 
 
 .search {
-	.search__input {
-		color: $primary-text-color;
-		background: $form-color;
-
-		&:focus {
-			background: $form-focused-color;
+	.search {
+		&__input {
+			color: $primary-text-color;
+			background: $form-color;
+	
+			&:focus { background: $form-focused-color }
+		}
+	
+		&__icon {
+			.fa { color: $icon-color }
 		}
 	}
 
-	.search__icon {
-		.fa {
-			color: $icon-color;
-		}
-	}
-}
-
-.search-results {
-	> .search-results__header {
-		background: $base-color;
-	}
-
-	> .search-results__section {
-		> h5 {
-			background: darken($base-color, 10%);
+	&-results {
+		> .search-results {
+			&__header { background: $base-color }
+			&__section {
+				> h5 { background: darken($base-color, 10%) }
+			}
 		}
 	}
 }
@@ -36,11 +31,8 @@
 .trends__item {
 	background: $trend-color;
 
-	.trends__item__name a {
-		color: $secondary-text-color;
-	}
-
-	.trends__item__current {
-		color: lighten($secondary-text-color, 10%);
+	.trends__item {
+		&__name a { color: $secondary-text-color }
+		&__current { color: lighten($secondary-text-color, 10%) }
 	}
 }

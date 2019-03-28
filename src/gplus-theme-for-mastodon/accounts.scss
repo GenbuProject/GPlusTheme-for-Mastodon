@@ -33,7 +33,7 @@
 
 		.account__header {
 			&__username { color: $secondary-lighter1-text-color }
-			&__fields { @extend .account__header__fields }
+			&__fields { @extend .account__header__fields; }
 		}
 
 		.account--action-button {

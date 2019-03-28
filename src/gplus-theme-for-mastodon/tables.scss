@@ -5,9 +5,7 @@
 
 
 .table {
-	thead th {
-		border-bottom-color: $base-separation-color;
-	}
+	thead th { border-bottom-color: $base-separation-color }
 	
 	th,
 	td {
@@ -17,22 +15,15 @@
 	}
 
 	& > tbody > tr:nth-child(odd) {
-		& > td,
-		& > th {
-			background: darken($base-color, 4%);
-		}
+		& > td, & > th { background: darken($base-color, 4%) }
 	}
 
-	a {
-		color: $secondary-text-color;
-	}
+	a { color: $secondary-text-color }
 }
 
 a.table-action-link,
 button.table-action-link {
 	color: $secondary-text-color;
 
-	&:hover {
-		color: darken($secondary-text-color, 8%);
-	}
+	&:hover { color: darken($secondary-text-color, 8%) }
 }

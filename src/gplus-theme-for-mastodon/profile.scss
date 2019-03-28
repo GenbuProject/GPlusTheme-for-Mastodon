@@ -141,10 +141,7 @@
 				color: $primary-text-color;
 
 				a {
-					&,
-					strong {
-						color: $primary-text-color;
-					}
+					&, strong { color: $primary-text-color }
 				}
 			}
 		}
@@ -177,11 +174,7 @@
 		&__text {
 			background: $base-lighter1-color;
 
-			&,
-			em {
-				color: $primary-lighter2-text-color;
-			}
-
+			&, em { color: $primary-lighter2-text-color }
 			a { color: $secondary-text-color }
 		}
 	}
