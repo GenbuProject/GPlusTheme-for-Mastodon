@@ -27,13 +27,11 @@ $column-breakpoint: 700px;
 				}
 
 				& > * {
-					padding-left: 40px;
-					padding-right: 40px;
+					padding-left: 40px; padding-right: 40px;
 					&:last-child { padding-bottom: 45px }
 
 					@media screen and (max-width: $column-breakpoint) {
-						padding-left: 20px;
-						padding-right: 20px;
+						padding-left: 20px; padding-right: 20px;
 						&:last-child { padding-bottom: 25px }
 					}
 				}
@@ -65,8 +63,7 @@ $column-breakpoint: 700px;
 		}
 
 		.separator-or {
-			margin-left: 20px;
-			margin-right: 20px;
+			margin-left: 20px; margin-right: 20px;
 			
 			span {
 				color: $primary-lighter1-text-color;
@@ -111,6 +108,7 @@ $column-breakpoint: 700px;
 		.row__information-board {
 			.information-board__section {
 				color: $primary-lighter2-text-color;
+
 				& > span:last-child { color: $primary-lighter1-text-color }
 			}
 		}
@@ -119,20 +117,13 @@ $column-breakpoint: 700px;
 	&__features {
 		.features-list {
 			.features-list__row {
-				.text {
-					color: $primary-lighter1-text-color;
-				}
-
-				.visual .fa {
-					color: $icon-color;
-				}
+				.text { color: $primary-lighter1-text-color }
+				.visual .fa { color: $icon-color }
 			}
 		}
 	}
 
-	&__footer {
-		color: $primary-lighter1-text-color;
-	}
+	&__footer { color: $primary-lighter1-text-color }
 
 	#mastodon-timeline {
 		color: $primary-text-color;
@@ -141,9 +132,7 @@ $column-breakpoint: 700px;
 		p {
 			color: $primary-text-color;
 
-			a {
-				color: $secondary-text-color;
-			}
+			a { color: $secondary-text-color }
 		}
 	}
 }

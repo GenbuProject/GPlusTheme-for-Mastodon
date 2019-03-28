@@ -310,11 +310,7 @@ button.table-action-link:hover {
 .account-timeline__header .account__header .account--action-button .icon-button:not(.active):active, .account-timeline__header .account__header .account--action-button .icon-button:not(.active):focus, .account-timeline__header .account__header .account--action-button .icon-button:not(.active):hover {
   color: #ffffff;
 }
-.account-timeline__header .account__disclaimer {
-  background: #ffffff;
-  border-color: rgba(0, 0, 0, 0.14);
-}
-.account-timeline__header .account__action-bar {
+.account-timeline__header .account__disclaimer, .account-timeline__header .account__action-bar, .account-timeline__header .account__section-headline {
   background: #ffffff;
   border-color: rgba(0, 0, 0, 0.14);
 }
@@ -326,10 +322,6 @@ button.table-action-link:hover {
 }
 .account-timeline__header .account__action-bar__tab > span {
   color: #9e9e9e;
-}
-.account-timeline__header .account__section-headline {
-  background: #ffffff;
-  border-color: rgba(0, 0, 0, 0.14);
 }
 .account-timeline__header .account__section-headline a {
   color: rgba(0, 0, 0, 0.87);

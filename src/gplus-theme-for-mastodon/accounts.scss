@@ -13,9 +13,7 @@
 		&__display-name {
 			color: $secondary-text-color;
 	
-			strong {
-				color: $primary-text-color;
-			}
+			strong { color: $primary-text-color }
 		}
 	}
 }
@@ -31,18 +29,11 @@
 	.account__header {
 		background-color: $account-foreground-color;
 
-		> div {
-			background-color: inherit;
-		}
+		> div { background-color: inherit }
 
 		.account__header {
-			&__username {
-				color: $secondary-lighter1-text-color;
-			}
-	
-			&__fields {
-				@extend .account__header__fields;
-			}
+			&__username { color: $secondary-lighter1-text-color }
+			&__fields { @extend .account__header__fields }
 		}
 
 		.account--action-button {
@@ -59,45 +50,31 @@
 	}
 
 	.account {
-		&__disclaimer {
+		&__disclaimer,
+		&__action-bar,
+		&__section-headline {
 			background: $column-header-color;
 			border-color: $base-separation-color;
 		}
-	
+
 		&__action-bar {
-			background: $column-header-color;
-			border-color: $base-separation-color;
-	
 			&__tab {
 				border-color: $base-separation-color;
+				&.active { border-bottom-color: $active-color }
 	
-				&.active {
-					border-bottom-color: $active-color;
-				}
-	
-				> span {
-					color: $primary-lighter1-text-color;
-				}
+				> span { color: $primary-lighter1-text-color }
 			}
 		}
 	
 		&__section-headline {
-			background: $column-header-color;
-			border-color: $base-separation-color;
-	
 			a {
 				color: $primary-text-color;
 	
 				&.active {
 					color: $primary-lighter1-text-color;
 	
-					&::before {
-						border-color: transparent transparent $base-separation-color;
-					}
-	
-					&::after {
-						border-color: transparent transparent $status-color;
-					}
+					&::before { border-color: transparent transparent $base-separation-color }
+					&::after { border-color: transparent transparent $status-color }
 				}
 			}
 		}
@@ -115,13 +92,9 @@
 		}
 	}
 
-	a {
-		color: $secondary-text-color;
-	}
+	a { color: $secondary-text-color }
 }
 
 .account__action-bar__tab {
-	strong {
-		color: $primary-text-color;
-	}
+	strong { color: $primary-text-color }
 }
