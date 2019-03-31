@@ -41,6 +41,10 @@
 		.fa.fa-star { vertical-align: top }
 	}
 
+	&.inverted {
+		padding: 0 8px;
+	}
+
 	&.disabled {
 		color: lighten($icon-color, 13%);
 
