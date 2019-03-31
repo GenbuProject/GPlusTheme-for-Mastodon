@@ -72,6 +72,8 @@
 	&.fa-users,
 	&.fa-globe,
 	&.fa-cog,
+	&.fa-cogs,
+	&.fa-gears,
 	&.fa-sign-out,
 	&.fa-star,
 	&.fa-reply,
@@ -92,13 +94,16 @@
 	&.fa-tasks,
 	&.fa-sliders,
 	&.fa-fire,
-	&.fa-list-ul {
+	&.fa-list-ul,
+	&.fa-search {
 		font-family: "Material Icons Extended";
 	}
 
 	&.fa-users::before { content: "people" } // 人々マーク(.drawer__header > .drawer__tab:2)
 	&.fa-globe::before { content: "public" } // 地球マーク(.drawer__header > .drawer__tab:3)
 	&.fa-cog::before { content: "settings" } // 歯車マーク(.drawer__header > .drawer__tab:4)
+	&.fa-cogs::before { content: "settings" } //歯車マーク(モバイル)
+	&.fa-gears::before { content: "settings" } //歯車マーク(モバイル)
 	&.fa-sign-out::before { content: "exit_to_app" } //サインアウト
 	&.fa-star::before { content: "plus_one" } // +1(.status .status__action-bar > .star-icon)
 	&.fa-reply::before { content: "reply" } //返信ボタン
@@ -120,4 +125,5 @@
 	&.fa-sliders::before { content: "tune" } //設定を表示ボタン
 	&.fa-fire::before { content: "whatshot" } //トレンドマーク
 	&.fa-list-ul::before { content: "list" } //リストマーク
+	&.fa-search::before { content: "search" } //検索アイコン(モバイル、トップバー内)
 }
