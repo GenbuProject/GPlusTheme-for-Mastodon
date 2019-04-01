@@ -13,14 +13,17 @@
 	.tabs-bar {
 		&__link {
 			color: $icon-color;
-			border-bottom: 0px;
+			border-bottom: 4px solid $column-header-color;
 			padding: 15px 10px 11px 10px;
 			
 			&.active {
-				border-bottom: 4px; 
+				border-bottom: 4px solid $active-color;
 			}
 
-			.fa { vertical-align: top }
+			.fa {
+				vertical-align: top;
+				font-size: 20px;
+			}
 		}
 	}
 }
@@ -43,6 +46,7 @@
 	
 		&__pager {
 			@include status-shadow;
+			@include material-card-radius;
 			
 			.drawer__inner {
 				background: $column-header-color;
@@ -70,6 +74,7 @@
 	.compose-form {
 		&__buttons-wrapper { background: $column-header-color }
 		&__publish { border-top: 1px solid $base-separation-color }
+		&__publish-button-wrapper { @include box-shadow }
 	}
 }
 
@@ -90,11 +95,8 @@
 		&__icon {
 			color: $icon-color;
 			vertical-align: top;
-		}
-
-		.column-header__icon {
 			font-size: 20px;
-			margin-right: 8px;
+			margin-right: 10px;
 		}
 
 		&__buttons {

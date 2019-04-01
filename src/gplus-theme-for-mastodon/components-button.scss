@@ -9,3 +9,8 @@
 	font-size: 24px;
 	background: $active-color;
 }
+
+.button {
+	@include button-shadow;
+	background-color: $active-button-color;
+}

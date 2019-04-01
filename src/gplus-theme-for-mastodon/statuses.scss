@@ -7,6 +7,7 @@
 
 .status {
 	@include status-shadow;
+	@include material-card-radius;
 	border-bottom: 0;
 
 	transition: box-shadow 0.1s 0s ease-out;

@@ -9,3 +9,4 @@
 @mixin status-focus-shadow { box-shadow: 0 0 20px 0 $status-focused-shadow-color }
 @mixin button-shadow { box-shadow: 0 2px 5px 0 $button-shadow-color }
 @mixin material-border { border-radius: 4px }
+@mixin material-card-radius { border-radius: 2px }

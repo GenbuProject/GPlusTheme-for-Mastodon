@@ -7,7 +7,7 @@
 
 .dropdown-menu,
 .actions-modal > ul {
-	@include material-border;
+	@include material-card-radius;
 	background: $base-lighter1-color;
 
 	.dropdown-menu {

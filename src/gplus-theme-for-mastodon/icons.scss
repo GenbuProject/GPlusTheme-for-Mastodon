@@ -41,10 +41,6 @@
 		.fa.fa-star { vertical-align: top }
 	}
 
-	&.inverted {
-		padding: 0 8px;
-	}
-
 	&.disabled {
 		color: lighten($icon-color, 13%);
 
@@ -95,7 +91,10 @@
 	&.fa-sliders,
 	&.fa-fire,
 	&.fa-list-ul,
-	&.fa-search {
+	&.fa-search,
+	&.fa-close,
+	&.fa-remove,
+	&.fa-times {
 		font-family: "Material Icons Extended";
 	}
 
@@ -126,4 +125,7 @@
 	&.fa-fire::before { content: "whatshot" } //トレンドマーク
 	&.fa-list-ul::before { content: "list" } //リストマーク
 	&.fa-search::before { content: "search" } //検索アイコン(モバイル、トップバー内)
+	&.fa-close::before { content: "close" } //閉じるボタン
+	&.fa-remove::before { content: "close" } //閉じるボタン
+	&.fa-times::before { content: "close" } //閉じるボタン(メディア)
 }
