@@ -74,7 +74,7 @@
 	.compose-form {
 		&__buttons-wrapper { background: $column-header-color }
 		&__publish { border-top: 1px solid $base-separation-color }
-		&__publish-button-wrapper { @include box-shadow }
+		&__publish-button-wrapper { @include column-shadow }
 	}
 }
 
