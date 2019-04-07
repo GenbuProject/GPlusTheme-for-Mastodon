@@ -8,9 +8,12 @@
 .floating-action-button {
 	font-size: 24px;
 	background: $active-color;
+	width: 3.6rem;
+	height: 3.6rem;
 }
 
 .button {
 	@include button-shadow;
+	@include material-card-radius;
 	background-color: $active-button-color;
 }

@@ -21,8 +21,8 @@
 			}
 
 			.fa {
+				@include material-icon-large;
 				vertical-align: top;
-				font-size: 20px;
 			}
 		}
 	}
@@ -35,8 +35,8 @@
 			background: $column-header-color;
 	
 			.drawer__tab {
+				@include material-icon-large;
 				color: $icon-color;
-				font-size: 20px;
 			}
 	
 			a {
@@ -74,7 +74,7 @@
 	.compose-form {
 		&__buttons-wrapper { background: $column-header-color }
 		&__publish { border-top: 1px solid $base-separation-color }
-		&__publish-button-wrapper { @include column-shadow }
+		&__publish-button-wrapper { @include button-shadow }
 	}
 }
 
@@ -93,13 +93,15 @@
 		* { background: inherit }
 
 		&__icon {
+			@include material-icon-large;
 			color: $icon-color;
 			vertical-align: top;
-			font-size: 20px;
 			margin-right: 10px;
 		}
 
 		&__buttons {
+			height: 50px;
+
 			.column-header {
 				&__back-button {
 					.column-back-button__icon { vertical-align: unset }
@@ -116,6 +118,11 @@
 			}
 		}
 
+		&__button {
+			color: $icon-color;
+			padding: 0 16px;
+		}
+
 		&__collapsible {
 			color: $secondary-text-color;
 			border-bottom: 1px solid $base-separation-color;
@@ -125,7 +132,11 @@
 	}
 
 	.column-back-button {
-		&__icon { vertical-align: unset }
+		&__icon {
+			@include material-icon-large;
+			vertical-align: middle;
+			margin-right: 8px;
+		}
 	}
 
 	.column {
@@ -136,6 +147,7 @@
 			background: $base-color;
 	
 			&__icon {
+				@include material-icon-large;
 				color: $icon-color;
 				vertical-align: top;
 			}

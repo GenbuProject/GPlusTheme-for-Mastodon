@@ -6,37 +6,40 @@
 
 
 .dropdown-menu,
-.actions-modal > ul {
+.actions-modal {
 	@include material-card-radius;
-	background: $base-lighter1-color;
 
-	.dropdown-menu {
-		&__arrow {
-			&.top { border-top-color: $column-header-color }
-			&.bottom { border-bottom-color: $column-header-color }
-		}
+	& > ul {
+		background: $base-lighter1-color;
 
-		&__item {
-			a {
-				color: $primary-lighter2-text-color;
+		.dropdown-menu {
+			&__arrow {
+				&.top { border-top-color: $column-header-color }
+				&.bottom { border-bottom-color: $column-header-color }
+			}
 
-				padding: 8px 16px;
-				background: $column-header-color;
+			&__item {
+				a {
+					color: $primary-lighter2-text-color;
 
-				&:active,
-				&:focus,
-				&:hover {
-					background: $column-header-hover-color;
+					padding: 12px 16px;
+					background: $column-header-color;
+
+					&:active,
+					&:focus,
+					&:hover {
+						background: $column-header-hover-color;
+					}
 				}
 			}
+
+			&__separator { border-bottom-color: $base-separation-color }
 		}
 
-		&__separator { border-bottom-color: $base-separation-color }
-	}
+		& > li:not(:empty) {
+			@extend .dropdown-menu__item;
 
-	& > li:not(:empty) {
-		@extend .dropdown-menu__item;
-
-		a { padding: 12px 16px }
+			a { padding: 12px 16px }
+		}
 	}
 }

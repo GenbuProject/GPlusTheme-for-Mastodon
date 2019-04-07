@@ -31,6 +31,12 @@ body.admin {
 					color: $primary-text-color;
 					background: $setting-lists-selected-color;
 				}
+
+				i.fa {
+					@include material-icon-large;
+					margin-right: 8px;
+					vertical-align: middle;
+				}
 			}
 
 			ul { background: darken($setting-base-color, 4%) }

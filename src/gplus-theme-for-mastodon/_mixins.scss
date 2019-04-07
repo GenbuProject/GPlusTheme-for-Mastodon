@@ -10,3 +10,4 @@
 @mixin button-shadow { box-shadow: 0 2px 5px 0 $button-shadow-color }
 @mixin material-border { border-radius: 4px }
 @mixin material-card-radius { border-radius: 2px }
+@mixin material-icon-large { font-size: 20px }

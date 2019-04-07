@@ -94,7 +94,11 @@
 	&.fa-search,
 	&.fa-close,
 	&.fa-remove,
-	&.fa-times {
+	&.fa-times,
+	&.fa-user,
+	&.fa-mobile-phone,
+	&.fa-mobile,
+	&.fa-filter {
 		font-family: "Material Icons Extended";
 	}
 
@@ -128,4 +132,8 @@
 	&.fa-close::before { content: "close" } //閉じるボタン
 	&.fa-remove::before { content: "close" } //閉じるボタン
 	&.fa-times::before { content: "close" } //閉じるボタン(メディア)
+	&.fa-user::before { content: "account_circle" } //ユーザーアイコン
+	&.fa-mobile-phone::before { content: "smartphone" } //モバイルアイコン
+	&.fa-mobile::before { content: "smartphone" } //モバイルアイコン
+	&.fa-filter::before { content: "filter_list" } //フィルターアイコン
 }
