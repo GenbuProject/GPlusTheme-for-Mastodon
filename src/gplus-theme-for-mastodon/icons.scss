@@ -50,6 +50,7 @@
 	}
 
 	.fa {
+		@include material-icon-large;
 		vertical-align: middle;
 
 		&.fa-retweet {
@@ -86,6 +87,7 @@
 	&.fa-lock,
 	&.fa-pencil,
 	&.fa-chevron-left,
+	&.fa-chevron-right,
 	&.fa-camera,
 	&.fa-tasks,
 	&.fa-sliders,
@@ -98,7 +100,11 @@
 	&.fa-user,
 	&.fa-mobile-phone,
 	&.fa-mobile,
-	&.fa-filter {
+	&.fa-filter,
+	&.fa-user-plus,
+	&.fa-cloud-upload,
+	&.fa-cloud-download,
+	&.fa-eye {
 		font-family: "Material Icons Extended";
 	}
 
@@ -123,6 +129,7 @@
 	&.fa-lock::before { content: "" } // サークルマーク(フォロワー限定投稿)
 	&.fa-pencil::before { content: "create" } // 鉛筆マーク(モバイル用フローティングボタン)
 	&.fa-chevron-left::before { content: "arrow_back" } //戻るボタン
+	&.fa-chevron-right::before { content: "arrow_forward" } //進むボタン
 	&.fa-camera::before { content: "camera_alt" } //メディアを追加ボタン
 	&.fa-tasks::before { content: "poll" } //投票を追加ボタン
 	&.fa-sliders::before { content: "tune" } //設定を表示ボタン
@@ -136,4 +143,8 @@
 	&.fa-mobile-phone::before { content: "smartphone" } //モバイルアイコン
 	&.fa-mobile::before { content: "smartphone" } //モバイルアイコン
 	&.fa-filter::before { content: "filter_list" } //フィルターアイコン
+	&.fa-user-plus::before { content: "person_add" } //ユーザーの追加アイコン
+	&.fa-cloud-upload::before { content: "cloud_upload" } //インポートアイコン
+	&.fa-cloud-download::before { content: "cloud_download" } //エクスポートアイコン
+	&.fa-eye::before { content: "visibility" } //目のアイコン
 }

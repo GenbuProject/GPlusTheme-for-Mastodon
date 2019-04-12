@@ -128,6 +128,10 @@ body.admin {
 	.label_input {
 		&__append { color: $primary-lighter1-text-color }
 	}
+
+	button {
+		@include button-shadow;
+	}
 }
 
 .simple_form,
