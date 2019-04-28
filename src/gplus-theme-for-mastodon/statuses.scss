@@ -102,6 +102,15 @@ a.status-card.compact {
 	&:hover { background: initial }
 }
 
+.status-card,
+.status-card.compact {
+	border-color: $non-elevated-card-boader;
+
+	&__title {
+		color : $primary-text-color;
+	}
+}
+
 .name-tag,
 a.name-tag {
 	color: $secondary-text-color;

@@ -140,7 +140,10 @@
 	}
 
 	.column {
-		&-subheading { background: darken($base-color, 10%) }
+		&-subheading {
+			background: $base-color;
+			border-top: $base-separation-color solid 1px;
+		}
 	
 		&-link {
 			color: $primary-text-color;

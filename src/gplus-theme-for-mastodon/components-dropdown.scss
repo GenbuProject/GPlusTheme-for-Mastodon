@@ -4,6 +4,9 @@
 @import 'mixins';
 
 
+.dropdown-menu {
+	background-color: $column-header-color;
+}
 
 .dropdown-menu,
 .actions-modal {
@@ -39,7 +42,21 @@
 		& > li:not(:empty) {
 			@extend .dropdown-menu__item;
 
-			a { padding: 12px 16px }
+			a {
+				padding: 16px 16px;
+				color: $primary-text-color;
+			}
+		}
+	}
+
+	.status {
+		padding-top: 16px;
+		padding-bottom: 16px;
+		padding-right: 16px;
+		padding-left: 74px;
+
+		&__avatar {
+			top: 16px;
 		}
 	}
 }
