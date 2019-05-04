@@ -228,3 +228,10 @@
 
 	&-gap { border: 0 }
 }
+
+.confirmation-modal {
+	&__action-bar{
+		@include material-card-radius;
+		background-color: $base-color;
+	}
+}

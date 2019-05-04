@@ -43,8 +43,12 @@
 			@extend .dropdown-menu__item;
 
 			a {
-				padding: 16px 16px;
+				padding: 12px 16px;
 				color: $primary-text-color;
+
+				&:hover {
+					color: $primary-text-color;
+				}
 			}
 		}
 	}
