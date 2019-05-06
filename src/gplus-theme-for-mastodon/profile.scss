@@ -36,6 +36,8 @@
 			@media screen and (min-width: 600px) { height: 500px }
 
 			&::after {
+				content: "";
+				
 				position: absolute;
 				top: auto;
 				left: 0;
