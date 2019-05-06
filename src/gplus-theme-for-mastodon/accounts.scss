@@ -12,7 +12,6 @@
 	.account {
 		&__display-name {
 			color: $secondary-text-color;
-	
 			strong { color: $primary-text-color }
 		}
 	}
@@ -29,11 +28,70 @@
 	.account__header {
 		background-color: $account-foreground-color;
 
-		> div { background-color: inherit }
+		> div { background-color: inherit } // -> v2.7.4
 
 		.account__header {
 			&__username { color: $secondary-lighter1-text-color }
 			&__fields { @extend .account__header__fields; }
+
+			&__image { // v2.8.0 ->
+				&::after {
+					content: "";
+
+					position: absolute;
+					top: auto;
+					left: 0;
+					bottom: 0;
+	
+					width: 100%;
+					height: 30%;
+					background: $account-header-image-shadow-color;
+					box-shadow: none;
+				}
+
+				> img:not([src]),
+				> img[src$="/headers/original/missing.png"] {
+					content: url("https://raw.githubusercontent.com/GenbuProject/GPlusTheme-for-Mastodon/asset/account-default_header.jpg");
+				}
+			}
+
+			&__bar { // v2.8.0 ->
+				background-color: $base-lighter1-color;
+
+				.account__header {
+					&__tabs {
+						.avatar {
+							.account__avatar {
+								border-color: $base-lighter1-color;
+								border-radius: 50%;
+							}
+						}
+
+						&__buttons {
+							.icon-button { border: 0 }
+						}
+
+						&__name {
+							h1 { color: $primary-text-color }
+							small { color: $secondary-text-color }
+						}
+					}
+
+					&__bio {
+						.account__header {
+							&__content { color: $primary-text-color }
+							&__fields { border-color: $base-separation-color }
+						}
+					}
+
+					&__extra {
+						&__links {
+							&, a { color: $primary-lighter1-text-color }
+							strong { color: $primary-lighter2-text-color }
+						}
+					}
+				}
+			}
 		}
 
 		.account--action-button {
@@ -53,7 +111,7 @@
 		&__disclaimer,
 		&__action-bar,
 		&__section-headline {
-			background: $column-header-color;
+			background: $base-lighter1-color;
 			border-color: $base-separation-color;
 		}
 
@@ -71,7 +129,7 @@
 				color: $primary-text-color;
 	
 				&.active {
-					color: $primary-lighter1-text-color;
+					color: $active-color;
 	
 					&::before { border-color: transparent transparent $base-separation-color }
 					&::after { border-color: transparent transparent $status-color }
@@ -88,7 +146,7 @@
 		dt,
 		dd {
 			color: $primary-text-color;
-			background: $column-header-color;
+			background: $base-lighter1-color;
 		}
 
 		dd {
