@@ -41,6 +41,10 @@
 		.fa.fa-star { vertical-align: top }
 	}
 
+	&.inverted {
+		color: $icon-color;
+	}
+
 	&.disabled {
 		color: lighten($icon-color, 13%);
 
@@ -151,4 +155,13 @@
 	&.fa-eye::before { content: "visibility" } //目のアイコン
 	&.fa-eye-slash::before { content : "visibility_off" } //閉じた目のアイコン
 	&.fa-share::before { content: "share" } //モバイル共有ボタン
+}
+
+.fa {
+	&.fa-chevron-left,
+	&.fa-chevron-right,
+	&.fa.fa-times {
+		@include material-icon-large;
+		vertical-align: bottom;
+	}
 }

@@ -76,6 +76,11 @@
 		&__publish { border-top: 1px solid $base-separation-color }
 		&__publish-button-wrapper { @include button-shadow }
 	}
+
+	.autosuggest-textarea__textarea {
+		background-color: $base-lighter1-color;
+		color: $primary-text-color;
+	}
 }
 
 .column {
