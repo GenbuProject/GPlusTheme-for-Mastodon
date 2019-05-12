@@ -109,6 +109,10 @@ a.status-card.compact {
 	&__title {
 		color : $primary-text-color;
 	}
+
+	&__host {
+		color: $primary-lighter1-text-color;
+	}
 }
 
 .name-tag,

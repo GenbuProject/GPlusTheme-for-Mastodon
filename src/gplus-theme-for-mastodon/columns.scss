@@ -81,6 +81,10 @@
 		background-color: $base-lighter1-color;
 		color: $primary-text-color;
 	}
+
+	.character-counter {
+		color: $icon-color
+	}
 }
 
 .column {
@@ -100,7 +104,7 @@
 		&__icon {
 			@include material-icon-large;
 			color: $icon-color;
-			vertical-align: top;
+			vertical-align: bottom;
 			margin-right: 10px;
 		}
 
@@ -139,13 +143,14 @@
 	.column-back-button {
 		&__icon {
 			@include material-icon-large;
-			vertical-align: middle;
+			vertical-align: bottom;
 			margin-right: 8px;
 		}
 	}
 
 	.column {
 		&-subheading {
+			color: $secondary-text-color;
 			background: $base-color;
 			border-top: $base-separation-color solid 1px;
 		}

@@ -31,6 +31,7 @@
 					&:active,
 					&:focus,
 					&:hover {
+						color: $primary-text-color;
 						background: $column-header-hover-color;
 					}
 				}
