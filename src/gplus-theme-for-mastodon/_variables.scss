@@ -68,6 +68,7 @@ $explore-header-color: lighten($accent-color, 16%);
 $explore-directory-color: $base-lighter1-color;
 
 $active-button-color: $valid-color; //文字入りボタン
+$non-active-button-color: lighten($base-color, 20%);
 
 $floating-acton-button-hover-color: lighten($active-color, 10%);
 
