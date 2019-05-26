@@ -15,7 +15,7 @@ $verified-color: #4caf50;
 $primary-text-color: rgba(0, 0, 0, 0.87);
 $primary-lighter1-text-color: change-color($color: $primary-text-color, $lightness: 62%, $alpha: 1.0); // ex: 時間表示
 $primary-lighter2-text-color: change-color($color: $primary-text-color, $lightness: 38%, $alpha: 1.0); // ex: 通知メッセージ表示
-$secondary-text-color: #2962ff;
+$secondary-text-color: #2962ff; // ex: リンク
 $secondary-lighter1-text-color: #00bfff; // ex: アカウントTLのユーザーID
 $light-text-color: #ffffff;
 $light-darker1-text-color: darken($light-text-color, 15%);
@@ -68,6 +68,8 @@ $explore-header-color: lighten($accent-color, 16%);
 $explore-directory-color: $base-lighter1-color;
 
 $active-button-color: $valid-color; //文字入りボタン
+
+$floating-acton-button-hover-color: lighten($active-color, 10%);
 
 
 // Shadow colors
