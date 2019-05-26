@@ -7,13 +7,23 @@
 
 .floating-action-button {
 	font-size: 24px;
-	background: $active-color;
+	background-color: $active-color;
 	width: 3.6rem;
 	height: 3.6rem;
+
+	&::active {
+		background-color: $active-color;
+	}
+
+	&::hover {
+		background-color: $floating-acton-button-hover-color;
+	}
 }
 
 .button {
 	@include button-shadow;
 	@include material-card-radius;
 	background-color: $active-button-color;
+
+	.text-icon-button { color: $primary-lighter1-text-color }
 }
