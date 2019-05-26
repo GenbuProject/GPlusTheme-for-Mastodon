@@ -72,9 +72,17 @@
 
 .compose-form {
 	.compose-form {
-		&__buttons-wrapper { background: $column-header-color }
+		&__buttons-wrapper {
+			background: $column-header-color;
+
+			&.character-counter__wrapper {
+				.character-counter { color: $primary-lighter1-text-color }
+			}
+		}
+
 		&__publish { border-top: 1px solid $base-separation-color }
 		&__publish-button-wrapper { @include button-shadow }
+		&__modifiers { background-color: $base-color }
 	}
 
 	.autosuggest-textarea__textarea {
@@ -90,6 +98,7 @@
 .column {
 	.column-header {
 		@include column-shadow;
+		@include material-card-radius;
 		background: $column-header-color;
 
 		&.active {
@@ -162,7 +171,8 @@
 			&__icon {
 				@include material-icon-large;
 				color: $icon-color;
-				vertical-align: top;
+				vertical-align: bottom;
+				margin-right: 8px;
 			}
 		}
 	}
@@ -240,8 +250,15 @@
 }
 
 .confirmation-modal {
-	&__action-bar{
-		@include material-card-radius;
+	@include material-card-radius;
+	color: $primary-text-color;
+	background-color: $base-lighter1-color;
+
+	&__action-bar {
+		background-color: $base-lighter1-color;
+	}
+
+	&__cancel-button {
 		background-color: $base-color;
 	}
 }
