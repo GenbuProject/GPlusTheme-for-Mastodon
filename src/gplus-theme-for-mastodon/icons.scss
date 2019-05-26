@@ -164,10 +164,8 @@
 .fa {
 	&.fa-chevron-left,
 	&.fa-chevron-right,
-	&.fa.fa-times { vertical-align: bottom }
-
-	&.fa-chevron-left,
-	&.fa-chevron-right { @include material-icon-large }
-
-	&.fa.fa-times { font-size: 30px }
+	&.fa.fa-times {
+		@include material-icon-large;
+		vertical-align: bottom;
+	}
 }

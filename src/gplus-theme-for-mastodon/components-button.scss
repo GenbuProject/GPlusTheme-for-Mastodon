@@ -27,3 +27,13 @@
 
 	.text-icon-button { color: $primary-lighter1-text-color }
 }
+
+.modal-root {
+	&__modal {
+		.media-modal {
+			&__close.icon-button {
+				font-size: 40px !important;
+			}
+		}
+	}
+}
