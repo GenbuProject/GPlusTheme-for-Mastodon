@@ -82,7 +82,7 @@
 
 		&__publish { border-top: 1px solid $base-separation-color }
 		&__publish-button-wrapper { @include button-shadow }
-		&__modifiers { background-color: $base-color }
+		&__modifiers { background-color: $base-lighter1-color }
 	}
 
 	.autosuggest-textarea__textarea {
@@ -259,6 +259,7 @@
 	}
 
 	&__cancel-button {
-		background-color: $non-active-button-color;
+		color: $primary-lighter1-text-color;
+		box-shadow: 0 2px 5px 0 transparent;
 	}
 }

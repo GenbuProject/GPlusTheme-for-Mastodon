@@ -112,7 +112,8 @@
 	&.fa-cloud-download,
 	&.fa-eye,
 	&.fa-eye-slash,
-	&.fa-share {
+	&.fa-share,
+	&.fa-chevron-down {
 		font-family: "Material Icons Extended";
 	}
 
@@ -159,6 +160,7 @@
 	&.fa-eye::before { content: "visibility" } //目のアイコン
 	&.fa-eye-slash::before { content : "visibility_off" } //閉じた目のアイコン
 	&.fa-share::before { content: "share" } //モバイル共有ボタン
+	&.fa-chevron-down::before { content: "keyboard_arrow_down" } //メニューボタン
 }
 
 .fa {
