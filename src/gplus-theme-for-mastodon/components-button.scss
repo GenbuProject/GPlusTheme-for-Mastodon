@@ -11,11 +11,11 @@
 	width: 3.6rem;
 	height: 3.6rem;
 
-	&::active {
+	&:active {
 		background-color: $active-color;
 	}
 
-	&::hover {
+	&:hover {
 		background-color: $floating-acton-button-hover-color;
 	}
 }
