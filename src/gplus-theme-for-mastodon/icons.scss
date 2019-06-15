@@ -112,8 +112,11 @@
 	&.fa-cloud-download,
 	&.fa-eye,
 	&.fa-eye-slash,
-	&.fa-share,
-	&.fa-chevron-down {
+	&.fa-share-alt,
+	&.fa-chevron-down,
+	&.fa-bars,
+	&.fa-navicon,
+	&.fa-reorder {
 		font-family: "Material Icons Extended";
 	}
 
@@ -159,8 +162,11 @@
 	&.fa-cloud-download::before { content: "cloud_download" } //エクスポートアイコン
 	&.fa-eye::before { content: "visibility" } //目のアイコン
 	&.fa-eye-slash::before { content : "visibility_off" } //閉じた目のアイコン
-	&.fa-share::before { content: "share" } //モバイル共有ボタン
+	&.fa-share-alt::before { content: "share" } //モバイル共有ボタン
 	&.fa-chevron-down::before { content: "keyboard_arrow_down" } //メニューボタン
+	&.fa-bars::before { content: "menu" } //ハンバーガーボタン
+	&.fa-navicon::before { content: "menu" } //ハンバーガーボタン
+	&.fa-reorder::before { content: "menu" } //ハンバーガーボタン
 }
 
 .fa {
