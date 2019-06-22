@@ -34,11 +34,11 @@ $base-lighter1-color: #ffffff;
 $base-darker1-color: rgba(0, 0, 0, 0.4);
 
 $column-header-color: $base-lighter1-color;
-$column-header-hover-color: change-color($color: $column-header-color, $lightness: 90%);
+$column-header-hover-color: darken($column-header-color, 10%);
 
 $status-color: $base-lighter1-color;
 $status-direct-color: darken($status-color, 5%);
-$status-actionbar-color: change-color($color: $status-color, $lightness: 98%);
+$status-actionbar-color: darken($status-color, 2%);
 
 $account-color: $base-lighter1-color;
 $account-foreground-color: $base-darker1-color;
