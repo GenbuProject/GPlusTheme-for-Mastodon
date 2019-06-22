@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+@import 'variables';
+
+
+
+.admin-wrapper {
+	.content {
+		.directory__tag {
+			& > a,
+			& > div { background: $setting-base-color }
+
+			h4 {
+				& { color: $primary-lighter2-text-color }
+				.fa, small { color: $primary-lighter1-text-color }
+			}
+
+			.trends__item__current { color: $primary-text-color }
+		}
+	}
+}

@@ -701,6 +701,19 @@ a.name-tag {
   color: #616161;
 }
 
+.admin-wrapper .content .directory__tag > a, .admin-wrapper .content .directory__tag > div {
+  background: #f1f1f1;
+}
+.admin-wrapper .content .directory__tag h4 {
+  color: #616161;
+}
+.admin-wrapper .content .directory__tag h4 .fa, .admin-wrapper .content .directory__tag h4 small {
+  color: #9e9e9e;
+}
+.admin-wrapper .content .directory__tag .trends__item__current {
+  color: rgba(0, 0, 0, 0.87);
+}
+
 body.admin {
   color: rgba(0, 0, 0, 0.87);
   background: #f1f1f1;
