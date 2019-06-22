@@ -66,6 +66,12 @@ $setting-emphasis-color: $verified-color;
 $dashboard-counters-base-color: $base-color;
 $dashboard-counters-hover-color: lighten($base-color, 2%);
 
+$log-entry-color: $base-lighter1-color;
+$log-entry-extra-color: $base-color;
+$log-entry-extra--neutral-color: $valid-color;
+$log-entry-extra--old-color: $active-color;
+$log-entry-extra--new-color: $verified-color;
+
 $explore-header-color: lighten($accent-color, 16%);
 $explore-directory-color: $base-lighter1-color;
 
