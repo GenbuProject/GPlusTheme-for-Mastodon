@@ -53,19 +53,17 @@
 }
 
 .detailed-status {
-	.detailed-status {
-		&__display-name {
-			color: $secondary-text-color;
-	
-			strong { color: $primary-text-color }
-		}
-	
-		&__meta {
-			.detailed-status__datetime { color: $primary-lighter1-text-color }
-	
-			.detailed-status__link {
-				.fa.fa-star { vertical-align: middle }
-			}
+	&__display-name {
+		color: $secondary-text-color;
+
+		strong { color: $primary-text-color }
+	}
+
+	&__meta {
+		.detailed-status__datetime { color: $primary-lighter1-text-color }
+
+		.detailed-status__link {
+			.fa.fa-star { vertical-align: middle }
 		}
 	}
 	

@@ -139,6 +139,24 @@
 	}
 }
 
+.account-authorize__wrapper {
+	@include status-shadow;
+	background: $base-lighter1-color;
+
+	&:focus { @include status-focus-shadow; }
+
+	.account {
+		&__header__content {
+			color: $primary-lighter2-text-color;
+		}
+	
+		&--panel {
+			background: $account-color;
+			border-color: $base-separation-color;
+		}
+	}
+}
+
 .account__header__fields {
 	dl {
 		border-color: $base-separation-color;

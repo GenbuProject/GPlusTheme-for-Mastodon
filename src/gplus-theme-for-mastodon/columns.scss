@@ -111,7 +111,8 @@
 	}
 
 	.column {
-		&-subheading { background: darken($base-color, 10%) }
+		&-subheading,
+		&-link__badge { background: darken($base-color, 10%) }
 	
 		&-link {
 			color: $primary-text-color;
@@ -131,6 +132,8 @@
 			article {
 				margin: 1em 0;
 				&:first-of-type { margin: 0 }
+
+				&:focus { outline: none }
 			}
 		}
 
