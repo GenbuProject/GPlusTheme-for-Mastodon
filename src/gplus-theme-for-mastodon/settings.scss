@@ -5,7 +5,7 @@
 @import 'settings-account';
 @import 'settings-report';
 @import 'settings-dashboard';
-@import 'settings-featured_tags';
+@import 'settings-directory_tag';
 
 
 
@@ -77,7 +77,10 @@ body.admin {
 			.radio label { color: $primary-text-color }
 		}
 
-		&-copy { background: $base-color }
+		&-copy {
+			background: $base-color;
+			border-color: $base-separation-color;
+		}
 	}
 
 	.check_boxes {
@@ -118,7 +121,14 @@ body.admin {
 		}
 	}
 
-	.hint, p.hint { color: $primary-lighter1-text-color !important }
+	.hint, p.hint {
+		color: $primary-lighter1-text-color !important;
+
+		code {
+			color: $light-text-color;
+			background: $setting-emphasis-color;
+		}
+	}
 
 	.label_input {
 		&__append { color: $primary-lighter1-text-color }

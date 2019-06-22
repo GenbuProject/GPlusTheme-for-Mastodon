@@ -61,6 +61,8 @@ $setting-toggle-checked-color: change-color($color: $checked-color, $alpha: 0.5)
 $setting-toggle-thumb-color: #fafafa;
 $setting-toggle-thumb-checked-color: $checked-color;
 
+$setting-emphasis-color: $verified-color;
+
 $dashboard-counters-base-color: $base-color;
 $dashboard-counters-hover-color: lighten($base-color, 2%);
 

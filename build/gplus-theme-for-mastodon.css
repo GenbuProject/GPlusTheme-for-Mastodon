@@ -777,6 +777,7 @@ body.admin .content .muted-hint {
 }
 .simple_form .input-copy {
   background: #f1f1f1;
+  border-color: rgba(0, 0, 0, 0.14);
 }
 .simple_form .check_boxes .checkbox label {
   color: rgba(0, 0, 0, 0.87);
@@ -819,6 +820,10 @@ body.admin .content .muted-hint {
 }
 .simple_form .hint, .simple_form p.hint {
   color: #9e9e9e !important;
+}
+.simple_form .hint code, .simple_form p.hint code {
+  color: #ffffff;
+  background: #4caf50;
 }
 .simple_form .label_input__append {
   color: #9e9e9e;
