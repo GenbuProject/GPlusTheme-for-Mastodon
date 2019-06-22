@@ -345,6 +345,11 @@ button.table-action-link:hover {
 .account .account__display-name strong {
   color: rgba(0, 0, 0, 0.87);
 }
+.account-role {
+  color: #616161;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-color: rgba(0, 0, 0, 0.5);
+}
 
 .column > .column-back-button {
   box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.3);
@@ -691,7 +696,7 @@ a.name-tag {
 .dashboard__counters > div > a:hover, .dashboard__counters > div > a:focus, .dashboard__counters > div > a:active {
   background: #f6f6f6;
 }
-.dashboard__counters__num {
+.dashboard__counters__text, .dashboard__counters__num {
   color: rgba(0, 0, 0, 0.87);
 }
 .dashboard__counters__label {

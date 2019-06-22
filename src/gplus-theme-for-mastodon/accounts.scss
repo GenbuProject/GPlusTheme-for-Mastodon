@@ -15,6 +15,12 @@
 			strong { color: $primary-text-color }
 		}
 	}
+
+	&-role {
+		color: $primary-lighter2-text-color;
+		background-color: rgba($base-separation-color, 0.1);
+		border-color: rgba($base-separation-color, 0.5);
+	}
 }
 
 .column {
