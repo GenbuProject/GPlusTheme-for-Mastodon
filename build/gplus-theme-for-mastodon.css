@@ -864,6 +864,13 @@ body.admin .content .muted-hint {
   border-bottom-color: #db4437;
 }
 
+.new_form_two_factor_confirmation .qr-wrapper .qr-code {
+  box-shadow: none;
+}
+.new_form_two_factor_confirmation .qr-wrapper .qr-alternative {
+  color: #00bfff;
+}
+
 label[for=user_setting_default_privacy_public], label[for=user_setting_default_privacy_unlisted] {
   color: #db4437 !important;
 }

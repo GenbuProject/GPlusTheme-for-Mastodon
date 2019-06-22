@@ -183,6 +183,13 @@ body.admin {
 	}
 }
 
+.new_form_two_factor_confirmation {
+	.qr-wrapper {
+		.qr-code { box-shadow: none }
+		.qr-alternative { color: $secondary-lighter1-text-color }
+	}
+}
+
 label {
 	&[for=user_setting_default_privacy_public],
 	&[for=user_setting_default_privacy_unlisted] {
