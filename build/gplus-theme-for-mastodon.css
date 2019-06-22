@@ -670,10 +670,12 @@ a.name-tag {
   border-color: rgba(0, 0, 0, 0.14);
 }
 .batch-table__row {
-  background: #ffffff;
   border-color: rgba(0, 0, 0, 0.14);
 }
-.batch-table__row:hover {
+.batch-table__row, .batch-table__row:nth-child(2n) {
+  background: #ffffff;
+}
+.batch-table__row:hover, .batch-table__row:nth-child(2n):hover {
   background: #e6e6e6;
 }
 .batch-table__row__content .status__content {
@@ -681,6 +683,15 @@ a.name-tag {
 }
 .batch-table__row__content .detailed-status__meta {
   color: #9e9e9e;
+}
+.batch-table__row__content .accounts-table .accounts-table__count {
+  color: rgba(0, 0, 0, 0.87);
+}
+.batch-table__row__content .accounts-table .accounts-table__count small {
+  color: #9e9e9e;
+}
+.batch-table__row__content .accounts-table td .account {
+  background: inherit;
 }
 
 .speech-bubble__bubble {

@@ -45,14 +45,26 @@
 	}
 
 	&__row {
-		background: $base-lighter1-color;
-		border-color: $base-separation-color;
+		&, &:nth-child(2n) { background: $base-lighter1-color }
+		&:hover, &:nth-child(2n):hover { background: $column-header-hover-color }
 
-		&:hover { background: $column-header-hover-color }
+		border-color: $base-separation-color;
 
 		&__content {
 			.status__content { color: $primary-text-color }
 			.detailed-status__meta { color: $primary-lighter1-text-color }
+
+
+			.accounts-table { // v2.8.0 ->
+				.accounts-table {
+					&__count {
+						& {color: $primary-text-color }
+						small { color: $primary-lighter1-text-color }
+					}
+				}
+
+				td .account { background: inherit }
+			}
 		}
 	}
 }
