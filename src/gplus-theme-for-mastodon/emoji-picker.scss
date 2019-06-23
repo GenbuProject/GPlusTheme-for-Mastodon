@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+@import 'variables';
+@import 'mixins';
+
+
+
+.emoji-mart {
+    &-bar {
+        border: 0 solid $base-separation-color;
+
+        &:first-child {
+            border-top-left-radius: 2px;
+            border-top-right-radius: 2px;
+            background-color: $base-color;
+        }
+    }
+
+    &-anchors {
+        color: $icon-color;
+    }
+    &-anchor {
+        &-selected {
+            color: $icon-active-color;
+
+            &:hover {
+                color: $icon-active-color;
+            }
+        }
+
+        &-bar {
+            background-color: $icon-active-color;
+        }
+    }
+
+    &-search {
+        background-color: $base-lighter1-color;
+    }
+    &-search input {
+        color: $primary-text-color;
+        background-color: $form-color;
+        border: 0px solid #ffffff00;
+    }
+
+    &-category-label span {
+        color: $primary-text-color;
+        background-color: $base-lighter1-color;
+    }
+
+    &-scroll {
+        background-color: $base-lighter1-color;
+    }
+}
+
+.emoji-picker-dropdown {
+    &__modifiers {
+        &__menu {
+            @include status-shadow;
+            @include material-card-radius;
+            background-color: $base-lighter1-color;
+        }
+    }
+
+    &__menu {
+        @include column-shadow;
+        background-color: $base-lighter1-color;
+    }
+}
