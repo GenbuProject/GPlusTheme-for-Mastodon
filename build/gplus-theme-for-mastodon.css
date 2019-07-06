@@ -1406,4 +1406,18 @@ label[for=user_setting_default_privacy_public], label[for=user_setting_default_p
   color: #2962ff;
 }
 
+.keyboard-shortcuts kbd {
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #ffffff;
+  border-color: rgba(0, 0, 0, 0.4);
+  margin: 0 0.25em;
+}
+.keyboard-shortcuts kbd:first-child {
+  margin-left: 0;
+}
+.keyboard-shortcuts kbd:last-child {
+  margin-right: 0;
+}
+
 /*# sourceMappingURL=gplus-theme-for-mastodon.css.map */
