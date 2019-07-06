@@ -22,13 +22,35 @@
 }
 
 .modal-root {
+	.column-inline-form {
+		background: $form-color;
+		
+		.setting-text {
+			color: $primary-text-color;
+			&:active, &:focus { color: $primary-lighter2-text-color }
+		}
+	}
+
 	.list-editor {
 		background: $base-color;
 		
 		h4 { background: $column-header-color }
 
+		.column-inline-form { background: $column-header-color }
+
 		.drawer__pager {
 			.drawer__inner { background: $column-header-color }
+		}
+	}
+
+	.list-adder {
+		background: $column-header-color;
+
+		&__account,
+		&__lists { background: $column-header-color }
+
+		&__lists {
+			.list { border-color: $base-separation-color }
 		}
 	}
 }

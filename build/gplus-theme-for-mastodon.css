@@ -325,14 +325,35 @@ button.table-action-link:hover {
   margin: 0;
 }
 
+.modal-root .column-inline-form {
+  background: rgba(0, 0, 0, 0.1);
+}
+.modal-root .column-inline-form .setting-text {
+  color: rgba(0, 0, 0, 0.87);
+}
+.modal-root .column-inline-form .setting-text:active, .modal-root .column-inline-form .setting-text:focus {
+  color: #616161;
+}
 .modal-root .list-editor {
   background: #f1f1f1;
 }
 .modal-root .list-editor h4 {
   background: #ffffff;
 }
+.modal-root .list-editor .column-inline-form {
+  background: #ffffff;
+}
 .modal-root .list-editor .drawer__pager .drawer__inner {
   background: #ffffff;
+}
+.modal-root .list-adder {
+  background: #ffffff;
+}
+.modal-root .list-adder__account, .modal-root .list-adder__lists {
+  background: #ffffff;
+}
+.modal-root .list-adder__lists .list {
+  border-color: rgba(0, 0, 0, 0.14);
 }
 
 .account {
