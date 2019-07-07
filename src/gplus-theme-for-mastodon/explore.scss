@@ -23,9 +23,15 @@
 		}
 
 		&__tag {
-			a { background: $explore-directory-color }
-			h4 { color: $primary-text-color }
-			.fa, small { color: $primary-lighter1-text-color }
+			& > a,
+			& > div { background: $explore-directory-color }
+
+			h4 {
+				& { color: $primary-lighter2-text-color }
+				.fa, small { color: $primary-lighter1-text-color }
+			}
+
+			.trends__item__current { color: $primary-text-color }
 		}
 	}
 

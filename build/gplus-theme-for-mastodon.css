@@ -1394,14 +1394,17 @@ label[for=user_setting_default_privacy_public], label[for=user_setting_default_p
 .public-layout .directory .accounts-table__count small {
   color: #9e9e9e;
 }
-.public-layout .directory__tag a {
+.public-layout .directory__tag > a, .public-layout .directory__tag > div {
   background: #ffffff;
 }
 .public-layout .directory__tag h4 {
-  color: rgba(0, 0, 0, 0.87);
+  color: #616161;
 }
-.public-layout .directory__tag .fa, .public-layout .directory__tag small {
+.public-layout .directory__tag h4 .fa, .public-layout .directory__tag h4 small {
   color: #9e9e9e;
+}
+.public-layout .directory__tag .trends__item__current {
+  color: rgba(0, 0, 0, 0.87);
 }
 .public-layout .notice-widget {
   color: #9e9e9e;
