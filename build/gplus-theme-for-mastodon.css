@@ -1061,7 +1061,7 @@ label[for=user_setting_default_privacy_public], label[for=user_setting_default_p
 .public-layout .logo-button svg path:not(#Mastodon):not(#Itabashi) {
   fill: #2962ff !important;
 }
-.public-layout .logo-button svg path:last-child {
+.public-layout .logo-button svg path#Mastodon {
   fill: #ffffff !important;
 }
 .public-layout .public-account-header {
@@ -1152,7 +1152,7 @@ label[for=user_setting_default_privacy_public], label[for=user_setting_default_p
   .public-layout .public-account-header__tabs__tabs a.button.logo-button svg path:not(#Mastodon):not(#Itabashi) {
     fill: #ffffff !important;
   }
-  .public-layout .public-account-header__tabs__tabs a.button.logo-button svg path:last-child {
+  .public-layout .public-account-header__tabs__tabs a.button.logo-button svg path#Mastodon {
     fill: #2962ff !important;
   }
 }
@@ -1252,7 +1252,7 @@ label[for=user_setting_default_privacy_public], label[for=user_setting_default_p
 .public-layout .footer .brand svg path:not(#Mastodon):not(#Itabashi) {
   fill: #2962ff !important;
 }
-.public-layout .footer .brand svg path:last-child {
+.public-layout .footer .brand svg path#Mastodon {
   fill: #ffffff !important;
 }
 

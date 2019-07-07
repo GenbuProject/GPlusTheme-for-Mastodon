@@ -23,7 +23,7 @@
 		svg path {
 			/* Only for Itabashi-don */
 			&:not(#Mastodon):not(#Itabashi) { fill: $secondary-text-color !important }
-			&:last-child { fill: $base-lighter1-color !important }
+			&#Mastodon { fill: $base-lighter1-color !important }
 		}
 	}
 
@@ -114,7 +114,7 @@
 						svg path {
 							/* Only for Itabashi-don */
 							&:not(#Mastodon):not(#Itabashi) { fill: $base-lighter1-color !important }
-							&:last-child { fill: $secondary-text-color !important }
+							&#Mastodon { fill: $secondary-text-color !important }
 						}
 					}
 				}
@@ -225,7 +225,7 @@
 			svg path {
 				/* Only for Itabashi-don */
 				&:not(#Mastodon):not(#Itabashi) { fill: $secondary-text-color !important }
-				&:last-child { fill: $base-lighter1-color !important }
+				&#Mastodon { fill: $base-lighter1-color !important }
 			}
 		}
 	}
