@@ -131,6 +131,12 @@ body.admin {
 		}
 	}
 
+	.recommended {
+		color: $verified-color;
+		background-color: transparentize($verified-color, 0.75);
+		border-color: $verified-color;
+	}
+
 	.label_input {
 		&__append { color: $primary-lighter1-text-color }
 	}
@@ -191,11 +197,12 @@ body.admin {
 	}
 }
 
-label {
+label,
+select#user_setting_default_privacy {
 	&[for=user_setting_default_privacy_public],
-	&[for=user_setting_default_privacy_unlisted] {
-		color: $active-text-color !important;
-	}
+	&[for=user_setting_default_privacy_unlisted],
+	option[value="public"],
+	option[value="unlisted"] { color: $active-text-color !important }
 }
 
 .column-header__collapsible__extra {
