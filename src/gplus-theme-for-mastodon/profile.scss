@@ -149,8 +149,11 @@
 		}
 	}
 
+	.public-account-bio,
+	.endorsements-widget,
+	.hero-widget { @include status-shadow; }
+
 	.public-account-bio {
-		@include column-shadow;
 		background: $base-lighter1-color;
 		
 		.account__header__content { color: $primary-text-color }
@@ -158,8 +161,6 @@
 	}
 
 	.endorsements-widget {
-		@include column-shadow;
-
 		padding-bottom: 0;
 		border-radius: 4px;
 
@@ -170,8 +171,6 @@
 	}
 
 	.hero-widget {
-		@include column-shadow;
-
 		&__img { background: $base-color }
 		&__text {
 			background: $base-lighter1-color;

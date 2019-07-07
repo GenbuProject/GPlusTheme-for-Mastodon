@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 @import 'variables';
+@import 'mixins';
 
 
 
@@ -11,6 +12,9 @@
 		h1 { color: $primary-text-color }
 		p { color: $primary-lighter2-text-color }
 	}
+
+	.directory,
+	.notice-widget { @include column-shadow; }
 
 	.directory {
 		background: $explore-directory-color;
@@ -23,14 +27,13 @@
 		}
 
 		&__tag {
-			& > a,
-			& > div { background: $explore-directory-color }
-
-			h4 {
-				& { color: $primary-lighter2-text-color }
-				.fa, small { color: $primary-lighter1-text-color }
+			& > a {
+				@include status-shadow;
+				background: $explore-directory-color;
 			}
 
+			h4 { color: $primary-lighter2-text-color }
+			.fa, small { color: $primary-lighter1-text-color }
 			.trends__item__current { color: $primary-text-color }
 		}
 	}
