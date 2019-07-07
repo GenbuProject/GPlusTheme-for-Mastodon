@@ -10,7 +10,15 @@
 			> a {
 				position: relative;
 
-				.card__img { border-bottom: 1px solid $base-separation-color }
+				.card__img {
+					border-bottom: 1px solid $base-separation-color;
+
+					> img:not([src]),
+					> img[src="/headers/original/missing.png"] {
+						content: url("https://raw.githubusercontent.com/GenbuProject/GPlusTheme-for-Mastodon/asset/account-default_header.jpg");
+					}
+				}
+				
 				.card__bar {
 					position: static;
 					padding-top: 30%;
@@ -29,6 +37,8 @@
 						img {
 							width: 128px;
 							height: 128px;
+
+							border-radius: 50%;
 						}
 					}
 			

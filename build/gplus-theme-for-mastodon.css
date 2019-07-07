@@ -636,6 +636,10 @@ a.name-tag {
   .edit_account .card > a .card__img {
     border-bottom: 1px solid rgba(0, 0, 0, 0.14);
   }
+  .edit_account .card > a .card__img > img:not([src]),
+.edit_account .card > a .card__img > img[src="/headers/original/missing.png"] {
+    content: url("https://raw.githubusercontent.com/GenbuProject/GPlusTheme-for-Mastodon/asset/account-default_header.jpg");
+  }
   .edit_account .card > a .card__bar {
     position: static;
     padding-top: 30%;
@@ -653,6 +657,7 @@ a.name-tag {
   .edit_account .card > a .card__bar .avatar img {
     width: 128px;
     height: 128px;
+    border-radius: 50%;
   }
   .edit_account .card > a .card__bar .display-name {
     flex: auto;
