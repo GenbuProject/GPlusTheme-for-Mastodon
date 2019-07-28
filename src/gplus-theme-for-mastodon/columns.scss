@@ -98,7 +98,6 @@
 .column {
 	.column-header {
 		@include column-shadow;
-		@include material-card-radius;
 		background: $column-header-color;
 
 		&.active {
