@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+@import 'variables';
+
+
+
+.status-card {
+	color: $primary-lighter1-text-color;
+	&__title, &__description { color: $primary-lighter2-text-color }
+
+	&__image { background: transparent }
+}

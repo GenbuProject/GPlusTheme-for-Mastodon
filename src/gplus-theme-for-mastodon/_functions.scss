@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+
+
+@function adjust-lightness ($color, $lightness) {
+	@if (lightness($color) - $lightness <= 0 and lightness($color) + $lightness < 100) {
+		@return lighten($color, $lightness);
+	}
+
+	@if (0 < lightness($color) - $lightness and 100 <= lightness($color) + $lightness) {
+		@return darken($color, $lightness);
+	}
+
+	@return change-color($color, $lightness: $lightness);
+}

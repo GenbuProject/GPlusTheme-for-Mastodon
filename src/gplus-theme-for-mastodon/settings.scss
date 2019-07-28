@@ -4,7 +4,9 @@
 @import 'mixins';
 @import 'settings-account';
 @import 'settings-report';
+@import 'settings-log';
 @import 'settings-dashboard';
+@import 'settings-directory_tag';
 
 
 
@@ -82,7 +84,10 @@ body.admin {
 			.radio label { color: $primary-text-color }
 		}
 
-		&-copy { background: $base-color }
+		&-copy {
+			background: $base-color;
+			border-color: $base-separation-color;
+		}
 	}
 
 	.check_boxes {
@@ -123,7 +128,20 @@ body.admin {
 		}
 	}
 
-	.hint, p.hint { color: $primary-lighter1-text-color !important }
+	.hint, p.hint {
+		color: $primary-lighter1-text-color !important;
+
+		code {
+			color: $light-text-color;
+			background: $setting-emphasis-color;
+		}
+	}
+
+	.recommended {
+		color: $verified-color;
+		background-color: transparentize($verified-color, 0.75);
+		border-color: $verified-color;
+	}
 
 	.label_input {
 		&__append { color: $primary-lighter1-text-color }
@@ -182,11 +200,19 @@ body.admin {
 	}
 }
 
-label {
-	&[for=user_setting_default_privacy_public],
-	&[for=user_setting_default_privacy_unlisted] {
-		color: $active-text-color !important;
+.new_form_two_factor_confirmation {
+	.qr-wrapper {
+		.qr-code { box-shadow: none }
+		.qr-alternative { color: $secondary-lighter1-text-color }
 	}
+}
+
+label,
+select#user_setting_default_privacy {
+	&[for=user_setting_default_privacy_public],
+	&[for=user_setting_default_privacy_unlisted],
+	option[value="public"],
+	option[value="unlisted"] { color: $active-text-color !important }
 }
 
 .column-header__collapsible__extra {

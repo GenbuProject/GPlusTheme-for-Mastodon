@@ -23,7 +23,7 @@
 		svg path {
 			/* Only for Itabashi-don */
 			&:not(#Mastodon):not(#Itabashi) { fill: $secondary-text-color !important }
-			&:last-child { fill: $base-lighter1-color !important }
+			&#Mastodon { fill: $base-lighter1-color !important }
 		}
 	}
 
@@ -36,6 +36,8 @@
 			@media screen and (min-width: 600px) { height: 500px }
 
 			&::after {
+				content: "";
+				
 				position: absolute;
 				top: auto;
 				left: 0;
@@ -112,7 +114,7 @@
 						svg path {
 							/* Only for Itabashi-don */
 							&:not(#Mastodon):not(#Itabashi) { fill: $base-lighter1-color !important }
-							&:last-child { fill: $secondary-text-color !important }
+							&#Mastodon { fill: $secondary-text-color !important }
 						}
 					}
 				}
@@ -147,8 +149,11 @@
 		}
 	}
 
+	.public-account-bio,
+	.endorsements-widget,
+	.hero-widget { @include status-shadow; }
+
 	.public-account-bio {
-		@include column-shadow;
 		background: $base-lighter1-color;
 		
 		.account__header__content { color: $primary-text-color }
@@ -156,8 +161,6 @@
 	}
 
 	.endorsements-widget {
-		@include column-shadow;
-
 		padding-bottom: 0;
 		border-radius: 4px;
 
@@ -168,8 +171,6 @@
 	}
 
 	.hero-widget {
-		@include column-shadow;
-
 		&__img { background: $base-color }
 		&__text {
 			background: $base-lighter1-color;
@@ -224,7 +225,7 @@
 			svg path {
 				/* Only for Itabashi-don */
 				&:not(#Mastodon):not(#Itabashi) { fill: $secondary-text-color !important }
-				&:last-child { fill: $base-lighter1-color !important }
+				&#Mastodon { fill: $base-lighter1-color !important }
 			}
 		}
 	}

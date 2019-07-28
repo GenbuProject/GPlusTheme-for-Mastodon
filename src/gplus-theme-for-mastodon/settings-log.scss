@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+@import 'variables';
+
+
+
+.log-entry {
+	.log-entry {
+		&__header {
+			color: $primary-lighter2-text-color;
+			background: $log-entry-color;
+
+			.username,
+			.target,
+			a { color: $secondary-text-color }
+		}
+
+		&__timestamp { color: $primary-lighter1-text-color }
+		&__icon { color: $icon-color }
+
+		&__extras {
+			color: $primary-text-color;
+			background: $log-entry-extra-color;
+
+			.diff-neutral { color: $log-entry-extra--neutral-color }
+			.diff-old { color: $log-entry-extra--old-color }
+			.diff-new { color: $log-entry-extra--new-color }
+		}
+	}
+}

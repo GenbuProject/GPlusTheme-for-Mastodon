@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+@import 'variables';
+@import 'mixins';
+
+
+
+.keyboard-shortcuts {
+	kbd {
+		@include status-shadow;
+
+		color: $primary-text-color;
+		background-color: $base-lighter1-color;
+		border-color: $base-darker1-color;
+
+		margin: 0 0.25em;
+
+		&:first-child { margin-left: 0 }
+		&:last-child { margin-right: 0 }
+	}
+}
