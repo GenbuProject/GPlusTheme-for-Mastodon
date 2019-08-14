@@ -24,11 +24,13 @@
 
 .icon-button {
 	color: $icon-color;
+	border-radius: 50%;
 
 	&:active,
 	&:focus,
 	&:hover {
 		color: lighten($icon-color, 7%);
+		background-color: $column-header-hover-color;
 	}
 
 	&.star-icon {
@@ -116,7 +118,13 @@
 	&.fa-chevron-down,
 	&.fa-bars,
 	&.fa-navicon,
-	&.fa-reorder {
+	&.fa-reorder,
+	&.fa-desktop,
+	&.fa-code,
+	&.fa-list,
+	&.fa-paperclip,
+	&.fa-plus,
+	&.fa-bullhorn {
 		font-family: "Material Icons Extended";
 	}
 
@@ -167,6 +175,12 @@
 	&.fa-bars::before { content: "menu" } //ハンバーガーボタン
 	&.fa-navicon::before { content: "menu" } //ハンバーガーボタン
 	&.fa-reorder::before { content: "menu" } //ハンバーガーボタン
+	&.fa-desktop::before { content: "desktop-windows" } //外観設定のアイコン
+	&.fa-code::before { content: "code" } //開発アイコン
+	&.fa-list::before { content: "list" } //リストアイコン
+	&.fa-paperclip::before { content: "attach_file" } //メディアを追加のアイコン
+	&.fa-plus::before { content: "add" } // 追加ボタン
+	&.fa-bullhorn::before { content: "announcement"} //Adminからのお知らせ(一部サーバーのみ)
 }
 
 .fa {
