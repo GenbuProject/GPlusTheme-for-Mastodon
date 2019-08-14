@@ -25,7 +25,10 @@
 	@include material-card-radius;
 	background-color: $active-button-color;
 
-	.text-icon-button { color: $primary-lighter1-text-color }
+	.text-icon-button {
+		color: $primary-lighter1-text-color;
+		border-radius: 50%;
+	}
 }
 
 .modal-root {

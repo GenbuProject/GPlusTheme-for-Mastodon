@@ -6,9 +6,10 @@
 
 
 .tabs-bar {
-	@include column-shadow;
 	margin: 0;
 	background: $column-header-color;
+	position: relative;
+	z-index: 2;
 
 	.tabs-bar {
 		&__link {
@@ -99,6 +100,7 @@
 	.column-header {
 		@include column-shadow;
 		background: $column-header-color;
+		z-index: 1;
 
 		&.active {
 			.column-header__icon {
@@ -121,9 +123,9 @@
 
 			.column-header {
 				&__back-button {
-					.column-back-button__icon { vertical-align: unset }
+					.column-back-button__icon { vertical-align: bottom }
 				}
-	
+
 				&__button {
 					&.active {
 						color: $icon-active-color;
@@ -143,7 +145,7 @@
 		&__collapsible {
 			color: $secondary-text-color;
 			border-bottom: 1px solid $base-separation-color;
-	
+
 			&-inner { background: $column-header-color }
 		}
 	}
@@ -158,7 +160,10 @@
 
 	.column {
 		&-subheading,
-		&-link__badge { background: darken($base-color, 10%) }
+		&-link__badge {
+			background: $base-color;
+			color: $secondary-text-color;
+		}
 	
 		&-link {
 			color: $primary-text-color;
@@ -220,6 +225,60 @@
 			background: none center / contain no-repeat;
 			background-image: url("https://raw.githubusercontent.com/GenbuProject/GPlusTheme-for-Mastodon/asset/notification-jingle_2x.gif");
 		}
+	}
+}
+
+// v2.9.0以降
+.column-header {
+	@include column-shadow;
+	background: $column-header-color;
+	z-index: 1;
+
+	&.active {
+		.column-header__icon {
+			color: $icon-active-color;
+			text-shadow: 0 0 10px change-color($color: $icon-active-color, $alpha: 0.4);
+		}
+	}
+
+	* { background: inherit }
+
+	&__icon {
+		@include material-icon-large;
+		color: $icon-color;
+		vertical-align: bottom;
+		margin-right: 10px;
+	}
+
+	&__buttons {
+		height: 50px;
+
+		.column-header {
+			&__back-button {
+				.column-back-button__icon { vertical-align: bottom }
+			}
+
+			&__button {
+				&.active {
+					color: $icon-active-color;
+					background: inherit;
+				}
+	
+				.fa { vertical-align: unset }
+			}
+		}
+	}
+
+	&__button {
+		color: $icon-color;
+		padding: 0 16px;
+	}
+
+	&__collapsible {
+		color: $secondary-text-color;
+		border-bottom: 1px solid $base-separation-color;
+
+		&-inner { background: $column-header-color }
 	}
 }
 
