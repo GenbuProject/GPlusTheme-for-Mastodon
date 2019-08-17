@@ -74,7 +74,10 @@
 						}
 
 						&__buttons {
-							.icon-button { border: 0 }
+							.icon-button { 
+								border: 0;
+								border-radius: 50%;
+							}
 						}
 
 						&__name {

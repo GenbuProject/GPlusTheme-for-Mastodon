@@ -6,6 +6,13 @@
 
 .dropdown-menu {
 	background-color: $column-header-color;
+
+		&__arrow {
+			&.top { border-top-color: $column-header-color }
+			&.bottom { border-bottom-color: $column-header-color }
+		}
+
+		&__separator { margin: 4px 0 }
 }
 
 .dropdown-menu,
@@ -16,11 +23,6 @@
 		background: $base-lighter1-color;
 
 		.dropdown-menu {
-			&__arrow {
-				&.top { border-top-color: $column-header-color }
-				&.bottom { border-bottom-color: $column-header-color }
-			}
-
 			&__item {
 				a {
 					color: $primary-lighter2-text-color;

@@ -149,6 +149,7 @@ body.admin {
 
 	button {
 		@include button-shadow;
+		background-color: $active-button-color;
 	}
 }
 

@@ -23,6 +23,8 @@
 
 			&__content { color: $primary-text-color }
 		}
+
+		.display-name strong { color: $primary-text-color }
 	}
 
 	&.status-direct {

@@ -25,9 +25,12 @@
 .icon-button {
 	color: $icon-color;
 	border-radius: 50%;
+	width: 28px !important; // UIの密度が下がる代わりに、ホバー時に正常に表示
+	height: 28px !important; // !importantを付けないと動作しない…?
 
 	&:active,
-	&:focus,
+	&:focus { background-color: transparent }
+
 	&:hover {
 		color: lighten($icon-color, 7%);
 		background-color: $column-header-hover-color;
@@ -43,9 +46,9 @@
 		.fa.fa-star { vertical-align: top }
 	}
 
-	&.inverted {
-		color: $icon-color;
-	}
+	&.inverted { color: $icon-color }
+
+	&.overlayed { border-radius: 50% }
 
 	&.disabled {
 		color: lighten($icon-color, 13%);
@@ -175,7 +178,7 @@
 	&.fa-bars::before { content: "menu" } //ハンバーガーボタン
 	&.fa-navicon::before { content: "menu" } //ハンバーガーボタン
 	&.fa-reorder::before { content: "menu" } //ハンバーガーボタン
-	&.fa-desktop::before { content: "desktop-windows" } //外観設定のアイコン
+	&.fa-desktop::before { content: "desktop_windows" } //外観設定のアイコン
 	&.fa-code::before { content: "code" } //開発アイコン
 	&.fa-list::before { content: "list" } //リストアイコン
 	&.fa-paperclip::before { content: "attach_file" } //メディアを追加のアイコン
@@ -186,8 +189,17 @@
 .fa {
 	&.fa-chevron-left,
 	&.fa-chevron-right,
-	&.fa.fa-times {
+	&.fa-plus {
 		@include material-icon-large;
 		vertical-align: bottom;
+	}
+
+	&.fa-times {
+		@include material-icon-large;
+		vertical-align: top;
+		&.fa-fw {
+			font-size: 24px;
+			vertical-align: 8px;
+		}
 	}
 }
